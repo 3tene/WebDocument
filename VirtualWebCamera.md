@@ -3,9 +3,22 @@
 >3tene の画面を仮想ウェブカメラに出力します。
 >メニューやウェブカメラプレビュー等の2D画像は出力されません。
 
+### 注意事項
+
 ><font color="Red">※Steam 版はインストーラが無いので仮想ウェブカメラが自動登録されません。</font>
 >　下記の<font color="Blue">「3tene Screen Capture」の再登録の仕方</font>を参照してください。
 ><font color="Red">※Mac版は対応していません。</font>
+
+>3tene Ver 2.0.6 以降は UnityCapture を使用しなくなりました。
+>旧バージョン(Ver 2.0.5 以前)の[UnityCapture設定](#UnityCapture.md)
+
+>UnityCapture がインストール済みの場合はインストールされたフォルダにある
+>Uninstall.bat を実行後、ファイルを削除する事でアンインストールされます。
+
+>3tene インストール後に 3tene のフォルダを移動すると
+><font color="Red">「3tene Screen Capture」が動作しなくなります。</font>
+>この問題を解決するには、フォルダを元に戻すか、
+>手動による<font color="Blue">「3tene Screen Capture」の再登録</font>が必要になります。
 
 ### 仮想ウェブカメラの特徴
 
@@ -18,19 +31,6 @@
 >対象とならないのでアバターと背景のみが表示されます。
 
 ![画像](image/VwcForOBS.png "")
-
-### 注意事項
-
->3tene Ver 2.0.6 以降は UnityCapture を使用しなくなりました。
->旧バージョンの[UnityCapture設定](#UnityCapture.md)
-
->UnityCapture がインストール済みの場合は Uninstall.bat を実行後、
->ファイルを削除しても問題ありません。
-
->3tene インストール後に 3tene のフォルダを移動すると
-><font color="Red">「3tene Screen Capture」が動作しなくなります。</font>
->この問題を解決するには、フォルダを元に戻すか、
->手動による<font color="Blue">「3tene Screen Capture」の再登録</font>が必要になります。
 
 ### 「3tene Screen Capture」の再登録の仕方
 
