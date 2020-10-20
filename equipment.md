@@ -110,7 +110,9 @@
 
 ><font color="Blue">※Oculus Rift S では動作確認をしていません。</font>
 ><font color="Blue">※Oculus Quest + Oculus Link では動作確認をしていません。</font>
-><font color="Red">※Oculus Go および Oculus Quest (単体) には対応していません。</font>
+><font color="Blue">※Oculus Quest2 + Oculus Link では動作確認をしていません。</font>
+><font color="Red">※Oculus Go には対応していません。</font>
+><font color="Red">※Oculus Quest (単体), Quest2 (単体) には対応していません。</font>
 ><font color="Red">※Oculus Rift は Mac に対応していません。</font>
 
 ### Perception Neuron (全身装着型センサー - 3teneSTUDIO のみ対応)
