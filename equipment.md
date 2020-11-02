@@ -68,11 +68,14 @@
 >首掛け式の自撮り棒を使う事で両手が空くので他の操作が可能になります。
 
 ><font color="Blue">※第二世代 iPhone SE (2020) は TrueDepth を搭載していない為、対象外となります。</font>
+>(iOS 14 にすると iPhone SE (2020) でも動作するようですが保証外となります。)
 
 >#### 動作確認済みの機器
 >iPhoneX (A11 Bionic プロセッサ + TrueDepth カメラ)
 >iPhoneXR (A12 Bionic プロセッサ + TrueDepth カメラ)
 >iPhone11 (A13 Bionic プロセッサ + TrueDepth カメラ)
+
+><font color="Blue">※iPhone12 シリーズでは動作確認をしていません。</font>
 
 
 ### Azure Kinect (USB 3接続の専用カメラ - 3teneFREE は非対応)
@@ -101,6 +104,9 @@
 
 ><font color="Blue">HTC Vive Pro はアップグレード、フルセットどちらでも動作します。</font>
 ><font color="Blue">HTC Vive Cosmos でも動作します。</font>
+
+><font color="Blue">※Valve Index では動作確認をしていません。</font>
+
 
 ### Oculus Rift (VR機器 - 3teneFREE は非対応)
 >ゴーグル（頭）、コントローラー（手）×２を使って、頭と手の位置で
