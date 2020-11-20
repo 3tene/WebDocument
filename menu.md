@@ -15,3 +15,5 @@
 - [3teneの購入、更新](#buy3tene.md)
 - [3teneの更新履歴](#history.md)
 
+[FaceForgeについて](#AboutFaceForge.md)
+
