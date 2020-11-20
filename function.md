@@ -32,6 +32,7 @@
 >iPhoneX 以降と連携して高精度フェイストラッキングを行います。
 >[iPhoneXによるフェイストラッキングについて](#ft_iphone.md)
 >>[iPhoneX フェイストラッキングの表情自動変更(表情認識)](#ft_iphone_expression.md)
+>>[iPhoneX フェイストラッキングの FaceSync (PerfectSync)](#ft_iphone_FaceSync.md)
 
 
 ### リップシンク（顔認識、音声認識）
