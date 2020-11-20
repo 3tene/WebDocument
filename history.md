@@ -6,6 +6,22 @@
 >【PRO+Live2D】タグは 3tenePRO+LIVE2D のみの修正になります。
 >【STUDIO】タグは 3teneSTUDIO のみ修正となります。
 
+### v2.0.8 2020/11/20
+- 機能追加・調整
+  - OVRLipSync を 20.0.0 に更新
+  - 【PRO】3tene FaceSync 機能を追加（PerfectSync 対応 VRM 必須）
+  - 【PRO】PerfectSyncコピーツール「FaceForge」を同梱
+  - 【PRO】PerfectSync対応版みとねのVRMファイルを追加
+  - 【PRO】3teneFT からショートカットを呼び出せる機能を追加
+  - 【PRO+Live2D】複数人の表示に対応（２人まで）
+  - 【PRO+Live2D】Live2D のモーションを標準ショートカットに統合（10個まで）
+
+- 不具合修正
+  - モーションの「スピーチ１」、「スピーチ２」が動作しないのを修正
+  - UI の一部で異なるフォントを使っている部分があったのを修正
+  - 【PRO】iPhone フェイストラッキングでVRMモデルによってまばたき、目の動きが左右逆になるのを修正
+  - 【PRO】RealSense のプレビューウインドウの位置、表示が正しくないのを修正
+
 ### v2.0.7 2020/10/21
 - 機能追加・調整
   - 3tene Screen Capture の 32bit版 を追加
