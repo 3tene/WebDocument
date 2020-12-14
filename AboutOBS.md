@@ -10,10 +10,11 @@
 
 ### OBS のキャプチャ方法を決定する
 
->・Windows で使う場合は<font color="Blue">ゲームキャプチャ</font>を使用してください。
-
->・Windows で [3tene Screen Capture](#VirtualWebCamera.md) を使用する場合は<font color="Blue">映像キャプチャ</font> 。
+>・Windows で [仮想ウェブカメラ 3tene Screen Capture](#VirtualWebCamera.md) を使用する場合は<font color="Blue">映像キャプチャ</font> 。
 >　※3tene 旧バージョンで UnityCapture を使用する場合も<font color="Blue">映像キャプチャ</font>。
+
+
+>・Windows でウインドウをそのまま取り込む場合は<font color="Blue">ゲームキャプチャ</font>を使用してください。
 
 >・Mac で使う場合は<font color="Blue">ウインドウキャプチャ</font>を使用してください。
 
@@ -30,6 +31,16 @@
 >　Mac 版は<font color="Red">ウインドウキャプチャ</font>を使用してください。
 
 
+### OBS の設定 (映像キャプチャ)
+
+>OBS の「ソース」の追加で「映像キャプチャデバイス」を選択します。
+>新規作成で任意の名前を入力し「OK」をクリックします。
+>デバイスの選択欄で「3tene Screen Capture」を選択し、「OK」を
+>クリックすると 3tene の画面が表示され録画が可能になります。
+
+![画像](image/obs_02.png "")
+
+
 ### OBS の設定 (ゲームキャプチャ)
 
 >OBS の「ソース」の追加で「ゲームキャプチャ」を選択します。
@@ -40,15 +51,6 @@
 >クリックすると 3tene の画面が表示され録画が可能になります。
 
 ![画像](image/obs_01.png "")
-
-### OBS の設定 (映像キャプチャ)
-
->OBS の「ソース」の追加で「映像キャプチャデバイス」を選択します。
->新規作成で任意の名前を入力し「OK」をクリックします。
->デバイスの選択欄で「3tene Screen Capture」を選択し、「OK」を
->クリックすると 3tene の画面が表示され録画が可能になります。
-
-![画像](image/obs_02.png "")
 
 
 ### OBS の設定 (ウインドウキャプチャ)
@@ -61,14 +63,16 @@
 
 ![画像](image/obs_03.png "")
 
+>Windows でウインドウキャプチャを使う場合は
+>「Windows Graphics Capture」を選択すると動作する可能性はありますが保証外となります。
 
 >macOS Catalina (10.15.x)で OBS を起動すると
 >ウインドウキャプチャに 3tene が現れない場合があります。
 
 >ウインドウキャプチャの「空の名前でウインドウを表示」にチェック、
->追加された項目を選択して「画面収録」の許可<font color="Red">(権限の設定)</font> を
+>追加された項目を選択して<font color="Red">「画面収録」の許可(権限の設定)</font> を
 >行うと 3tene が一覧に現れると思います。
 
->Windows でウインドウキャプチャを使う場合は
->「Windows Graphics Capture」を選択すると動作する可能性はありますが保証外となります。
+>macOS Catalina および Big Sur では<font color="Red">権限許可</font>が必要です。
+>![画像](image/obs_04.png "")
 
