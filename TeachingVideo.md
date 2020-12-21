@@ -14,16 +14,12 @@
 
 <iframe src="https://www.youtube.com/embed/2ApjnjfJVXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen" width="576" height="324" />
 
-<br>
-<br>
-第７回 2020年12月 公開予定。
-<br>
-<br>
+<iframe src="https://www.youtube.com/embed/pn91iYFjSxQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen" width="576" height="324" />
 
 
 ### 機能の紹介
 
-- 3tene で Azure Kinect を使ってみた！
+- 3tene V2 で Azure Kinect を使ってみた！
 
 <iframe src="https://www.youtube.com/embed/wZ6P0VCSKZ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen" width="576" height="324" />
 
