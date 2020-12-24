@@ -18,6 +18,8 @@
 
 >・Mac で使う場合は<font color="Blue">ウインドウキャプチャ</font>を使用してください。
 
+>・NDI は Windows, Mac どちらでも使用可能ですが OBS に追加プラグインが必要です。
+
 
 #### 注意事項
 
@@ -75,4 +77,14 @@
 
 >macOS Catalina および Big Sur では<font color="Red">権限許可</font>が必要です。
 >![画像](image/obs_04.png "")
+
+
+### OBS の設定 (NDI)
+
+>最初に OBS 用の NDI プラグインをダウンロードし、インストールを行います。
+>[https://github.com/Palakis/obs-ndi/releases](https://github.com/Palakis/obs-ndi/releases)
+
+>OBS の「ソース」の追加で「NDI　output」を選択します。
+>NDI の送信側で設定したソース名称を入力します。
+>新規作成で任意の名前を入力し「OK」をクリックします。
 
