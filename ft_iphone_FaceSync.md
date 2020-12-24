@@ -4,8 +4,8 @@
 
 >PerfectSync を利用するには 3teneFT と <font color="Red">PerfectSync 対応の VRM モデル</font>が必要です。
 
->3teneFT 1.1.1 では舌に対応していません。
-><font color="Blue">近日、3teneFT のアップデートで対応を行います。</font>
+><font color="Blue">3teneFT ver 1.1.2 で舌の動きに対応しています。</font>
+><font color="Red">※3teneFT ver 1.1.1 以前でも PerfectSync は使えますが、舌に対応していません。</font>
 
 
 ### 設定
@@ -27,14 +27,15 @@
 ### 制限事項
 
 >3tene FaceSync 利用時は音声リップシンクは使えません。
->常に顔認識での動作になります。
+><font color="Red">※リップシンクが無効状態でも顔認識で動作します。</font>
 
 
-### PerfectSync 簡易対応の VRM を作成する。
+### PerfectSync 簡易対応の VRM を作成する
 
 >VRoidStudio で作成され、PerfectSync に対応しているベースのVRMモデルを用意します。
->ベースが作成された VRiodStudio と同じバージョンで出力されたモデルを用意します。
->FaceForge を使用して PerfectSync に必要な情報をコピーします。
+>ベース VRM モデルが作成された VRiodStudio と同じバージョンで出力されたモデルを用意します。
+
+>FaceForge を使用してベース VRM モデルから PerfectSync 情報をコピーします。
 ><font color="Red">生成される VRM モデルの動作保証はされないので注意してください。</font>
 
 
