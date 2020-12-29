@@ -85,11 +85,11 @@
 >ただし、NVIDIA 製のグラフィックボード(GPU) GeForce GTX 1070 相当を
 >必要とします。
 
-><font color="Red">※Intel および AMD 製のグラフィックボード(GPU) は非対応です。</font>
+><font color="Red">※Intel および AMD 製チップのグラフィックボード(GPU) は非対応です。</font>
 
 
-### HTC Vive (VR機器 - 3teneFREE は非対応)
->ゴーグル（頭）、コントローラー（手）×２を使って、
+### HTC Vive, Valve Index (VR機器 - 3teneFREE は非対応)
+>ゴーグル（頭）、コントローラー（手）×２、室内センサー×２を使って、
 >頭と手の位置でモデルを動かします。またモデルの移動が可能になります。
 >コントローラーのボタンで表情等を操作する事も可能です。
 >トラッカーを３つ追加し、腰、足×２に割り当てると
@@ -99,17 +99,19 @@
 >USB 3.0 と WiFi は干渉します。
 >トラッカーを使う場合にはドングルとヘッドセットのケーブルを近づけないでください。
 
->ベースステーション（センサー）は赤外線を使用して動きを検知しています。
+>ベースステーション（室内センサー）は赤外線を使用して動きを検知しています。
 >窓からの日光はカーテン等で遮断し、赤外線を発生する装置は設置しないようにしてください。
 
 ><font color="Blue">HTC Vive Pro はアップグレード、フルセットどちらでも動作します。</font>
 ><font color="Blue">HTC Vive Cosmos でも動作します。</font>
 
-><font color="Blue">※Valve Index では動作確認をしていません。</font>
+>#### Valve Index について
+>HTC Vive と同じ構成なのでほぼ同じ用に扱えます。
+><font color="Blue">SteamVR のバージョンが古いと動作が不安定になる場合があるようです。</font>
 
 
 ### Oculus Rift (VR機器 - 3teneFREE は非対応)
->ゴーグル（頭）、コントローラー（手）×２を使って、頭と手の位置で
+>ゴーグル（頭）、コントローラー（手）×２、卓上センサー×２を使って、頭と手の位置で
 >モデルを動かします。モデルの移動は可能ですが足の完全な制御はできません。
 >コントローラーのボタンで表情等を操作する事も可能です。
 >※使用には広い空間(2メートル×2メートル以上)が必要かと思います。
@@ -131,4 +133,9 @@
 
 >詳しくは[注意事項 | Perception Neuron by Noitom](https://neuronmocap.com/node/1589)を参照してください。
 
+>#### 動作確認済みの機器
+>PerceptionNeuron + Axis Neuron
+>PerceptionNeuron V2 + Axis Neuron
+>PerceptionNeuron Pro + Axis NeuronPro
+>PerceptionNeuron Studio + Axis Studio (3teneSTUDIO v1.10.20 2020/02/14 以降で対応)
 
