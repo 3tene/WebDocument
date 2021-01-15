@@ -20,4 +20,5 @@
 - [3teneFTについて](#About3teneFT.md)
 - [FaceForgeについて](#AboutFaceForge.md)
 - [OBSとの連携について](#AboutOBS.md)
+- [OBSとゲーム実況](#AboutGameLive.md)
 
