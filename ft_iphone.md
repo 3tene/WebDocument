@@ -67,13 +67,17 @@
 
 >アダプタが複数ある場合は１つづつ入力して試すか、下記のアプリを試してみてください。
 
+><font color="Red">※PC を再起動するとIPアドレスの値は変わる場合がありますが</font>
+>　<font color="Red">ルーターから割り当てられるIPアドレスを固定化する事で対策が可能です。</font>
+
+
 >#### 3tene のIPアドレスが複数ある場合の確認方法
 
 >iPhone にネットワーク検索アプリをインストールします。
 ><a href="https://itunes.apple.com/jp/app/inet-network-scanner/id340793353?mt=8" target="_blank">iNet – Network scanner</a>
 ><a href="https://itunes.apple.com/jp/app/fing-network-scanner/id430921107?mt=8" target="_blank">Fing</a>
 
->アプリでネットワーク検索を行い、3tene 側で表示されているIPアドレスと
+>上記のアプリでネットワーク検索を行い、3tene 側で表示されているIPアドレスと
 >同一のIPアドレスが検索結果にあれば、その値を 3teneFT に入力します。
 
 >みつからない場合は iPhone の接続されているネットワークグループに問題があります。
