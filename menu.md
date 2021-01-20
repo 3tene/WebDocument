@@ -4,9 +4,7 @@
 - [対応機器](#equipment.md)
 - [エディションの違い](#edition.md)
 - [Mac版の制限](#mac.md)
-- [使い方 (機能別)](#function.md)
-- [使い方 (動画)](#TeachingVideo.md)
-- [3tene動画](#movie.md)
+- [使い方](#function.md)
 - [VRMの作成について](#vrm.md)
 - [Live2Dについて](#AboutLive2D.md)
 - [FAQ](#faq.md)
@@ -15,6 +13,10 @@
 - [用語集](#glossary.md)
 - [3teneの購入、更新](#buy3tene.md)
 - [3teneの更新履歴](#history.md)
+
+関連動画
+- [3tene動画](#movie.md)
+- [使い方 (動画)](#TeachingVideo.md)
 
 関連ソフトウェア
 - [3teneFTについて](#About3teneFT.md)

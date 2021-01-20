@@ -79,7 +79,7 @@
 >のように設定を行います。
 
 >映像キャプチャ（3tene の仮想ウェブカメラ）でも動作しますが<font color="Blue">フレームレートの落ちが激しい</font>ので
->「3tene Screen Caputure に映像を出力する」をオフにした後に <font color="Red">PC を再起動します。</font>
+>「3tene Screen Capture に映像を出力する」をオフにした後に <font color="Red">PC を再起動します。</font>
 ><font color="Blue">※3tene の再起動だけではフレームレート低下が直らない場合があります。</font>
 
 >PC 再起動完了後、OBS で 3tene の設定を「ウインドウキャプチャ」にします。
