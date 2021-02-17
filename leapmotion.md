@@ -6,29 +6,50 @@
 
 ### LeapMotion ソフトウェアのインストール
 
+>LeapMotion を使用するには<font color="Blue">専用ソフトウェア</font>が必須となっています。
+
 ><a href="https://developer.leapmotion.com/vr-setup" target="_blank">公式サイト</a>より Leap_Motion_Setup_4.0.0.exe をダウンロードします。
->現在はダウンロードするのにログインが必要なようです。
+><font color="Red">※ダウンロードするにはログインが必要です。</font>
+><font color="Red">※「V2 (Legacy Desktop Apps)」では動作しないので注意してください。</font>
 
 >ダウンロード完了後、インストールしてください。
->※「V2 (Legacy Desktop Apps)」では動作しないので注意してください。
+
+><font color="Blue">インストール完了後、Leap Motion ソフトウェアを起動します。</font>
+
+
+ ![画像](image/leap_setup_1.png)
+>3tene で使用するには<font color="Blue">ソフトウェア バージョンが 4.0 以降</font>になっている必要があります。
+
+ ![画像](image/leap_setup_2.png)
+>正しく接続されていると<font color="Green">全てのステータスが緑で表示</font>されます。
+>・Service Status → LeapMotion ソフトウェアが正常に動作している。
+>・Device Status → LeapMotion が USB 接続で正常に接続され動作している。
+>・Smudge Status → LeapMotion のセンサーに汚れが無く正常に動作している。
+
+ ![画像](image/leap_setup_3.png)
+>3tene で<font color="Blue">センサー映像を確認できるようにする為に「イメージを許可する」を有効</font>にしてください。
+
+>環境によっては「ロバストモード」の有効無効で認識精度が変わる場合があるので
+>切り替えて試してみる事をお勧めします。
+
 
 ### LeapMotion の認識範囲
 
  >LeapMotion の認識範囲は中心角110°、半径50cmの範囲となっておりますので、
- >LeapMotionを使用する場合は、範囲内でのご利用をお願いいたします。
+ >LeapMotion を使用する場合は、範囲内でのご利用をお願いいたします。
 
  ![画像](image/leapmotion1.png)
 
 ### LeapMotion の使用モードの切り替え
 
 >設定 - システム - LeapMotionの操作方法 - モード から「デスクトップモード」「ヘッドマウントモード」を変更することが出来ます。
->※モード変更のドロップダウンを変更、後同ドロップダウンが再びアクティブになった際にモード変更が完了します。
+><font color="Red">※モード変更のドロップダウンを変更後、同ドロップダウンが再びアクティブになった際にモード変更が完了します。</font>
 
 <img src="image/leapmotion2.jpg" width="600px">
 
 >#### デスクトップモード
->膝もしくは机の上に LeapMotion を置き、その上で腕を動かします。
->※机の上だと位置が高く、センサーの範囲内に手を収めるのが難しい場合があります。
+><font color="Blue">膝</font>もしくは<font color="Blue">机の上</font>に LeapMotion を置き、その上で腕を動かします。
+><font color="Red">※机の上だと位置が高く、センサーの範囲内に手を収めるのが難しい場合があります。</font>
 
 >#### ヘッドマウントモード
 >ヘッドセット前面に LeapMotion を配置し、顔の前で腕を動かします。
