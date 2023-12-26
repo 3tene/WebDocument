@@ -54,6 +54,70 @@
 |口 え|ParamMouthE (or ParamE)|-|0|0|1|+口を「え」の形にする|
 |口 お|ParamMouthO (or ParamO)|-|0|0|1|+口を「お」の形にする|
 
+#### パーフェクトシンク
+
+ID① と ID② の両方が存在する場合は ID① の「Param〇〇」が優先されます。
+該当のパラメータが存在しない場合は同パラメータは動作しません。
+各パラメータの詳細につきましては[こちら](https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation)をご確認ください。
+
+|カテゴリ|ID①（Cubism3）|ID②（Cubism3）|最小|基準|最大|説明|
+|---|:---|:---|:---|:---|:---|:---|
+|左目|ParamEyeBlinkLeft|EyeBlinkLeft|0|0|1|左まぶたの閉じ具合|
+|^|ParamEyeLookDownLeft|EyeLookDownLeft|0|0|1|下向きの視線と一致する左まぶたの動き|
+|^|ParamEyeLookInLeft|EyeLookInLeft|0|0|1|右向きの視線と一致する左まぶたの動き|
+|^|ParamEyeLookOutLeft|EyeLookOutLeft|0|0|1|左向きの視線と一致する左まぶたの動き|
+|^|ParamEyeLookUpLeft|EyeLookUpLeft|0|0|1|上向きの視線と一致する左まぶたの動き|
+|^|ParamEyeSquintLeft|EyeSquintLeft|0|0|1|左目の周りの顔の収縮|
+|^|ParamEyeWideLeft|EyeWideLeft|0|0|1|左目の周りのまぶたの広がり|
+|右目|ParamEyeBlinkLeft|EyeBlinkLeft|0|0|1|左まぶたの閉じ具合|
+|^|ParamEyeLookDownLeft|EyeLookDownLeft|0|0|1|下向きの視線と一致する右まぶたの動き|
+|^|ParamEyeLookInLeft|EyeLookInLeft|0|0|1|右向きの視線と一致する右まぶたの動き|
+|^|ParamEyeLookOutLeft|EyeLookOutLeft|0|0|1|左向きの視線と一致する右まぶたの動き|
+|^|ParamEyeLookUpLeft|EyeLookUpLeft|0|0|1|上向きの視線と一致する右まぶたの動き|
+|^|ParamEyeSquintLeft|EyeSquintLeft|0|0|1|右目の周りの顔の収縮|
+|^|ParamEyeWideLeft|EyeWideLeft|0|0|1|右目の周りのまぶたの広がり|
+|顎|ParamJawForward|JawForward|0|0|1|下顎の前方への動き|
+|^|ParamJawLeft|JawLeft|0|0|1|下顎の左方向への動き|
+|^|ParamJawRight|JawRight|0|0|1|下顎の右方向への動き|
+|^|ParamJawOpen|JawOpen|0|0|1|下顎の開口部|
+|口|ParamMouthClose|MouthClose|0|0|1|顎の位置とは無関係の唇の閉じ具合|
+|^|ParamMouthFunnel|MouthFunnel|0|0|1|両唇が開いた形状の収縮|
+|^|ParamMouthPucker|MouthPucker|0|0|1|閉じた両方の唇の収縮|
+|^|ParamMouthLeft|MouthLeft|0|0|1|両方の唇をの左方向への動き|
+|^|ParamMouthRight|MouthRight|0|0|1|両方の唇をの右方向への動き|
+|^|ParamMouthSmileLeft|MouthSmileLeft|0|0|1|左口角の上方向の動き|
+|^|ParamMouthSmileRight|MouthSmileRight|0|0|1|右口角の上方向の動き|
+|^|ParamMouthFrownLeft|MouthFrownLeft|0|0|1|左口角の下方向の動き|
+|^|ParamMouthFrownRight|MouthFrownRight|0|0|1|右口角の下方向の動き|
+|^|ParamMouthDimpleLeft|MouthDimpleLeft|0|0|1|左口角の後方への動き|
+|^|ParamMouthDimpleRight|MouthDimpleRight|0|0|1|右口角の後方への動き|
+|^|ParamMouthStretchLeft|MouthStretchLeft|0|0|1|左口角の左方向への動き|
+|^|ParamMouthStretchRight|MouthStretchRight|0|0|1|右口角の右方向への動き|
+|^|ParamMouthRollLower|MouthRollLower|0|0|1|下唇の内側への動き|
+|^|ParamMouthRollUpper|MouthRollUpper|0|0|1|上唇の内側への動き|
+|^|ParamMouthShrugLower|MouthShrugLower|0|0|1|下唇の外側への動き|
+|^|ParamMouthShrugUpper|MouthShrugUpper|0|0|1|上唇の外側への動き|
+|^|ParamMouthPressLeft|MouthPressLeft|0|0|1|下唇左側の上方向への圧縮|
+|^|ParamMouthPressRight|MouthPressRight|0|0|1|下唇右側の上方向への圧縮|
+|^|ParamMouthLowerDownLeft|MouthLowerDownLeft|0|0|1|下唇左側の下方向への動き|
+|^|ParamMouthLowerDownRight|MouthLowerDownRight|0|0|1|下唇右側の下方向への動き|
+|^|ParamMouthUpperUpLeft|MouthUpperUpLeft|0|0|1|上唇左側の上方向への動き|
+|^|ParamMouthUpperUpRight|MouthUpperUpRight|0|0|1|上唇右側の上方向への動き|
+|眉|ParamBrowDownLeft|BrowDownLeft|0|0|1|左眉外側の下方向への動き|
+|^|ParamBrowDownRight|BrowDownRight|0|0|1|右眉外側の下方向への動き|
+|^|ParamBrowInnerUp|BrowInnerUp|0|0|1|両眉内側の上方向への動き|
+|^|ParamBrowOuterUpLeft|BrowOuterUpLeft|0|0|1|左眉外側の上方向への動き|
+|^|ParamBrowOuterUpRight|BrowOuterUpRight|0|0|1|右眉外側の上方向への動き|
+|頬|ParamCheekPuff|CheekPuff|0|0|1|両頬の外側への動き|
+|^|ParamCheekSquintLeft|CheekSquintLeft|0|0|1|左目周囲および下頬の上方向への動き|
+|^|ParamCheekSquintRight|CheekSquintRight|0|0|1|右目周囲および下頬の上方向への動き|
+|鼻|ParamNoseSneerLeft|NoseSneerLeft|0|0|1|鼻孔周囲の鼻の左側の隆起|
+|^|ParamNoseSneerRight|NoseSneerRight|0|0|1|鼻孔周囲の鼻の右側の隆起|
+|舌|ParamTongueOut|TongueOut|0|0|1|舌の伸び|
+
+※EyeBlinkLeft, EyeBlinkRight に限りパラメータが存在しない場合は
+ParamEyeLOpen(PARAM_EYE_L_OPEN), ParamEyeROpen(PARAM_EYE_R_OPEN)を参照します。
+
 #### モーション、LeapMotion（3tene用パラメータ）
 
 |名前|ID（Cubism3）|ID（Cubism2）|最小|基準|最大|説明|
@@ -63,14 +127,12 @@
 右腕 X|ParamArmRX|–|-30|0|30|+で右腕を閉じる|
 右腕 Y|ParamArmRY|–|-30|0|30|+で右腕を上げる|
 
-
 #### LeapMotion（3tene用パラメータがない場合）
 
 |名前|ID（Cubism3）|ID（Cubism2）|最小|基準|最大|説明|
 |---|:---|:---|:---|:---|:---|:---|
 |左腕 A|ParamArmLA|–|-10|0|10|+で左腕を広げる|
 |右腕 A|ParamArmRA|–|-10|0|10|+で右腕を広げる|
-
 
 ### Live2D のモデルで母音によるリップシンクを使用するには
 
