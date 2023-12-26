@@ -11,12 +11,9 @@
 
 ### 有料版について
 
->有料版は 3tenePRO、3tenePRO＋Live2D、3teneSTUDIO の３種類のエディションがあります。
->3tene を商用利用する場合は有料版の購入をお願いします。
+>有料版は 3tenePRO、3tenePRO＋LIVE2D、3teneSTUDIO の３種類のエディションがあります。
 >購入には 3tene ホームページへの会員登録が必要です。
-
 >購入方法は<font color="Blue">個人と企業・法人で異なります</font>のでご注意ください。
->フリーランスの方は業務内容によっては企業・法人扱いになる場合もあるので<a href="https://3tene.com/contact/" target="_blank">こちら</a>からお問い合わせください。
 
 
 #### 個人の場合
