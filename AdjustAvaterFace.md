@@ -3,14 +3,12 @@
 
 >アバターのフェイストラッキングの調整や設定を行います。
 
-![画像](image/AdjustAvaterFace_1.png "")
-
 
 ### アバター調整のウインドウを表示する
 
 >右側メニューのアバター調整のアイコンをクリックします。
 
-![画像](image/AdjustAvaterSetting_2.png "")
+![画像](image/Selected_AdjustAvatarFace.png "")
 
 >顔タブを選択します。
 
