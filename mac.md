@@ -9,8 +9,13 @@
 
 ### Apple Silicon CPU を搭載した Mac の対応について
 
->制限として<font color="Red">音声リップシンクが動作しません。</font>
-><font color="Blue">※顔認識によるリップシンクは使用可能です。</font>
+>Intel Mac には下記の制限はありません。
+
+><S>制限として<font color="Red">音声リップシンクが動作しません。</font></S>
+><S><font color="Blue">※顔認識によるリップシンクは使用可能です。</font></S>
+
+>以前から使用されている<font color="Red">「音声リップシンク タイプＡ」は動作しません</font>が、
+><font color="Blue">3tene V4 から追加された「音声リップシンク タイプＢ」は動作します。</font>
 
 >●M1 CPU
 >3tene V2 ver 2.0.9 2020/12/18 から起動できるようになりました。 
@@ -21,7 +26,7 @@
 
 >もし、起動できない場合は DisableLipSync.txt を
 >実行ファイルと同じフォルダに作成してください。
->※音声リップシンクを強制的に無効にします。
+>※音声リップシンクが強制的に無効になり、起動できる可能性があります。
 
 
 ### Mac OS 10.15.x (Catalina) の対応について
@@ -30,9 +35,11 @@
 >古いバージョンの 3tene は動作対象外となります。
 
 
-### LeapMotion に対応していません
+### <S>LeapMotion に対応していません</S> (<font color="Red">3tene V4 から対応しました</font>)
 
->最新の LeapMotion が Mac に対応していないので使用できません。
+><S>最新の LeapMotion が Mac に対応していないので使用できません。</S>
+>3teneMoApp_HandTracking (Mac 版) v1.0.2 2023/12/19 以降と
+>LeapMotion 用の最新ランタイム(Ultraleap Tracking v5.14 以降)の組み合わせで動作します。
 
 
 ### Nuitrack + RealSense に対応していません
