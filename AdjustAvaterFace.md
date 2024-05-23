@@ -8,9 +8,11 @@
 
 >右側メニューのアバター調整のアイコンをクリックします。
 
-![画像](image/Selected_AdjustAvatarFace.png "")
+![画像](image/AdjustAvatar_FromMenu.png "")
 
 >顔タブを選択します。
+
+![画像](image/AdjustAvatarFace_00.png "")
 
 
 ### フェイストラッキング (ウェブカメラ)

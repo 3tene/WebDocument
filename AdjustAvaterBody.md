@@ -7,9 +7,11 @@
 
 >右側メニューのアバター調整のアイコンをクリックします。
 
-![画像](image/Selected_AdjustAvatarBody.png "")
+![画像](image/AdjustAvatar_FromMenu.png "")
 
 >体タブを選択します。
+
+![画像](image/AdjustAvatarBody_00.png "")
 
 
 ### 待機動作
