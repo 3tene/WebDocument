@@ -8,16 +8,26 @@
 
 >LeapMotion を使用するには<font color="Blue">専用ソフトウェア</font>が必須となっています。
 
-><font color="Red">※Ultraleap Hand Tracking Software (GEMINI) Ver 5.2 以降を使用する場合は</font>
->　<font color="Blue">3tene v2.0.18 以降</font><font color="Red">が必要です！！</font>
+><font color="Blue">3tene</font>が対応している<font color="Blue">専用ソフトウェアのバージョン</font>は下記になります。
 
-|名称|LeapMotion v5.2|LeapMotion v5.0|LeapMotion v4.x|
-|:---|---|---|---|
-|3tene v2.0.18 以降|○|×|×|
-|3tene v2.0.17 以前|×|○|○|
+|名称|v6.0(Hyperion)|v5.2(Gemini)|v5.0|v4.x|
+|:---|---|---|---|---|
+|3tene v4.0.6 以降|○|○|×|×|
+|3tene v2.0.18 以降|×|○|×|×|
+|3tene v2.0.17 以前|×|×|○|○|
 
-><font color="Blue">3tene v2.0.18 以降は v5.2 で動作します</font>が、<font color="Red">v5.0 および v4.x では動作しません。</font>
-><font color="Blue">3tene v2.0.17 以前</font>は <font color="Red">v5.2 で動作しません。</font><font color="Blue">v5.0 および v4.x にて動作します。</font>
+><font color="Blue">3tene v2.0.18 以降は v5.2 以降で動作します</font>が、<font color="Red">v5.0 および v4.x では動作しません。</font>
+><font color="Blue">3tene v2.0.17 以前</font>は <font color="Red">v5.2 以降で動作しません。</font><font color="Blue">v5.0 および v4.x にて動作します。</font>
+
+>#### <font color="Blue">最新(v6.0.0 以降) 専用ソフトウェア(Ultraleap Hyperion) </font>について
+>Leap Motion Controller 2 以前の製品を認識しないようです。
+
+|名称|Gemini v5.2 まで|Hyperion v6.0.0 以降|
+|:---|---|---|
+|Leap Motion Controller (初代)|○|×|
+|Ultraleap 3Di|○|×|
+|Stereo IR 170|○|×|
+|Leap Motion Controller 2|○|○|
 
 
 ### 新 LeapMotion ソフトウェア(v5.2 以降)のインストール
@@ -41,35 +51,6 @@
 >使用環境に合わせて LeapMotion の認識向きを指定します。
 >・default 向きを変えずにそのまま使用します。
 >・Reversed 向きを逆にして使用します。
-
-
-### 旧 LeapMotion ソフトウェア(v4.1 以前)のインストール
-
-><a href="https://developer.leapmotion.com/vr-setup" target="_blank">公式サイト</a>より Leap_Motion_Setup_4.0.0.exe をダウンロードします。
->(もしくはLeap_Motion_Installer_v4-2020-release-updates_public_win_x64_4.1.0+52211_ah1889.exe)
-
-><font color="Red">※ダウンロードするにはログインが必要です。</font>
-><font color="Red">※「V2 (Legacy Desktop Apps)」では動作しないので注意してください。</font>
-
->ダウンロード完了後、インストールしてください。
-
-><font color="Blue">インストール完了後、Leap Motion ソフトウェアを起動します。</font>
-
-
- ![画像](image/leap_setup_1.png)
->3tene で使用するには<font color="Blue">ソフトウェア バージョンが 4.0 以降</font>になっている必要があります。
-
- ![画像](image/leap_setup_2.png)
->正しく接続されていると<font color="Green">全てのステータスが緑で表示</font>されます。
->・Service Status → LeapMotion ソフトウェアが正常に動作している。
->・Device Status → LeapMotion が USB 接続で正常に接続され動作している。
->・Smudge Status → LeapMotion のセンサーに汚れが無く正常に動作している。
-
- ![画像](image/leap_setup_3.png)
->3tene で<font color="Blue">センサー映像を確認できるようにする為に「イメージを許可する」を有効</font>にしてください。
-
->環境によっては「ロバストモード」の有効無効で認識精度が変わる場合があるので
->切り替えて試してみる事をお勧めします。
 
 
 ### LeapMotion の認識範囲
