@@ -10,11 +10,11 @@
 
 ><font color="Blue">3tene</font>が対応している<font color="Blue">専用ソフトウェアのバージョン</font>は下記になります。
 
-|名称|v6.0(Hyperion)|v5.2(Gemini)|v5.0|v4.x|
+|名称|v4.x|v5.0|v5.2(Gemini)|v6.0(Hyperion)|
 |:---|---|---|---|---|
-|3tene v4.0.6 以降|○|○|×|×|
-|3tene v2.0.18 以降|×|○|×|×|
-|3tene v2.0.17 以前|×|×|○|○|
+|3tene v4.0.6 以降|×|×|○|○|
+|3tene v2.0.18 以降|×|×|○|×|
+|3tene v2.0.17 以前|○|○|×|×|
 
 ><font color="Blue">3tene v2.0.18 以降は v5.2 以降で動作します</font>が、<font color="Red">v5.0 および v4.x では動作しません。</font>
 ><font color="Blue">3tene v2.0.17 以前</font>は <font color="Red">v5.2 以降で動作しません。</font><font color="Blue">v5.0 および v4.x にて動作します。</font>
