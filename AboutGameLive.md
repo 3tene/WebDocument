@@ -82,7 +82,13 @@
 >「3tene Screen Capture に映像を出力する」をオフにした後に <font color="Red">PC を再起動します。</font>
 ><font color="Blue">※3tene の再起動だけではフレームレート低下が直らない場合があります。</font>
 
->PC 再起動完了後、OBS で 3tene の設定を「ウインドウキャプチャ」にします。
+>PC 再起動完了後、OBS の「ウインドウキャプチャ」に 3tene を設定します。
+><font color="Blue">必ず「キャプチャ方法」を「Windows 10 (1903以降)」に変更してください。</font>
+><font color="Red">※「キャプチャ方法」が「自動」のままだと OBS が正常に取り込めません。</font>
+
+>対応環境であれば Windows なら Spout、Mac なら Syphon を使った方が
+>PC にかかる負荷が少なくなります。
+><font color="Blue">※Spout を使う場合は OBS に Spout プラグインを追加する必要があります。</font>
 
 >![画像](image/GameLive_06.png "")
 
