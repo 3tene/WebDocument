@@ -22,7 +22,7 @@
 >#### <font color="Blue">最新(v6.0.0 以降) 専用ソフトウェア(Ultraleap Hyperion) </font>について
 >Leap Motion Controller 2 以前の製品を認識しないようです。
 
-|名称|Gemini v5.2 まで|Hyperion v6.0.0 以降|
+|名称|Gemini v5.20 まで|Hyperion v6.0.0 以降|
 |:---|---|---|
 |Leap Motion Controller (初代)|○|×|
 |Ultraleap 3Di|○|×|
@@ -30,9 +30,9 @@
 |Leap Motion Controller 2|○|○|
 
 
-### 新 LeapMotion ソフトウェア(v5.2 以降)のインストール
+### 新 LeapMotion ソフトウェア(v5.20 以降)のインストール
 
-><a href="https://developer.leapmotion.com/vr-setup" target="_blank">公式サイト</a>より Ultraleap_Tracking_Installer_5.2.0_win64.exe をダウンロードします。
+><a href="https://developer.leapmotion.com/vr-setup" target="_blank">公式サイト</a>より ultraleap-hand-tracking_v5.20.0-2024.04.24_windows.24.exe をダウンロードします。
 
 ><font color="Red">※ダウンロードするにはログインが必要です。</font>
 
@@ -53,27 +53,35 @@
 >・Reversed 向きを逆にして使用します。
 
 
-### LeapMotion の認識範囲
-
- >LeapMotion の認識範囲は中心角110°、半径50cmの範囲となっておりますので、
- >LeapMotion を使用する場合は、範囲内でのご利用をお願いいたします。
-
- ![画像](image/leapmotion1.png)
-
 ### LeapMotion の使用モードの切り替え
 
->設定 - システム - LeapMotionの操作方法 - モード から「デスクトップモード」「ヘッドマウントモード」を変更することが出来ます。
-><font color="Red">※モード変更のドロップダウンを変更後、同ドロップダウンが再びアクティブになった際にモード変更が完了します。</font>
+>LeapMotion シリーズはセンサー範囲内に手が入ると認識します。
 
-<img src="image/leapmotion2.jpg" width="600px">
+>LeapMotion (初代)のセンサー範囲は<font color="Blue">中心角110°、半径60cm</font>の範囲となっています。
+>LeapMotion 2のセンサー範囲は<font color="Blue">中心角160°、半径110cm</font>の範囲となっています。
+ ![画像](image/leapmotion_1.png)
+
+>認識できるセンサー範囲を有効に活用する為に設置モードの変更が可能です。
+
+>設定 - システム - LeapMotionの操作方法 - モード から
+>「デスクトップモード」「ヘッドマウントモード」を変更することが出来ます。
+><font color="Red">※ドロップダウンを変更後、モード変更完了後にアクティブに戻ります。</font>
+ ![画像](image/leapmotion_2.png)
 
 >#### デスクトップモード
 ><font color="Blue">膝</font>もしくは<font color="Blue">机の上</font>に LeapMotion を置き、その上で腕を動かします。
 ><font color="Red">※机の上だと位置が高く、センサーの範囲内に手を収めるのが難しい場合があります。</font>
 
+><font color="Blue">机の上にあるキーボードや楽器を操作するような動きに適しています。</font>
+ ![画像](image/leapmotion_desk.png)
+ 
 >#### ヘッドマウントモード
->ヘッドセット前面に LeapMotion を配置し、顔の前で腕を動かします。
->※ネックマウント等を使用した使い方はヘッドマウントモードになります。
+>ネックマウントに LeapMotion を固定して使用する場合のモードになります。
+>ネックマウントの前で腕を動かします。
+>※元は VR ヘッドセットに設置していたのが名称の由来です。
+
+><font color="Blue">正面に対してジャンケン等、手の動きを見せたい場合に適しています。</font>
+ ![画像](image/leapmotion_head.png)
 
 ### 3teneでの使用方法
 
@@ -82,21 +90,15 @@
 > 1. LeapMotion を USB ケーブルで PC に接続します。
 > 2. 3tene が Leap Motion を認識すると LeapMotion のアイコンがアクティブになります。
 >    アイコンをクリックすると LeapMotion のカメラ映像が表示されます。
-> 3. アバターの調整 → 設定 → アバターの操作方法 を「LeapMotion」に変更し、動作を確認します。
+> 3. アバターの調整 → 設定 → ボディトラッキングの種類を「LeapMotion」に変更し、動作を確認します。
 > 4. アバターの調整 → 体 → LeapMotion の項目を動きを見ながらそれぞれを調整します。
 
 
-### ボディトラッキングを開始する (3tene V2 以降)
+### ボディトラッキングを開始する
 
 >右側メニューのトラッキング開始のアイコンをクリックして
 >トラッキング開始のウインドウを表示します。
->全身操作の開始ボタンをクリックするとトラッキングが開始されます。
+>ボディトラッキングの開始ボタンをクリックするとトラッキングが開始されます。
 
+![画像](image/leapmotion_3.png "")
 
-![画像](image/leapmotion3.png "")
-
-
-### 既知の不具合
-
->アバターの調整 → 顔 → 映り方 が「鏡」の場合、LeapMotionの動きがモデルの腕に上手く反映されない不具合があります。
->「シンクロ」での利用をお願いします。
