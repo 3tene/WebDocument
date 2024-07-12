@@ -3,9 +3,10 @@
 >センサーを付けたグローブを装着し、指を制御します。
 
 >Hi5 VR GLOVE で腕は動かせないので
->PerceptionNeuron 等の全身操作の機器と合わせて使用します。
+>mocopi や PerceptionNeuron 等の全身操作の機器と合わせて使用します。
 >※PerceptionNeuron V2 と合わせて使用する場合は「全ての指を制御する」をオフにしてください。
 
+>後継製品の Hi5 2.0 VR Gloves にも対応しています。
 
 ### Hi5 VR GLOVE の設定
 

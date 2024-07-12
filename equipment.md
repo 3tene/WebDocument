@@ -218,3 +218,17 @@
 |PerceptionNeuron Pro|Axis NeuronPro|正常動作を確認済み。|
 |PerceptionNeuron Studio|Axis Studio|正常動作を確認済み。|
 
+
+### 指操作用グローブ (3teneSTUDIO のみ対応)
+
+>指が操作できないボディトラッキングの機器と合わせて使用します。
+>※複数の接続は不可。
+
+>#### 動作確認表
+
+|機器名|3tene|
+|---|:---|
+|Hi5 VR GLOVE|正常動作を確認済み。|
+|Hi5 2.0 VR Gloves|正常動作を確認済み。|
+|ContactGlove|<font color="Red">動作しません。</font>|
+
