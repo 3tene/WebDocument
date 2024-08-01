@@ -41,6 +41,8 @@
 
 
 ### LeapMotion (USB接続の専用カメラ)
+><font color="Red">※3teneFREE は標準対応。3tenePRO はモーションアプリ連携で動作。</font>
+
 >腕および手を認識し、指の動きまでモデルに同じ状態を再現します。
 >モデルの上半身だけ表示させるアナウンサーのようなスタイルにはお勧めです。
 >モデル全体を表示させる用途に使用するには難しいかも知れません。
@@ -51,7 +53,66 @@
 ><font color="Red">※USB 3.x での接続が必須となります。</font>
 
 
-### RealSense + Nuitrack (USB接続の専用カメラ - 3teneFREE は非対応)
+### iPhoneX 以降（スマートフォン＋専用アプリ）
+><font color="Red">※3teneFREE は非対応。</font>
+
+>専用アプリにて iPhoneX 以降(<font color="Blue">※</font>)に搭載された TrueDepth を使用した顔認識を行い、
+>その認識結果を WiFi で PC (3tene) に送信する事により顔認識を行います。
+>ウェブカメラ使用時と同等の機能があり、ウェブカメラよりも高精度で
+>目の動きを再現するアイトラッキングが使用可能になります。
+
+>iPhone を手に持たず、台座や首掛け式の自撮り棒等で固定して使用する事をお勧めします。
+
+
+>#### 動作確認表
+
+|機器名|プロセッサ|センサー|状況|
+|---|:---:-|:---:|:---|
+|iPhone X|A11 Bionic|TrueDepth|動作を確認済み。<br><font color="Red">※動作が不安定になる場合があるようです。</font>|
+|iPhone XR|A12 Bionic|TrueDepth|正常動作を確認済み。|
+|iPhone XS|A12 Bionic|TrueDepth|<font color="Blue">動作確認をしていません。</font>|
+|iPhone 11|A13 Bionic|TrueDepth|正常動作を確認済み。|
+|iPhone SE 2020|A13 Bionic|無し|<font color="Blue">動作確認をしていません。</font><br>iOS 14 以降にアップデートすると動作するようです。<br>（TrueDepth 非搭載なので保証外。)|
+|iPhone 12|A14 Bionic|TrueDepth|<font color="Blue">動作確認をしていません。</font>|
+|iPhone 12 PRO|A14 Bionic|TrueDepth<br>LiDAR|<font color="Blue">動作確認をしていません。</font>|
+|iPhone 13|A15 Bionic|TrueDepth<br>LiDAR|<font color="Blue">動作確認をしていません。</font>|
+|iPad Pro (第5世代)|M1|TrueDepth<br>LiDAR|正常動作を確認済み。|
+
+
+### Sony mocopi (全身センサー)
+><font color="Red">※3teneFREE は非対応。モーションアプリ連携で動作。</font>
+
+>演者に６つのセンサーを取り付けて、ボディトラッキングを実現します。
+>別途、mocopi の専用アプリをインストールした高性能スマートフォンが必要になります。
+>スマートフォンの対応機種は<a href="https://www.sony.jp/mocopi/" target="_blank">mocopi 公式ページ</a> にて確認してください。
+
+>mocopi の仕様により<font color="Blue">時間の経過と共に計算誤差が蓄積されズレが発生</font>してしまうため、
+>15分に一度直立の姿勢をとってアプリから<font color="Red">ポーズリセット</font>、
+>30分に1度<font color="Red">キャリブレーション</font>する事が推奨されています。
+
+><font color="Blue">mocopi とスマートフォンは Bluetooth で接続</font>される為、
+><font color="Red">Bluetooth の電波状況が悪いと動作が不安定</font>になります。
+
+
+### Azure Kinect (USB 3接続の専用カメラ)
+><font color="Red">※3teneFREE は非対応。モーションアプリ連携で動作。</font>
+
+>深度カメラで体全体を認識し、ボディトラッキングを実現します。
+>広さを優先した広角モードと奥行きを優先した狭角など、
+>用途に合わせてモードが変更できます。
+
+><font color="Red">※USB 3.x での接続が必須となります。</font>
+><font color="Blue">使用するには動作クロックが 3GHz 以上（2GHz では不足。）のＣＰＵと
+>NVIDIA 製のグラフィックボード(GPU) GeForce GTX 1070 相当を必要とします。</font>
+><font color="Red">※DirectML に対応したＧＰＵでも動作する可能性があります。（未確認）</font>
+><font color="Red">※GeForce RTX 3000 シリーズを使用する場合はドライバ R456 以降が必要です。</font>
+
+><font color="Blue">Kinect の Firmware は 1.6.110079014 で確認をしています。</font>
+
+
+### RealSense + Nuitrack (USB接続の専用カメラ)
+><font color="Red">※3teneFREE は非対応。モーションアプリ連携で動作。</font>
+
 >Nuitrack (有料ソフトウェア、別途購入が必要) と専用の深度カメラを使用します。
 >Nuitrack が深度カメラから得た情報を解析し、骨格トラッキングによりモデルに同じ状態を再現します。
 
@@ -90,44 +151,9 @@
 |Orbbec Astra Plus|○|<font color="Blue">動作確認をしていません。</font>|
 
 
-### iPhoneX 以降（スマートフォン - 3teneFREE は非対応）
->専用アプリにて iPhoneX 以降(<font color="Blue">※</font>)に搭載された TrueDepth を使用した顔認識を行い、
->その認識結果を WiFi で PC (3tene) に送信する事により顔認識を行います。
->ウェブカメラ使用時と同等の機能があり、ウェブカメラよりも高精度で
->目の動きを再現するアイトラッキングが使用可能になります。
+### HTC Vive, Valve Index (VR機器)
+><font color="Red">※3teneFREE は非対応。モーションアプリ連携で動作。</font>
 
->iPhone を手に持たず、台座や首掛け式の自撮り棒等で固定して使用する事をお勧めします。
-
-
->#### 動作確認表
-
-|機器名|プロセッサ|センサー|状況|
-|---|:---:-|:---:|:---|
-|iPhone X|A11 Bionic|TrueDepth|動作を確認済み。<br><font color="Red">※動作が不安定になる場合があるようです。</font>|
-|iPhone XR|A12 Bionic|TrueDepth|正常動作を確認済み。|
-|iPhone XS|A12 Bionic|TrueDepth|<font color="Blue">動作確認をしていません。</font>|
-|iPhone 11|A13 Bionic|TrueDepth|正常動作を確認済み。|
-|iPhone SE 2020|A13 Bionic|無し|<font color="Blue">動作確認をしていません。</font><br>iOS 14 以降にアップデートすると動作するようです。<br>（TrueDepth 非搭載なので保証外。)|
-|iPhone 12|A14 Bionic|TrueDepth|<font color="Blue">動作確認をしていません。</font>|
-|iPhone 12 PRO|A14 Bionic|TrueDepth<br>LiDAR|<font color="Blue">動作確認をしていません。</font>|
-|iPhone 13|A15 Bionic|TrueDepth<br>LiDAR|<font color="Blue">動作確認をしていません。</font>|
-|iPad Pro (第5世代)|M1|TrueDepth<br>LiDAR|正常動作を確認済み。|
-
-
-### Azure Kinect (USB 3接続の専用カメラ - 3teneFREE は非対応)
->深度カメラで体全体を認識し、ボディトラッキングを実現します。
->広さを優先した広角モードと奥行きを優先した狭角など、
->用途に合わせてモードが変更できます。
-
-><font color="Red">※USB 3.x での接続が必須となります。</font>
-><font color="Blue">使用するには動作クロックが 3GHz 以上（2GHz では不足。）のＣＰＵと
->NVIDIA 製のグラフィックボード(GPU) GeForce GTX 1070 相当を必要とします。</font>
-><font color="Red">※DirectML に対応したＧＰＵでも動作する可能性があります。（未確認）</font>
-><font color="Red">※GeForce RTX 3000 シリーズを使用する場合はドライバ R456 以降が必要です。</font>
-
-><font color="Blue">Kinect の Firmware は 1.6.110079014 で確認をしています。</font>
-
-### HTC Vive, Valve Index (VR機器 - 3teneFREE は非対応)
 >ゴーグル（頭）、コントローラー（手）×２、室内センサー×２を使って、
 >頭と手の位置でモデルを動かします。またモデルの移動が可能になります。
 >コントローラーのボタンで表情等を操作する事も可能です。
@@ -161,7 +187,9 @@
 ><font color="Blue">SteamVR のバージョンが古いと動作が不安定になる場合があるようです。</font>
 
 
-### Oculus Rift (VR機器 - 3teneFREE は非対応)
+### Oculus Rift (VR機器)
+><font color="Red">※3teneFREE は非対応。モーションアプリ連携で動作。</font>
+
 >ゴーグル（頭）、コントローラー（手）×２、卓上センサー×２を使って、頭と手の位置で
 >モデルを動かします。モデルの移動は可能ですが足の完全な制御はできません。
 >コントローラーのボタンで表情等を操作する事も可能です。
