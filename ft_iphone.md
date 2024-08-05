@@ -46,7 +46,34 @@
 >3teneFT との接続確認が取れてからは<font color="Blue"> 3tene の通信の許可や、ブロック対象外</font>の設定を
 >セキュリティソフトに追加して利用するようにしてください。
 
->#### セキュリティソフト
+### ファイアウォールの設定を行う手順
+
+><font color="Red">ファイアウォールは通信（接続要求含む）を開始している状態で設定を無効にしても
+>即座に無効にはなりません。</font>
+
+><font color="Blue">対象(PCおよびスマートフォン等)が完全に通信を行っていない状態で実行してください。</font>
+>※3tene(PC) および 3teneFT(iPhone) は起動していない状態をお勧めします。
+
+>下記の操作手順で試してみてください。
+
+><font color="Blue">1. 3teneFT が起動している場合は完全に終了させる。</font>
+><font color="Blue">2. PC を再起動する。</font>
+><font color="Blue">3. ファイアウォールの設定を行う。
+>　※3tene がブロックされない個別登録もしくは完全無効。</font>
+><font color="Blue">4. 3tene を起動する。IPアドレスを確認する。</font>
+><font color="Blue">5. 3teneFT を起動する。PC の IP アドレスを設定する。</font>
+><font color="Blue">6. 3tene のフェイストラッキング(iPhone)を開始する。</font>
+><font color="Blue">7. 3teneFT の接続を開始する。</font>
+
+>Windows Defender および ESET のファイアウォール設定は下記ページに記載しています。
+>[セキュリティソフトについて](#AboutSecuritySoft.md)
+
+### セキュリティソフト公式サイトへのリンク
+
+>セキュリティソフトによってはファイアウォールの設定を行う場合に
+><font color="Blue">IP アドレス、ポート番号やプロトコル(TCP、UDP等)</font>を指定する必要があります。
+
+>各セキュリティソフトの詳しい情報はそれぞれの公式サイトなどを確認してください。
 
 >Windows Defender ファイアウォール の設定は<a href="https://support.microsoft.com/ja-jp/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off" target="_blank">こちら</a>
 >アバスト <a href="https://www.avast.co.jp/" target="_blank">公式サイト</a>
@@ -55,20 +82,6 @@
 >ノートン <a href="https://jp.norton.com/" target="_blank">公式サイト</a>
 >マカフィー <a href="https://www.mcafee.com/japan/home/" target="_blank">公式サイト</a>
 >ESET <a href="https://eset-info.canon-its.jp/" target="_blank">公式サイト</a>
-
-
->#### 各セキュリティソフトのファイアウォールの設定
-
->それぞれのセキュリティソフトによって方法は異なりますが、
-<font color="Blue">直接アプリケーション毎の通信の許可に 3tene を追加</font>したり、
-<font color="Blue">設定からファイアウォールルールを設定</font>したりすることで
-ファイアウォールを有効にしたまま 3tene と 3teneFT の通信が可能になります。
-
->また、ファイアウォールルールを設定するときは<font color="Blue">(TCP,UDP等の)プロトコルや
-IPアドレス,ポート番号等</font>を指定する必要があります。
->Windows Defender ファイアウォールの設定方法は下のリンク先のページに記述しましたので、
->それ以外の詳しい方法はそれぞれのセキュリティソフトの公式サイトなどを確認してください。
->[セキュリティソフトについて](#AboutSecuritySoft.md)
 
 
 ### 3teneFT側でIPアドレスの設定
