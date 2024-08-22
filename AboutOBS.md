@@ -40,6 +40,14 @@
 >　Mac 版は<font color="Red">ウインドウキャプチャ</font>を使用してください。
 
 
+### OBS を管理者権限で起動して利用する場合について
+
+>Windows10 において負荷分散が変化するという事で
+><font color="Blue">OBS を管理者権限で起動して使用する方法</font>がありますが、
+>その場合には <font color="Blue">3tene も管理者権限で起動</font>していないと
+><font color="Red">OBS で 3tene ScreenCapture が選択できなくなります。</font>
+
+
 ### OBS の設定 (映像キャプチャ)
 
 >OBS の「ソース」の追加で「映像キャプチャデバイス」を選択します。
