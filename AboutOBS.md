@@ -17,9 +17,8 @@
 
 ### OBS のキャプチャ方法を決定する
 
->・Windows で [仮想ウェブカメラ 3tene Screen Capture](#VirtualWebCamera.md) を使用する場合は<font color="Blue">映像キャプチャ</font> 。
->　※3tene 旧バージョンで UnityCapture を使用する場合も<font color="Blue">映像キャプチャ</font>。
-
+>・Windows で OBS の映像キャプチャを利用する場合は
+>　 [仮想ウェブカメラ 3tene Screen Capture](#VirtualWebCamera.md) を使用します。
 
 >・Windows でウインドウをそのまま取り込む場合は<font color="Blue">ゲームキャプチャ</font>を使用してください。
 
@@ -30,10 +29,13 @@
 
 #### 注意事項
 
-><font color="Blue">・3tene v2.0.6 2020/10/12 以降で OBS の映像キャプチャを使う</font>場合は
->　ウェブカメラ一覧で<font color="Red">「Unity Video Capture」</font>ではなく
->　<font color="Blue">「3tene Screen Capture」を選択</font>してください。
->　※Steam 版で利用するには手動登録が必要になります。
+><font color="Blue">・3tene Steam 版</font>で<font color="Blue"> OBS の映像キャプチャを利用するには手動登録</font>が必要になります。
+>　[仮想カメラ 3tene Screen Capture](#VirtualWebCamera.md) を参照して手動設定してください。
+
+><font color="Blue">・3tene v2.0.6 2020/10/12 以降で映像キャプチャを使う</font>場合は
+>　ウェブカメラ一覧で<font color="Blue">「3tene Screen Capture」を選択</font>してください。
+>　<font color="Red">「Unity Video Capture」</font>は使用されなくなりました。
+>　<font color="Blue">※旧バージョンの 3tene では UnityCapture を使用します。</font>
 
 ><font color="Blue">・3tene v1.10.20 2020/02/14 以降で OBS を使う</font>場合は
 >　Windows 版は<font color="Green">ウインドウキャプチャ</font>ではなく<font color="Red">ゲームキャプチャ</font>を使用してください。
