@@ -20,7 +20,7 @@
 
 >設定 - システム - 「NDIを使用する」 にチェックを入れると3teneの設定は完了です。
 >設定 - システム - 「NDIソース名」 で受信側にソースが表示されます。
->NDIソース名 は変更することが出来ます。デフォルトでは「3teneNDI」となっております。
+>NDIソース名 は変更することが出来ます。デフォルトでは「3teneNDI」です。
 
 >受信側でソース名を3tene内で設定したソース名を選択すると映像が表示されます。
 
@@ -29,7 +29,7 @@
 ><font color="Blue">3tene がセキュリティソフトにブロックされないように設定を変更してみてください。</font>
 
 
-<img src="image/NDI1.png" width="800px">
+<img src="image/NDI_1.png">
 
 
 ### OBS での使用方法
@@ -39,7 +39,14 @@
 >https://github.com/Palakis/obs-ndi/releases
  
 >インストールが完了するとソースに「NDI Source」が追加されます。
->NDI Source を追加し、「Source name」 に 3tene で設定した「NDIソース名」を選択し、右下の「OK」をクリックすると 3tene 画面が表示されます。
+>NDI Source を追加し、「Source name」 に 3tene で設定した「NDIソース名」を選択し、
+>右下の「OK」をクリックすると 3tene 画面が表示されます。
 
-<img src="image/NDI2.png" width="800px">
+<img src="image/NDI_2.png">
+
+
+>下記のように OBS に表示される画像が乱れる場合は
+><font color="Blue">3tene のウインドウ横サイズを調整して偶数</font>にしてみてください。
+
+<img src="image/NDI_3.png">
 
