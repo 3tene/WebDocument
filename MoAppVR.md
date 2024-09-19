@@ -11,7 +11,10 @@
 
 ><font color="red">詳細は準備中。</font>
 
->モーションアプリを動かすのに下記の設定が必要になります。
+><font color="Red">SteamVR がインストールされている事が必須となります。</font>
+><font color="Blue">※3teneMoApp_VR を起動すると SteamVR が起動します。</font>
+
+>モーションアプリで VR を扱うには下記の設定が必要になります。
 ><font color="Blue">※VR 設定は 3tene V2 とほぼ同じですのでそちらを参照してください。</font>
 >[VRモードの使い方](V2/index.html#UsingVR.md)
 
