@@ -1,16 +1,16 @@
 ## モーションアプリ連携について
 
->3tene を拡張する 3teneMotionApp システムを搭載。
+>3tene を拡張する <font color="Blue">3teneMotionApp</font> システムを搭載。
 >3tene 本体の更新を行わずに新たな機器追加が可能になりました。
 
->3tene 本体とモーションアプリを連携する事でトラッキングを可能にします。
+><font color="Blue">3tene 本体とモーションアプリを連携する</font>事でトラッキングを可能にします。
 >![画像](image/MotionApp_1.png "")
 
->3tene V3 シリーズでは既存の AzureKinect だけでなく、
+>3tene V3 シリーズでは既存の Azure Kinect だけでなく、
 >LeapMotion、VR、Nuitrack も 3teneMotionApp として追加されました。
 
 >※3tene 本体から VR 機能を切り離したので SteamVR は起動しなくなりました。
->　（3teneMotionApp で VR を使用する場合は SteamVR が起動します。）
+>　（モーションアプリ連携で VR を使用する場合は SteamVR が起動します。）
 
 >また、PC 1台に対して1台しか接続できない機器でも
 >複数の PC を用意してローカルネットワークで繋ぐことで

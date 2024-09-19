@@ -24,25 +24,25 @@
 >1. <font color="blue">スマートフォンに専用アプリをインストール</font>し、mocopi が動作するのを確認する。
 >専用アプリでの動作については mocopi 公式の<a href="https://www.youtube.com/watch?v=g0d-x0l2HtA" target="_blank">動画</a>などを参照して設定をしてください。
 
->2. 3teneMocopi をインストールした<font color="blue">PCとスマートフォンをWiFi接続</font>して動作するのを確認する。
+>2. 3teneMoApp_Mocopi をインストールした<font color="blue">PCとスマートフォンをWiFi接続</font>して動作するのを確認する。
 ><font color="red">※セキュリティソフトによってブロックされ、通信できない場合があります。
 >その場合にはファイルウォールの確認をお願いします。</font>
 >[セキュリティソフトについて](#AboutSecuritySoft.md)
 
 
->3teneMocopi の<font color="blue">設定「情報」に表示されている IP アドレス</font>を mocopi 専用アプリに入力します。
+>3teneMoApp_Mocopi の<font color="blue">設定「情報」に表示されている IP アドレス</font>を mocopi 専用アプリに入力します。
 ![画像](image/mocopi_02.png "")
 
 >専用アプリの操作 → 設定 → PC接続設定 → IPアドレス入力 → OK
 ![画像](image/mocopi_03.png "")
-><font color="blue">3teneMocopi のトラッキングを開始した状態で専用アプリから送信</font>を行うと
+><font color="blue">3teneMoApp_Mocopi のトラッキングを開始した状態で専用アプリから送信</font>を行うと
 >アバターが動作するようになります。
 
 >専用アプリの操作手順
 > → 上部の「モーション」をタップ → <font color="blue">下部の中央にある送信アイコン</font>をタップ
 ![画像](image/mocopi_04.png "")
 
->3. <font color="blue">3tene と 3teneMocopi を接続</font>して動作するのを確認する。
+>3. <font color="blue">3tene と 3teneMoApp_Mocopi を接続</font>して動作するのを確認する。
 >モーションアプリの動作確認後に 3tene と接続を行って使用します。
 >[モーションアプリについて](#MotionApp.md)
 

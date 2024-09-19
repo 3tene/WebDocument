@@ -36,7 +36,7 @@
 >・現在のバージョンは複数人の認識に対応していません。（必ず１人だけ写るようにしてください。）
 
 
-### 3teneKinect について
+### 3teneMoApp_Kinect について
 
 >※<font color="Red">初代 Kinect および Kinect V2 には対応していません。</font>
 
@@ -66,22 +66,22 @@
 ### Azure Kinect の操作手順
 
 >1. 3tene を起動する。
->2. 3teneKinect を起動する。
->3. 3teneKinect で Azure Kinect の制御を開始する。
+>2. 3teneMoApp_Kinect を起動する。
+>3. 3teneMoApp_Kinect で Azure Kinect の制御を開始する。
 >![画像](image/AzureKinect_1.png "")
 >4. 3tene でボディトラッキングを 3tene モーションアプリ に設定します。
 >![画像](image/AzureKinect_2.png "")
 >5. 3tene のトラッキングを開始します。
 >![画像](image/AzureKinect_3.png "")
 
->必ず 3teneKinect の制御を開始した後に 3tene のトラッキング開始を行ってください。
+>必ず 3teneMoApp_Kinect の制御を開始した後に 3tene のトラッキング開始を行ってください。
 
 
 ### 3teneKinect の開始に失敗する場合
 
 >下記の内容を再度確認してください。
 >・Kinect が USB 3.0 以降の端子に接続されている。（主に青い USB 端子）
->・3teneKinect が日本語を含んだパスで実行されてないか。
+>・3teneMoApp_Kinect が日本語を含んだパスで実行されてないか。
 
 >特に問題がみつからない場合は Windows の環境変数に設定を追加する事で
 >Kinect からのログ出力を保存し、原因を解析する事が可能になります。
@@ -110,7 +110,7 @@
 >ただ、<font color="Red">Kinect アプリを起動中に環境変数の変更を行ってもログの出力はされません</font>ので
 >もし起動している場合は変更後に一度アプリを閉じて再び開くか、それでも出力されない場合は PC を再起動してください。
 
-### 3teneKinect の設定項目
+### 3teneMoApp_Kinect の設定項目
 
 >![画像](image/AzureKinect_4.jpg "")
 
@@ -157,14 +157,14 @@
 
 ### PCを2台以上の構成で扱う
 
->3tene(PRO, STUDIO) と 3teneKinect を別々のPCで動かして利用する事が可能です。
+>3tene(PRO, STUDIO) と 3teneMoApp_Kinect を別々のPCで動かして利用する事が可能です。
 >Azure Kinect 用の高性能 PC を別途用意する事で負荷分散も行えます。
 ><font color="Red">※β版で分散機能は提供されません。</font>
 
 
 >![画像](image/kinect_howto_2.png "")
 
->3teneKinect の IP アドレスを確認して 3tene 側の AzureKinect の IPアドレスに設定します。
+>3teneMoApp_Kinect の IP アドレスを確認して 3tene 側の AzureKinect の IPアドレスに設定します。
 >※１台構成に戻す場合は IPアドレスを 127.0.0.1 に設定してください。
 
 >![画像](image/AzureKinect_5.png "")
@@ -178,7 +178,7 @@
 >速やかにファイアウォールの設定を戻してください。
 ><font color="Blue">通常使用ではセキュリティソフトに「3teneKinect をブロックしない設定」を追加してください。</font>
 
->後は１台構成の場合と同じ手順で 3teneKinect の制御を開始した後に、
+>後は１台構成の場合と同じ手順で 3teneMoApp_Kinect の制御を開始した後に、
 >3tene のトラッキングを開始します。
 
 
