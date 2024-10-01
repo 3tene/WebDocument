@@ -96,12 +96,26 @@
 >![画像](image/obs_04.png "")
 
 
-### OBS の設定 (NDI)
+### 3tenePRO(STUDIO) で使える OBS の設定
 
->最初に OBS 用の NDI プラグインをダウンロードし、インストールを行います。
->[https://github.com/Palakis/obs-ndi/releases](https://github.com/Palakis/obs-ndi/releases)
+>上記の映像キャプチャを使うよりも負荷が少なくなるのでお奨めです。
 
->OBS の「ソース」の追加で「NDI　output」を選択します。
->NDI の送信側で設定したソース名称を入力します。
->新規作成で任意の名前を入力し「OK」をクリックします。
+>メニュー等の2D画像は出力されないので OBS を使う場合にお勧めです。
+>アルファチャンネルにも対応しており背景透過が可能です。
+
+>アルファチャンネルの背景透過を行って残像が発生する場合は 3tenePRO の
+><font color="Blue">設定「カメラ」のアンチエイリアスを無効</font>にするか、
+>OBS のクロマキーを使用する方法に変更してください。
+
+>Spout を経由して OBS に画面を出力します。(Windows 専用)
+>[Spoutについて](#Spout.md)
+
+>Syphon を経由して OBS に画面を出力します。(Mac 専用)
+>[Syphonについて](#Syphon.md)
+
+>NDI を経由して OBS に画面を出力します。
+>[NDIについて](#NDI.md)
+
+
+
 
