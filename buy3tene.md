@@ -1,4 +1,4 @@
-## 3tene のダウンロード、購入、更新
+## 3tene の購入について
 
 ### 3teneFREE (無料版)について
 
@@ -13,7 +13,7 @@
 
 >有料版は 3tenePRO、3tenePRO＋LIVE2D、3teneSTUDIO の３種類のエディションがあります。
 >購入には 3tene ホームページへの会員登録が必要です。
->購入方法は<font color="Blue">個人と企業・法人で異なります</font>のでご注意ください。
+>購入方法は<font color="Blue">個人と企業・法人で異なります</font>ので注意してください。
 
 
 #### 個人の場合
@@ -23,13 +23,14 @@
 
 >3tenePRO, 3tenePRO+LIVE2D の案内は<a href="https://3tene.com/pro/" target="_blank">こちら</a>から。
 >3teneSTUDIO の案内は<a href="https://3tene.com/studio/" target="_blank">こちら</a>から。
->ご購入は<a href="https://3tene.com/series_purchase/" target="_blank">こちら</a>から。
+>購入は<a href="https://3tene.com/series_purchase/" target="_blank">こちら</a>から。
 
->個人のユーザーはご購入(付与)した<font color="Red">メジャーバージョン内の最新版の 3tene</font> をご利用いただくことができます。
->アップデート方法については「アップデートについて」をご確認ください。
+>個人のユーザーは<font color="Red">購入した 3tene のメジャーバージョンが同じ最終更新版</font> を
+>ダウンロードして使用することができます。
+>アップデート方法については「ダウンロード方法」を確認してください。
 
 ><font color="Red">※BOOTH での取り扱いは終了いたしました。</font>(～ 2020年07月17日)
->BOOTH で 3tene をご購入済みの方は <font color="Blue">V1 の最新版</font> がダウンロード可能です。
+>BOOTH で 3tene を購入済みの方は <font color="Blue">V1 の最新版</font> がダウンロード可能です。
 
 
 #### 企業・法人の場合
@@ -41,9 +42,8 @@
 >3tenePRO, 3tenePRO+LIVE2D の案内は<a href="https://3tene.com/pro/" target="_blank">こちら</a>から。
 >3teneSTUDIO の案内は<a href="https://3tene.com/studio/" target="_blank">こちら</a>から。
 >価格表は<a href="https://3tene.com/pro_company/" target="_blank">こちら</a>から。
->ご購入のお問い合わせは<a href="https://3tene.com/contact/" target="_blank">こちら</a>から。
+>購入のお問い合わせは<a href="https://3tene.com/contact/" target="_blank">こちら</a>から。
 
->企業・法人は<font color="Blue">常に最新版の 3tene</font> をご利用いただくことができます。
->アップデート方法については「アップデートについて」をご確認ください。
-
+>企業・法人は<font color="Blue">常に最新版の 3tene</font> を利用する事が可能です。
+>アップデート方法については「ダウンロード方法」を確認してください。
 

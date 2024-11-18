@@ -5,7 +5,7 @@
 - [対応機器](#equipment.md)
 - [エディションの違い](#edition.md)
 - [Mac版の制限](#mac.md)
-- [購入](#buy3tene.md)
+- [購入について](#buy3tene.md)
 
 アップデート
 - [ダウンロード方法](#download3tene.md)
