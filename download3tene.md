@@ -15,12 +15,14 @@
 
 #### PRO のダウンロード
 
->有料版のアップデートは<font color="Blue">3tene 公式サイトでログインして</font>ください。
->ログイン後、<font color="Blue">マイページ</font>を開きます。
+>有料版のアップデートは<font color="Red">3tene 公式サイトでログイン</font>してください。
 ![画像](image/download3tene_2.png "")
 
-><font color="Blue">マイページのダウンロード</font>を選択すると一覧が表示されます。
->選択した <font color="Blue">3tene もしくはモーションアプリの最新版</font>がダウンロードされます。
+>ログイン後、<font color="Red">マイページ</font>を開きます。
 ![画像](image/download3tene_3.png "")
+
+><font color="Red">マイページのダウンロード</font>を選択すると一覧が表示されます。
+>選択した <font color="Red">3tene もしくはモーションアプリの最新版</font>がダウンロードされます。
+![画像](image/download3tene_4.png "")
 
 
