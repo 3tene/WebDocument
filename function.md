@@ -225,9 +225,10 @@
 
 >アバターに関連する各種設定を行います。
 
->>[設定タブ](#AdjustAvaterSetting.md) アバターに使用する機器を設定します
+>>[機器タブ](#AdjustAvaterDevice.md) トラッキング、アバターに使用する機器を設定します
+>>[基本タブ](#AdjustAvaterNormal.md) トラッキング以外を設定します。
 >>[顔タブ](#AdjustAvaterFace.md) フェイストラッキング関連を設定します。
->>[体タブ](#AdjustAvaterBody.md) 体の動き関連を設定します。
+>>[体タブ](#AdjustAvaterBody.md) ボディトラッキング関連を設定します。
 >>[その他タブ](#AdjustAvaterOther.md) その他の項目を設定します。
 
 
