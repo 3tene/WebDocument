@@ -2,15 +2,15 @@
 
 ### メニューアイコンの説明
 
-![画像](image/menu_detile.png "左右メニュー")
+><font color="Blue">※3teneFREE では搭載されていない機能のアイコンは表示されません。</font>
 
-><font color="Blue">※フリー版にはNuitrackのプレビューのアイコンはありません。</font>
-><font color="Blue">※Mac にはLeapMotion、動画保存のアイコンはありません。</font>
+![画像](image/menu_detile.png "左右メニュー")
 
 ### アバタースロット
 
 >複数人に対応している 3tene ではアバタースロットで指定した
 >アバターが各種操作の対象になります。
+><font color="Blue">※3teneFREE は対応していません。</font>
 
 ![画像](image/menu_avatar_slot.png "アバタースロット")
 
