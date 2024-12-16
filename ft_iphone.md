@@ -32,7 +32,7 @@
 ><font color="Blue">PC とルーターを接続し、そのルーターの WiFi に iPhone を接続してください。</font>
 >※3teneFT を利用する iPhone を PC と同じネットワークに接続する必要があります。
 
-![画像](image/iphonex_ft_howto_0.jpg "")
+![画像](image/ft_iphonex_howto_01.jpg "")
 
 >また、 PC のセキュリティソフトのファイアウォールが有効の場合に
 ><font color="Red">3tene と 3teneFT の接続がブロックされる事があります。</font>
@@ -91,7 +91,7 @@
 
 ><font color="Red">3teneFREE は iPhone に対応していないのでIPアドレスの項目は表示されません。</font>
 
-![画像](image/iphonex_ft_howto_1.png "")
+![画像](image/ft_iphonex_howto_02.png "")
 
 >アダプタが複数ある場合は１つづつ入力して試すか、下記のアプリを試してみてください。
 
@@ -114,28 +114,31 @@
 
 >画面下部の Host Address 内に確認したIPアドレスを入力します。
 
-![画像](image/iphonex_ft_howto_2.png "")
+![画像](image/ft_iphonex_howto_03.png "")
+
 
 ### 3tene と 3teneFT の接続方法
 
 >3tene側
->・アバターの調整 → 「設定」タブ → フェイストラッキングの種類 を iPhoneX に変更します。
+>・アバターの調整 → 「機器」タブ → フェイストラッキングの種類 を iPhoneX に変更します。
 
-![画像](image/iphonex_ft_howto_3.png "")
+>[顔タブ](#AdjustAvaterFace.md)でトラッキングの調整も行なえます。
 
+![画像](image/ft_iphonex_howto_04.png "")
 
->さらに右側メニューの「トラッキングの開始」アイコンをクリックします。
+>さらに右側メニューの「トラッキングの開始」アイコンをク
+リックします。
 >トラッキングの開始ウインドウの開始ボタンをクリックしてトラッキングを開始します。
 ><font color="Blue">フェイストラッキングが開始されると iPhone からの接続待ち状態になります。</font>
 
-![画像](image/iphonex_ft_howto_4.png "")
+![画像](image/ft_iphonex_howto_05.png "")
 
 >3teneFT側
 >・画面下部の確認ボタン（右側）をタップしマスクが顔を追跡することを確認します。
 >　※認識しない場合は顔の認識を妨げるものを外してください。（サングラス、マスク等）
 
 
-![画像](image/iphonex_ft_howto_5.png "")
+![画像](image/ft_iphonex_howto_06.png "")
 
 >画面下部の接続ボタン（左側）をタップすると接続を開始します。
 
@@ -155,12 +158,12 @@
 >接続要求中 : 入力したIPアドレスに接続を試みています。
 >接続中 : 接続が完了しています。アバターが動いているはずです。</font>
 
-![画像](image/iphonex_ft_howto_6.png "")
+![画像](image/iphonex_ft_howto_07.png "")
 
 >3tene と 3teneFT が接続されると 3tene の画面右上に接続アイコンが表示されます。
 >3teneFT 側は「接続要求中」が「接続中」に変化します。
 
-![画像](image/iphonex_ft_howto_7.png "")
+![画像](image/iphonex_ft_howto_08.png "")
 
 ><font color="Red">5秒程度待って接続アイコンが表示されない場合は PC のファイアウォールの確認、
 >もしくは 3teneFT 側のIPアドレス入力を確認してください。</font>
@@ -180,19 +183,4 @@
 > → 応答がある場合はセキュリティで弾かれている可能性があります。
 >　　1. セキュリティソフトの設定（ファイアウォール等）を確認してください。
 >　　2. ルーターのセキュリティ関連の設定を確認してください。
-
-
-### フェイストラッキングモード
-
->フェイストラッキングモードを変更することで、アバターの動作を変更することが出来ます。
-
->iPhone位置変動
->>iPhoneを常に顔の前に置き、フェイストラッキングを行うモードになります。
->>iPhoneの位置を左右に動かすことで、アバターの体が左右にねじれます。
-
->iPhone位置固定
->>iPhoneの位置を固定し、フェイストラッキングを行うモードになります。
->>iPhoneのカメラ映像内で顔を動かすとアバターの体が前後左右に動きます。
-
-![画像](image/iphonex_ft_howto_8.png "")
 

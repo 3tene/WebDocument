@@ -2,7 +2,7 @@
 
 >アバターの口を動かす機能です。２種類のモードがあります。
 
->アバターの調整「[設定タブ](#AdjustAvaterSetting.md)」および「[顔タブ](#AdjustAvaterFace.md)」で設定を確認してください。
+>アバターの調整「[機器タブ](#AdjustAvaterDevice.md)」および「[顔タブ](#AdjustAvaterFace.md)」で設定を確認してください。
 
 
 ### リップシンクの種類

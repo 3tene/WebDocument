@@ -27,33 +27,33 @@
 >ウェブカメラの初回接続時であれば汎用ドライバが自動的にインストールされますので
 >インストールが完了するまで待ってください。
 
->3tene を起動後、アバターの調整のウインドウを開き、「設定」タブを選択します。
+>3tene を起動後、アバターの調整のウインドウを開き、「機器」タブを選択します。
 
-![画像](image/Selected_AdjustAvatarSetting.png "")
+![画像](image/AdjustAvatar_FromMenu.png "")
 
 
 ### ウェブカメラを設定する（通常版）
 
-><font color="Blue">フェイストラッキングで使用する機器</font>のウェブカメラの項目で
->接続しているウェブカメラを選択します。
-
-![画像](image/webcamera_settings_01.png "")
+>アバター調整の<font color="Blue">ウェブカメラ(通常)の項目</font>で接続するウェブカメラを選択します。
 
 >ウェブカメラの映像で口も動かす場合は
 >リップシンク種類の項目で「顔認識」を選択します。
 >必要に応じて解像度も設定します。
+
+![画像](image/ft_webcamera_settings_01.png "")
 
 
 ### ウェブカメラを設定する（共有版、+Eyes 含む。）
 
-><font color="Blue">ウェブカメラ(共有)</font>のウェブカメラの項目で
->接続しているウェブカメラを選択します。
+><font color="Red">※3teneFREE は対応していません。</font>
 
-![画像](image/webcamera_settings_02.png "")
+>アバター調整の<font color="Blue">ウェブカメラ(共有)の項目</font>で接続するウェブカメラを選択します。
 
 >ウェブカメラの映像で口も動かす場合は
 >リップシンク種類の項目で「顔認識」を選択します。
 >必要に応じて解像度も設定します。
+
+![画像](image/ft_webcamera_settings_02.png "")
 
 
 ### フェイストラッキングを開始する
@@ -62,8 +62,7 @@
 >トラッキング開始のウインドウを表示します。
 >フェイストラッキングの開始ボタンをクリックするとトラッキングが開始されます。
 
-
-![画像](image/webcamera_settings_3.png "")
+![画像](image/ft_webcamera_settings_3.png "")
 
 
 ### ウェブカメラの映像を確認する
@@ -72,12 +71,15 @@
 >ウェブカメラの映像が表示されるプレビューウインドウを表示します。
 >フェイストラッキングで正常に顔が認識されているかを確認する事が出来ます。
 
-![画像](image/webcamera_settings_4.png "")
+![画像](image/ft_webcamera_settings_04.png "")
 
 ><font color="Blue">※[仮想ウェブカメラ(UnityCapture)](#VirtualWebCamera.md)を使用した出力では
 >　プレビューウインドウはメニューと同様の扱いとなり録画対象となりません。</font>
 
+
 ### ウェブカメラの位置をリセットする
+
+><font color="Red">ウェブカメラのリセット</font>を行う事で、基準となる位置をリセットすることが出来ます。
 
 >ウェブカメラをリセットする事で下記の計算の初期化を行います。
 
@@ -85,7 +87,8 @@
 >・体の前後の動作
 >・眉毛の動作
 
-![画像](image/webcamera_settings_5.png "")
+![画像](image/ft_webcamera_settings_05.png "")
+
 
 ### 体の前後の動作
 
@@ -94,9 +97,7 @@
 >フェイストラッキングで使用しているカメラに顔を近づけると、
 >アバターの体は前に傾き、カメラから顔を離すと、アバターの体は後ろに傾きます。
 
-><font color="Red">ウェブカメラのリセット</font>を行う事で、基準となる位置をリセットすることが出来ます。
-
-![画像](image/webcamera_settings_6.png "")
+![画像](image/ft_webcamera_settings_06.png "")
 
 
 ### 眉毛の動作
@@ -108,4 +109,4 @@
 ><font color="Blue">眉毛は上下に動くので基準となる中心位置を決める</font>必要があります。
 ><font color="Red">ウェブカメラのリセット</font>を行う事で、基準となる位置をリセットすることが出来ます。
 
-![画像](image/webcamera_settings_7.png "")
+![画像](image/ft_webcamera_settings_07.png "")
