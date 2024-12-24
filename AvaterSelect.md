@@ -26,6 +26,9 @@
 
 >![画像](image/avatar_select_03.png "ファイル選択ダイアログ")
 
+>3tene V4 は<font color="Red"> VRM 1.0 に対応していません</font>ので読み込みに失敗します。
+>![画像](image/avatar_select_vrm1.png "VRM 1.0 読み込み")
+
 
 ### 登録済みアバターを選択する
 
