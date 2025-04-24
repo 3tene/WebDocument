@@ -12,18 +12,22 @@
 ### Mac で開発元や動作が未確認と表示され 3tene が起動できません。
 
 >3tene および MacOS のバージョンによって対処が異なります。
+><a href="https://support.apple.com/ja-jp/guide/mac-help/mh40616/mac" target="_blank">Apple 公式サイト</a>
+<!--
+>公式：[https://support.apple.com/ja-jp/guide/mac-help/mh40616/mac](https://support.apple.com/ja-jp/guide/mac-help/mh40616/mac)
+-->
 
-><font color="Blue">・15.x Sequoia</font> 以降で使用する場合は
+>・<font color="Blue">15.x Sequoia</font> 以降で使用する場合は
 >3tene の起動をブロックされた後に「システム設定」→「プライバシーとセキュリティ」を開いて、
 >セキュリティの項目にある 3tene の「このまま開く」を実行して下さい。
 >※次回からこの操作は不要で 3tene の起動が可能となります。
 
-><font color="Blue">・10.15.x Catalina</font> 以降で使用する場合は
+>・<font color="Blue">10.15.x Catalina</font> 以降で使用する場合は
 ><font color="Red">※3tene のバージョンが v1.10.28 2020/05/22 以降である必要があります。</font>
 >Control キーを押しながら3teneアイコンをクリック。
 >メニューの「開く」を選択。表示されたダイアログでも「開く」を選択して起動する。
 
->・10.14.x Mojave 以前
+>・<font color="Blue">10.14.x Mojave</font> 以前
 >Control キーを押しながら3teneアイコンをクリック。
 >メニューの「開く」を選択。表示されたダイアログでも「開く」を選択して起動する。
 
