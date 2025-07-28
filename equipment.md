@@ -76,6 +76,12 @@
 |iPhone 12|A14 Bionic|TrueDepth|<font color="Blue">動作確認をしていません。</font>|
 |iPhone 12 PRO|A14 Bionic|TrueDepth<br>LiDAR|<font color="Blue">動作確認をしていません。</font>|
 |iPhone 13|A15 Bionic|TrueDepth<br>LiDAR|<font color="Blue">動作確認をしていません。</font>|
+|iPhone 14|A15 Bionic|TrueDepth<br>LiDAR|<font color="Blue">動作確認をしていません。</font>|
+|iPhone 14 Pro|A16 Bionic|TrueDepth<br>LiDAR|<font color="Blue">動作確認をしていません。</font>|
+|iPhone SE 2022|A15 Bionic|無し|<font color="Blue">動作確認をしていません。|iPhone 15|A16 Bionic|TrueDepth<br>LiDAR|<font color="Blue">動作確認をしていません。</font>|
+|iPhone 15 Pro|Apple A17 Pro|TrueDepth<br>LiDAR|<font color="Blue">動作確認をしていません。</font>|
+|iPhone 16|Apple A18|TrueDepth<br>LiDAR|<font color="Blue">動作確認をしていません。</font>|
+|iPhone 16 Pro|Apple A18 Pro|TrueDepth<br>LiDAR|<font color="Blue">動作確認をしていません。</font>|
 |iPad Pro (第5世代)|M1|TrueDepth<br>LiDAR|正常動作を確認済み。|
 
 
@@ -87,11 +93,13 @@
 >スマートフォンの対応機種は<a href="https://www.sony.jp/mocopi/" target="_blank">mocopi 公式ページ</a> にて確認してください。
 
 >mocopi の仕様により<font color="Blue">時間の経過と共に計算誤差が蓄積されズレが発生</font>してしまうため、
->15分に一度直立の姿勢をとってアプリから<font color="Red">ポーズリセット</font>、
->30分に1度<font color="Red">キャリブレーション</font>する事が推奨されています。
+>15分に一度直立の姿勢をとって<font color="Red">ポーズリセット</font>(アプリもしくはセンサーボタン)、
+>30分に1度、アプリから<font color="Red">キャリブレーション</font>する事が推奨されています。
 
 ><font color="Blue">mocopi とスマートフォンは Bluetooth で接続</font>される為、
 ><font color="Red">Bluetooth の電波状況が悪いと動作が不安定</font>になります。
+
+>※別途、mocopi の<font color="Blue">スマホアプリ(無料)</font>もしくは<font color="Blue">PCアプリ(サブスク550円/月)</font>が必要です。
 
 
 ### Azure Kinect (USB 3接続の専用カメラ)
@@ -178,6 +186,9 @@
 |HTC Vive Cosmos|動作すると報告あり。|
 |HTC Vive Cosmos Elite|<font color="Blue">動作確認をしていません。</font>|
 |HTC Vive Focus Plus|<font color="Red">動作しません。</font>|
+|HTC Vive Focus Vision|<font color="Blue">動作確認をしていません。</font>|
+|HTC Vive Focus 3|<font color="Blue">動作確認をしていません。</font>|
+|HTC Vive XR Elite|<font color="Blue">動作確認をしていません。</font>|
 |Valve Index|正常動作を確認済み。|
 
 ><font color="Blue">HTC Vive Pro はアップグレード、フルセットどちらでも動作します。</font>
@@ -185,6 +196,15 @@
 >#### Valve Index について
 >HTC Vive と同じ構成なのでほぼ同じ用に扱えます。
 ><font color="Blue">SteamVR のバージョンが古いと動作が不安定になる場合があるようです。</font>
+
+
+>#### トラッカーについて
+
+|機器名|状況|
+|---|:---|
+|Vive トラッカー|正常動作を確認済み。|
+|Vive トラッカー (3.0)|<font color="Blue">動作確認をしていません。</font>|
+|Vive Ultimate トラッカー|<font color="Blue">動作確認をしていません。</font>|
 
 
 ### Oculus Rift (VR機器)
@@ -209,6 +229,7 @@
 |Oculus Quest2 (単体) |<font color="Red">動作しません。</font>|
 |Oculus Quest2 + Oculus Link|<font color="Blue">動作確認をしていません。</font>|
 |Oculus Quest2<br>(Oculus Air Link)|正常動作を確認済み。|
+|Oculus Quest3|<font color="Blue">動作確認をしていません。</font>|
 
 
 ### Perception Neuron (全身装着型センサー - 3teneSTUDIO のみ対応)
