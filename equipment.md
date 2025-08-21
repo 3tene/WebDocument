@@ -232,6 +232,18 @@
 |Oculus Quest3|<font color="Blue">動作確認をしていません。</font>|
 
 
+### PICO (VR、MR機器)
+><S><font color="Red">※3teneFREE は非対応。モーションアプリ連携で動作。</font></S>
+><font color="Blue">動作確認をしていません。</font>
+
+>#### 動作確認表
+
+|機器名|3tene|
+|---|:---|
+|PICO 4|<font color="Blue">動作確認をしていません。</font>|
+|PICO 4 Ultra|<font color="Blue">動作確認をしていません。</font>|
+
+
 ### Perception Neuron (全身装着型センサー - 3teneSTUDIO のみ対応)
 >顔以外の全身モーションキャプチャが可能。
 >指にも対応しています。（Perception Neuron Pro は指に非対応。）
