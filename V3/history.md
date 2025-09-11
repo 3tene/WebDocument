@@ -262,5 +262,5 @@
 
 ### 過去バージョン
 
->[3tene V2 までの古い更新履歴](V2/index.html#history.md)
+>[3tene V2 までの古い更新履歴](../V2/index.html#history.md)
 
