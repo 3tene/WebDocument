@@ -15,7 +15,7 @@
 |---|:---|
 |ウェブカメラ|従来の 3tene と同じエンジンです。<BR>片目のまばたきや目線を動かす事はできません。|
 |ウェブカメラ(共有)|従来の 3tene と同じエンジンです。<BR>ボディトラッキング（ウェブカメラ ハンドトラッキング）と<BR>ウェブカメラを共有します。|
-|ウェブカメラ+Eyes(共有)|目のトラッキングや PerfectSync が扱えます。<BR>従来よりも処理が重くなっています。<BR><font color="Red">※3teneFREE では使用できません。</font>|
+|ウェブカメラ+Eyes(共有)|目のトラッキングや PerfectSync が扱えます。<BR>従来よりも処理が重くなっています。<BR><font color="Red">※3teneFREE では使用できません。</font><BR>ボディトラッキング（ウェブカメラ ハンドトラッキング）と<BR>ウェブカメラを共有します。|
 
 ><font color="Red">※</font>PerfectSync は 3tenePRO v4.0.2 から対応しています。
 ><font color="Red">※</font>頭の動きはボディトラッキング (Mocopi や Perception Neuron) が優先されます。
@@ -52,6 +52,8 @@
 >ウェブカメラの映像で口も動かす場合は
 >リップシンク種類の項目で「顔認識」を選択します。
 >必要に応じて解像度も設定します。
+
+>+Eyes は<font color="Blue">目のトラッキングや VRM が対応していれば PerfectSync が使えます。</font>
 
 ![画像](image/ft_webcamera_settings_02.png "")
 
