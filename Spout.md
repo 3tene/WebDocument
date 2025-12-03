@@ -43,6 +43,7 @@
 ### OBS のアルファチャンネル設定
 
 >3tene の背景設定を「色設定」の「透過背景」に設定します。
+![画像](image/background_3.png "")
 
 >OBS のソースを右クリックして「プロパティ」を選択、
 >「Composite mode」の Opaque を Default に変更します。
