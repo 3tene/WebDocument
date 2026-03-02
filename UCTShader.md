@@ -65,7 +65,7 @@
 
 
 >・眉毛マテリアルの設定例
->F00_000_00_FaceBrow_00_Face マテリアル を展開し下記情報をメモしておく
+><font color="Blue">眉毛に該当するマテリアル (例：F00_000_00_FaceBrow_00_Face)</font> を展開し下記情報をメモしておく。
 >Color > Texture > Lit Color Alpha のテクスチャとカラー
 >Color > Texture > Shade Color のテクスチャとカラー
 
@@ -91,7 +91,7 @@
 
 
 >・前髪マテリアルの設定例
->前髪に該当するマテリアルを展開し下記情報をメモしておく
+><font color="Blue">前髪に該当するマテリアル (例：F00_000_Hair_00_HAIR_01)</font> を展開し下記情報をメモしておく。
 >Color > Texture > Lit Color Alpha のテクスチャとカラー
 >Color > Texture > Shade Color のテクスチャとカラー
 >Lighting > NormalMap[Normal] のテクスチャ
