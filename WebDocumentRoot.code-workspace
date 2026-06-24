@@ -5,6 +5,7 @@
         }
     ],
     "settings": {
+        "liveServer.settings.port": 5501
         "markdown.mermaid.enabled": false,
         "markdown-pdf.includeMermaid": false,
         "markdown-pdf.mermaidServer": "",

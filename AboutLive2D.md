@@ -1,4 +1,4 @@
-<!-- iframe がセキュリティ問題になるの変換されない。返還後に html を修正する。 -->
+<!-- iframe がセキュリティ問題になるので変換されない。返還後に html を修正する。 -->
 ## Live2Dについて
 
 >3tenePro+Live2D 版のみ、Live2D Cubism で作成されたモデルデータを読み込めます。
@@ -57,9 +57,9 @@
 
 #### パーフェクトシンク
 
-ID① と ID② の両方が存在する場合は ID① の「Param〇〇」が優先されます。
-該当のパラメータが存在しない場合は同パラメータは動作しません。
-各パラメータの詳細につきましては[こちら](https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation)をご確認ください。
+>ID① と ID② の両方が存在する場合は ID① の「Param〇〇」が優先されます。  
+>該当のパラメータが存在しない場合は同パラメータは動作しません。  
+>各パラメータの詳細につきましては[こちら](https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation)をご確認ください。  
 
 |カテゴリ|ID①（Cubism3）|ID②（Cubism3）|最小|基準|最大|説明|
 |---|:---|:---|:---|:---|:---|:---|
