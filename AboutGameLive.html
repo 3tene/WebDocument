@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AboutGameLive.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="style2.css" type="text/css">
+</head>
+<body>
+<h2 id="ゲーム実況について">ゲーム実況について</h2>
+<blockquote>
+<p>Windows 環境で <font color="Blue">3tene とゲーム等の別アプリを組み合わせて実況</font>を行う場合の設定です。<br>
+<br>
+ゲームは処理負荷が高い場合がほとんどなのでグラフィックボード(GPU) が<br>
+追加されている事を前提とします。<br>
+<br>
+※<font color="Blue">上級者レベルのＰＣ知識が必要</font>となりますので注意してください。
+　<font color="Red">設定の変更は自己責任でお願いします。</font></p>
+</blockquote>
+<h3 id="発生する問題">発生する問題</h3>
+<blockquote>
+<p>Direct3D を使うアプリ（3teneやゲーム）を複数起動すると<br>
+<font color="Red">アクティブなウインドウが優先して処理される</font>為、ゲームを操作するリアルタイムの実況では<br>
+3tene のフレームレートが低下する可能性が高くなります。<br>
+<br>
+この <font color="Blue">3tene のフレームレート低下を設定変更で最低限</font>に抑えます。</p>
+</blockquote>
+<h3 id="gpu-設定の変更">GPU 設定の変更</h3>
+<blockquote>
+<p>追加されたグラフィックボード(GPU) だけでなく、<font color="Blue">ＣＰＵに内蔵されたＧＰＵ (iGPU) も使用します。</font><br>
+<br>
+ＣＰＵに内蔵されたＧＰＵ (iGPU) はグラフィックボードを追加すると<br>
+無効になってしまうので <font color="Blue">UEFI (BIOS) で無効にならないように変更する</font>必要があります。<br>
+<br>
+※メーカーやマザーボードによっては UEFI に該当する項目が無かったり<br>
+　名称が異なっている場合があるのでしっかり確認してください。<br>
+<br>
+<img src="image/GameLive_01.png" alt="画像">
+<br>
+UEFI の設定が正しく行われるとデバイスマネージャーの<br>
+「ディスプレイ アダプター」に両方の GPU が表示されます。<br>
+<br>
+<img src="image/GameLive_02.png" alt="画像"></p>
+</blockquote>
+<h3 id="アプリ設定">アプリ設定</h3>
+<blockquote>
+<p><font color="Blue">Windows7 や古いバージョンの Windows 10 は対象外となります。</font><br>
+<br>
+※3tene を起動している場合は必ず終了してから行ってください。<br>
+<br>
+デスクトップを右クリックして「ディスプレイ設定」をクリック。<br>
+下にスクロールして「グラフィックの設定」をクリック。<br>
+<br>
+「基本設定を指定するアプリを選択します」を「デスクトップ アプリ」に設定。<br>
+「参照」をクリックしてインストールされた 3tene を選択します。<br>
+<br>
+<img src="image/GameLive_03.png" alt="画像">
+<br>
+追加された 3tene.exe の「オプション」を選択します。<br>
+「省電力」を選択します。(iGPU を選択する。)<br>
+※「高パフォーマンス」は追加したグラフィックボードになっているハズです。<br>
+<br>
+<img src="image/GameLive_04.png" alt="画像">
+<br>
+この状態で 3tene と組み合わせたいゲームを起動して<br>
+3tene は GPU 0 → ＣＰＵに内蔵されたＧＰＵ (iGPU)<br>
+ゲームは GPU 1 → グラフィックボード (GPU)<br>
+となっているかをタスクマネージャーで確認します。<br>
+<br>
+<img src="image/GameLive_05.png" alt="画像">
+<br>
+スクウェア・エニックス様の<br>
+<a href="http://benchmark.finalfantasyxv.com/jp/" target="_blank">FINAL FANTASY XV BENCHMARK</a><br>
+を使用させて頂きました。</p>
+</blockquote>
+<h3 id="obs-の設定">OBS の設定</h3>
+<blockquote>
+<p>処理する GPU を分けるとゲームキャプチャで<br>
+両方の画面をキャプチャできなくなるようなので<br>
+<br>
+3tene → ウインドウキャプチャ<br>
+ゲーム → ゲームキャプチャ<br>
+<br>
+のように設定を行います。<br>
+<br>
+映像キャプチャ（3tene の仮想ウェブカメラ）でも動作しますが<font color="Blue">フレームレートの落ちが激しい</font>ので<br>
+「3tene Screen Capture に映像を出力する」をオフにした後に <font color="Red">PC を再起動します。</font><br>
+<font color="Blue">※3tene の再起動だけではフレームレート低下が直らない場合があります。</font><br>
+<br>
+PC 再起動完了後、OBS の「ウインドウキャプチャ」に 3tene を設定します。<br>
+<font color="Blue">必ず「キャプチャ方法」を「Windows 10 (1903以降)」に変更してください。</font><br>
+<font color="Red">※「キャプチャ方法」が「自動」のままだと OBS が正常に取り込めません。</font><br>
+<br>
+対応環境であれば Windows なら Spout、Mac なら Syphon を使った方が<br>
+PC にかかる負荷が少なくなります。<br>
+<font color="Blue">※Spout を使う場合は OBS に Spout プラグインを追加する必要があります。</font><br>
+<br>
+<img src="image/GameLive_06.png" alt="画像">
+<br>
+この状態だとゲームのウインドウがアクティブなっていても<br>
+3tene のフレームレートはほぼ下がらなくなります。<br>
+※ただしＣＰＵに内蔵されたＧＰＵ (iGPU)の性能に依存します。</p>
+</blockquote>
+<h3 id="final-fantasy-xv-benchmark-の数値-参考">FINAL FANTASY XV BENCHMARK の数値 (参考)</h3>
+<blockquote>
+<p>ベンチマーク設定：軽量品質、1280x720、ウインドウ<br>
+PC：Core i7-4770 + GeForce GTX 1050 Ti<br>
+<font color="Blue">※BENCHMARK のウインドウをアクティブにして測定。</font><br>
+<br>
+BENCHMARK のみ実行 → 7550 快適<br>
+BENCHMARK + 3teneFREE + OBS を実行 → 6817 快適 (3tene は 57～60 fps)</p>
+</blockquote>
+
+</body>
+</html>

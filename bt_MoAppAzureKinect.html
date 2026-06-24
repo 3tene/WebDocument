@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>bt_MoAppAzureKinect.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="style2.css" type="text/css">
+</head>
+<body>
+<h2 id="azure-kinect-について-モーションアプリ連携">Azure Kinect について (モーションアプリ連携)</h2>
+<blockquote>
+<p>深度カメラと機械学習データを合わせてボディトラッキングを行います。<br>
+機械学習の扱いには高性能な GPU が必要となります。<br>
+<br>
+<a href="download3tene.html">モーションアプリのダウンロードの仕方</a></p>
+</blockquote>
+<h3 id="azure-kinect-の要求スペック">Azure Kinect の要求スペック</h3>
+<blockquote>
+<p>Azure Kinect でボディトラッキングを使用する為には高性能PCが必要になります。<br>
+<br>
+・ＣＰＵ：第7世代 Core i5 クアッドコア 2.4GHz 以上<br>
+・メモリ：4GB 以上<br>
+・ＧＰＵ：NVIDIA GeForce GTX 1070 以上<br>
+・接続：USB 3.x 必須。（USB 2.0 では Kinect を認識しません。）<br>
+<br>
+GPU は <font color="Red">CUDA モードで動作する NVIDIA 製 GeForce シリーズが推奨となります。</font><br>
+<br>
+3teneKinect 1.0.3 以降で GeForce シリーズを使用する場合は<br>
+<font color="Blue">ドライバ・バージョン R455 以降をインストールする</font>必要があります。<br>
+<br>
+Intel の ＣＰＵ内蔵グラフィック（6000 番台以降）、AMD 製の Radeon シリーズは<br>
+DirectML モードで動作すると思われますが<font color="Blue">動作確認をしていません。</font><br>
+<font color="Red">DirectML の利用には対応デバイスとドライバソフトウェアが必至となります。</font><br>
+<br>
+<a href="https://docs.microsoft.com/ja-jp/azure/kinect-dk/system-requirements" target="_blank">公式：Azure Kinect 要求機能（英語）</a><br>
+<br>
+「Visual Studio 2015 の Visual C++ 再頒布可能パッケージ」のインストールが別途必要です。<br>
+<a href="https://docs.microsoft.com/ja-jp/azure/kinect-dk/body-sdk-setup" target="_blank">公式：開発者向けクイックスタート</a></p>
+</blockquote>
+<h3 id="注意事項">注意事項</h3>
+<blockquote>
+<p>・<font color="Red">黒い衣服を着ていると認識率が低下します。</font><br>
+・現在のバージョンは複数人の認識に対応していません。（必ず１人だけ写るようにしてください。）</p>
+</blockquote>
+<h3 id="3tenemoapp_kinect-について">3teneMoApp_Kinect について</h3>
+<blockquote>
+<p>※<font color="Red">初代 Kinect および Kinect V2 には対応していません。</font><br>
+<br>
+3tene(PRO, STUDIO) で Azure Kinect を使用する為には<br>
+<font color="Blue">別途 3teneKinect が起動している必要があります。</font><br>
+<br>
+<font color="Red">3teneKinect は日本語が含まれるパスに配置しないでください。</font><br>
+<font color="Blue">プレビューが真っ白の状態になり、正常動作しません。</font><br>
+<br>
+3teneKinect が Azure Kinect の制御および管理を行い、取得した認識データを<br>
+3tenePRO(Studio) に送信する事でアバターに動きを反映させています。<br>
+<br>
+3teneKinect 1.0.3 では AzureKinect DK の<br>
+Sensor-SDK 1.4.1、 BodyTracking-SDK 1.1.0 を使用して作成されています。<br>
+<br>
+認識する部位は頭、腕、手、腰、足となりますが指は親指と人差し指のみとなります。<br>
+指の認識ではブレが発生しやすい為、3teneKinect では指の制御機能を用意しています。<br>
+<br>
+<font color="Blue">3teneKinect は 3tenePRO のダウンロードと同じく、<br>
+<a href="https://www.3tene.com" target="_blank">3tene 公式サイト</a>のマイページよりダウンロードできます。</font><br>
+<br>
+PC 1台で構成する場合は下記になります。<br>
+<img src="image/kinect_howto_1.png" alt="画像"></p>
+</blockquote>
+<h3 id="azure-kinect-の操作手順">Azure Kinect の操作手順</h3>
+<blockquote>
+<ol>
+<li>3tene を起動する。</li>
+<li>3teneMoApp_Kinect を起動する。</li>
+<li>3teneMoApp_Kinect で Azure Kinect の制御を開始する。<br>
+<img src="image/AzureKinect_1.png" alt="画像"></li>
+<li>3tene でボディトラッキングを 3tene モーションアプリ に設定します。<br>
+<img src="image/AzureKinect_2.png" alt="画像"></li>
+<li>3tene のトラッキングを開始します。<br>
+<img src="image/AzureKinect_3.png" alt="画像"><br>
+<br>
+必ず 3teneMoApp_Kinect の制御を開始した後に 3tene のトラッキング開始を行ってください。</li>
+</ol>
+</blockquote>
+<h3 id="3tenekinect-の開始に失敗する場合">3teneKinect の開始に失敗する場合</h3>
+<blockquote>
+<p>下記の内容を再度確認してください。<br>
+・Kinect が USB 3.0 以降の端子に接続されている。（主に青い USB 端子）<br>
+・3teneMoApp_Kinect が日本語を含んだパスで実行されてないか。<br>
+<br>
+特に問題がみつからない場合は Windows の環境変数に設定を追加する事で<br>
+Kinect からのログ出力を保存し、原因を解析する事が可能になります。<br>
+<br>
+<font color="Blue">設定 → システム → 詳細情報 → システムの詳細設定 → 環境変数</font><br>
+<br>
+<img src="image/AzureKinect_Env.png" alt="画像">
+<br>
+上記のように設定を行うと実行ファイルと同じパスに<br>
+k4a.log と k4abt.log が出力されるようになります。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>変数名</th>
+<th style="text-align:center">設定値</th>
+<th style="text-align:left">備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>K4A_ENABLE_LOG_TO_A_FILE</td>
+<td style="text-align:center">k4a.log</td>
+<td style="text-align:left">センサー API のログ出力ファイル名</td>
+</tr>
+<tr>
+<td>K4A_LOG_LEVEL</td>
+<td style="text-align:center">w</td>
+<td style="text-align:left">ログ出力の警告レベル。 c, e, w, i, t</td>
+</tr>
+<tr>
+<td>K4ABT_ENABLE_LOG_TO_A_FILE</td>
+<td style="text-align:center">k4abt.log</td>
+<td style="text-align:left">ボディトラッキング API のログ出力ファイル名</td>
+</tr>
+<tr>
+<td>K4ABT_LOG_LEVEL</td>
+<td style="text-align:center">w</td>
+<td style="text-align:left">ログ出力の警告レベル。 c, e, w, i, t</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>また、Windows の管理者権限による問題で、<br>
+<font color="Blue">使用している PC の Windows アカウントが管理者権限を持つ場合</font>は
+上記の手順を行えばログは出力されますが、<br>
+<font color="Blue">管理者権限を持たない場合</font>は上記の手順を行ってもログは<br>
+出力されませんので、下記のようにシステム環境変数の欄に設定を追加してください。<br>
+<br>
+<img src="image/AzureKinect_Env_2.png" alt="画像"><br>
+<br>
+ただ、<font color="Red">Kinect アプリを起動中に環境変数の変更を行ってもログの出力はされません</font>ので<br>
+もし起動している場合は変更後に一度アプリを閉じて再び開くか、それでも出力されない場合は PC を再起動してください。</p>
+</blockquote>
+<h3 id="3tenemoapp_kinect-の設定項目">3teneMoApp_Kinect の設定項目</h3>
+<blockquote>
+<p><img src="image/AzureKinect_4.jpg" alt="画像"></p>
+<h4 id="演算ユニット">演算ユニット</h4>
+<p>認識処理で使用する API を指定します。<br>
+GPU ： グラフィックボード（GPU）を使用します。<br>
+CPU ： ＣＰＵを使用します。（処理が重すぎて速度がほぼ出ません。）<br>
+CUDA ： CUDA を使用します。（GeForce が必須となります。）<br>
+DirectML ： DirectML を使用します。（GeForce 以外でも動作します。）</p>
+</blockquote>
+<blockquote>
+<h4 id="深度モード">深度モード</h4>
+<p>NFOV 2x2 Binned ： 奥行き重視。75度、0.5～5.46m、最大30fps<br>
+NFOV Unbinned ： 奥行き重視。75度、0.5～3.86m、最大30fps、高解像度<br>
+WFOV 2x2 Binned ： 広さ重視。120度、0.25～2.88m、最大30fps<br>
+WFOV Unbinned ： 広さ重視。120度、0.25～2.21m、最大15fps、高解像度</p>
+</blockquote>
+<blockquote>
+<h4 id="モデル">モデル</h4>
+<p>パペット ： 認識結果をパペットに反映させます。認識結果をそのまま反映します。<br>
+みとね ： VRM モデルに認識結果を反映させます。3teneで表示させた場合の確認用です。<br>
+両方 ： パペットと VRM モデルを表示します。</p>
+</blockquote>
+<blockquote>
+<h4 id="位置ｚ">位置Ｚ</h4>
+<p>モデルの位置を調整します。</p>
+</blockquote>
+<blockquote>
+<h4 id="補間の強さ">補間の強さ</h4>
+<p>認識結果に対して補間を行います。強めにすると細かいブレが抑えられます。</p>
+</blockquote>
+<blockquote>
+<h4 id="手首を制御する">手首を制御する</h4>
+<p>手首に認識結果を反映するかを指定します。<br>
+手首のブレが激しい場合にはオフにしてください。（手首は動かなくなります。）</p>
+</blockquote>
+<blockquote>
+<h4 id="指親指以外を制御する">指（親指以外）を制御する</h4>
+<p>指に認識結果を反映するかを指定します。<br>
+指のブレが激しい場合にはオフにしてください。（指は動かなくなります。）</p>
+</blockquote>
+<blockquote>
+<h4 id="親指を制御する">親指を制御する</h4>
+<p>親指に認識結果を反映するかを指定します。<br>
+親指のブレが激しい場合にはオフにしてください。（親指は動かなくなります。）</p>
+</blockquote>
+<blockquote>
+<h4 id="頭の角度角度x">頭の角度　角度X</h4>
+<p>頭の角度を調整します。<br>
+トラッキングを開始した際、正面を向いた状態でアバターの顔の角度が正常でない場合は調整を行ってください。</p>
+</blockquote>
+<h3 id="pcを2台以上の構成で扱う">PCを2台以上の構成で扱う</h3>
+<blockquote>
+<p>3tene(PRO, STUDIO) と 3teneMoApp_Kinect を別々のPCで動かして利用する事が可能です。<br>
+Azure Kinect 用の高性能 PC を別途用意する事で負荷分散も行えます。<br>
+<font color="Red">※β版で分散機能は提供されません。</font><br>
+<br>
+<img src="image/kinect_howto_2.png" alt="画像">
+<br>
+3teneMoApp_Kinect の IP アドレスを確認して 3tene 側の AzureKinect の IPアドレスに設定します。<br>
+※１台構成に戻す場合は IPアドレスを 127.0.0.1 に設定してください。<br>
+<br>
+<img src="image/AzureKinect_5.png" alt="画像"><br>
+<br>
+<font color="Red">※セキュリティソフトのファイアウォールによって<br>
+　3teneKinect の通信がブロックされる場合があります。<br>
+　ブロックされると接続ができないのでセキュリティの設定変更が必要です。</font><br>
+<br>
+ファイアウォールを完全無効にして接続を確認する事も可能ですが、<br>
+<font color="Red">セキュリティ上、大きな問題となる</font>為、接続確認が取れた場合は<br>
+速やかにファイアウォールの設定を戻してください。<br>
+<font color="Blue">通常使用ではセキュリティソフトに「3teneKinect をブロックしない設定」を追加してください。</font><br>
+<br>
+後は１台構成の場合と同じ手順で 3teneMoApp_Kinect の制御を開始した後に、<br>
+3tene のトラッキングを開始します。</p>
+</blockquote>
+
+</body>
+</html>

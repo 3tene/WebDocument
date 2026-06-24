@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CameraAngle.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="style2.css" type="text/css">
+</head>
+<body>
+<h2 id="シーンカメラのアングルについて">シーンカメラのアングルについて</h2>
+<blockquote>
+<p>シーンカメラのアングルを保存および復帰を行います。<br>
+<br>
+<font color="Red">※VRM 読み込み時に保存したアングルは Live2D 読み込み時には利用できません。<br>
+（逆も出来ません。）</font></p>
+</blockquote>
+<h3 id="シーンカメラのアングルのウインドウを表示する">シーンカメラのアングルのウインドウを表示する</h3>
+<blockquote>
+<p>左側メニューのシーンカメラのアングルアイコンをクリックします。<br>
+<br>
+<img src="image/CameraAngle_1.png" alt="画像"></p>
+</blockquote>
+<h3 id="アングルの保存">アングルの保存</h3>
+<blockquote>
+<p>「現在のアングルをリストに追加」を選択すると<br>
+現在のシーンカメラの状態が保存され、リストに追加されます。<br>
+<br>
+<img src="image/CameraAngle_2.png" alt="画像"></p>
+</blockquote>
+<h3 id="アングルの復帰">アングルの復帰</h3>
+<blockquote>
+<p>リストに登録されているアングルの「読み込む」を選択すると<br>
+保存されているアングルが復帰します。<br>
+<br>
+<img src="image/CameraAngle_3.png" alt="画像"></p>
+</blockquote>
+<h3 id="アングルの更新削除">アングルの更新、削除</h3>
+<blockquote>
+<p>保存済みのアングルを変更する場合は変更したいアングルを選び（青色状態にする）、<br>
+リスト下の「更新」ボタンを選択します。<br>
+<br>
+<img src="image/CameraAngle_4.png" alt="画像">
+<br>
+保存済みのアングルを削除する場合は変更したいアングルを選び（青色状態にする）、<br>
+リスト下の「削除」ボタンを選択します。<br>
+<br>
+<img src="image/CameraAngle_5.png" alt="画像"></p>
+</blockquote>
+<h3 id="アングル名称の変更">アングル名称の変更</h3>
+<blockquote>
+<p>保存済みのアングルの名称を変更する場合は変更したい<br>
+アングルを選び（青色状態にする）、アングル名を編集した後に<br>
+「名称変更」ボタンを選択するとリストの表示名称が変更されます。<br>
+<br>
+<img src="image/CameraAngle_6.png" alt="画像"></p>
+</blockquote>
+<h3 id="保存アングルの順番変更">保存アングルの順番変更</h3>
+<blockquote>
+<p>リストの項目を上下に移動します。<br>
+リストは<font color="Blue">先頭から５番目まで</font>が設定ウィンドウ内のショートカット１と<br>
+アングルプレビューの項目の対象になるので<br>
+<font color="Blue">よく使うアングルは５番目以内に移動する</font>と使いやすくなるかと思います。<br>
+<br>
+リスト下の「上」ボタンを押すと選択しているリストとその上のリストの順番を入れ替えます。<br>
+<br>
+<img src="image/CameraAngle_7.png" alt="画像"><br>
+<br>
+リスト下の「下」ボタンを押すと選択しているリストとその下のリストの順番を入れ替えます。<br>
+<br>
+<img src="image/CameraAngle_8.png" alt="画像"></p>
+</blockquote>
+<h3 id="アングルプレビュー-3tene-freeは非対応">アングルプレビュー (3tene FREEは非対応)</h3>
+<blockquote>
+<p>リストの<font color="Blue">先頭から５番目まで</font>に保存されたアングルを<br>
+常時確認可能なプレビューウインドウを表示します。<br>
+<font color="Blue">有効にチェックを付ける事でプレビューを開始します</font>が、<br>
+その分の処理負荷が増えますので注意してください。<br>
+<br>
+リストの順番を変更するとプレビューウインドウにも反映されます。<br>
+<br>
+<img src="image/CameraAngle_9.png" alt="画像"></p>
+</blockquote>
+<h3 id="起動時に保存したアングルを復帰させる">起動時に保存したアングルを復帰させる</h3>
+<blockquote>
+<p>起動時に復帰させたいアングルを選び（青色状態にする）、<br>
+「選択中のアングルを起動時に読み込む」のチェックを付けると<br>
+次回、3tene 起動時に保存されたアングルが自動的に復帰されます。<br>
+<br>
+<img src="image/CameraAngle_10.png" alt="画像"></p>
+</blockquote>
+<h3 id="アングルのインポートエクスポート">アングルのインポート、エクスポート</h3>
+<blockquote>
+<p>保存したシーンカメラのアングルをバックアップしたい場合や、<br>
+他の PC にインストールされた 3tene に移したい場合に使います。<br>
+<br>
+<font color="Blue">エクスポート</font>でシーンカメラのリストとそれに関連する画像を<br>
+指定されたフォルダに CameraAngle フォルダとして出力します。<br>
+<br>
+<font color="Blue">インポート</font>ではエクスポートで出力されたフォルダを指定する事で<br>
+保存された情報を取り込みます。<br>
+<br>
+<font color="Red">※インポートするとそれまでのリスト情報は全て破棄されるので<br>
+　使用する場合は注意して使用してください。</font></p>
+</blockquote>
+
+</body>
+</html>

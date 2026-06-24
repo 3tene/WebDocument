@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>troubleshooting.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="style2.css" type="text/css">
+</head>
+<body>
+<h2 id="トラブルシューティング">トラブルシューティング</h2>
+<h3 id="windows-11-でこのアプリの一部がブロックされていますと表示されます">Windows 11 で「このアプリの一部がブロックされています」と表示されます。</h3>
+<blockquote>
+<p>Widnows11 の新機能「スマート アプリ コントロール」が有効になっていると思われます。<br>
+無効すると改善されると思います。<br>
+<br>
+<font color="Red">※「スマート アプリ コントロール」を無効にすると<br>
+Windows を再インストールしない限り、有効には戻せませんので注意してください。</font></p>
+</blockquote>
+<h3 id="mac-で開発元や動作が未確認と表示され-3tene-が起動できません">Mac で開発元や動作が未確認と表示され 3tene が起動できません。</h3>
+<blockquote>
+<p>3tene および MacOS のバージョンによって対処が異なります。<br>
+<a href="https://support.apple.com/ja-jp/guide/mac-help/mh40616/mac" target="_blank">Apple 公式サイト</a><br>
+<br>
+・<font color="Blue">15.x Sequoia</font> 以降で使用する場合は<br>
+3tene の起動をブロックされた後に「システム設定」→「プライバシーとセキュリティ」を開いて、<br>
+セキュリティの項目にある 3tene の「このまま開く」を実行して下さい。<br>
+※次回からこの操作は不要で 3tene の起動が可能となります。<br>
+<br>
+・<font color="Blue">10.15.x Catalina</font> 以降で使用する場合は<br>
+<font color="Red">※3tene のバージョンが v1.10.28 2020/05/22 以降である必要があります。</font><br>
+Control キーを押しながら3teneアイコンをクリック。<br>
+メニューの「開く」を選択。表示されたダイアログでも「開く」を選択して起動する。<br>
+<br>
+・<font color="Blue">10.14.x Mojave</font> 以前<br>
+Control キーを押しながら3teneアイコンをクリック。<br>
+メニューの「開く」を選択。表示されたダイアログでも「開く」を選択して起動する。</p>
+</blockquote>
+<h3 id="3tene-が起動中のロゴ表示の後に止まってしまいます">3tene が起動中のロゴ表示の後に止まってしまいます。</h3>
+<blockquote>
+<p>2019/01/18 フェイストラッキングが原因の起動不具合を修正。<br>
+2019/04/12 録音機器が原因の起動不具合を修正。<br>
+<br>
+最新の 3tene を試してみてください。</p>
+</blockquote>
+<h3 id="3tene-が起動中に強制終了されます">3tene が起動中に強制終了されます。</h3>
+<blockquote>
+<p>2019/08/09 動画保存機能が原因で強制終了される問題の対策を導入しました。<br>
+<br>
+ESC キーを押しながら 3tene を起動すると動画保存機能が無効になり起動する場合があります。<br>
+起動するようになった場合は 3tene をインストールしたフォルダに<br>
+「動画無効.txt」もしくは「DisableMovie.txt」を作成すると（中身はカラでOK）<br>
+常に動画保存機能が無効になります。<br>
+<br>
+動画保存を行いたい場合は別途 OBS をインストールして 3tene を録画してください。</p>
+</blockquote>
+<h3 id="3tene-の起動中にエラーが表示されます">3tene の起動中にエラーが表示されます。</h3>
+<blockquote>
+<p>2020/06/30 修正を行いました。<br>
+<br>
+最新の 3tene を試してみてください。<br>
+<br>
+もし起動中に「Initialize Setting Error !!」が表示された場合は<br>
+設定 → システム → 全設定のリセット<br>
+で全設定をクリアすると改善する場合があります。</p>
+</blockquote>
+<h3 id="3tene-pro版-が起動中に強制終了されます">3tene (Pro版) が起動中に強制終了されます。</h3>
+<blockquote>
+<p>SteamVR の動作が不安定な場合に起こる事があるようです。<br>
+SteamVR を終了し、VR 機器の接続（認識）を切った状態で起動してみてください。</p>
+</blockquote>
+<h3 id="フェイストラッキングが動作しません-3tene-ver-1系">フェイストラッキングが動作しません！ (3tene ver 1系)</h3>
+<blockquote>
+<p>右側メニューのフェイストラッキングの開始ボタンは押していますか？<br>
+動作中は緑色に変化します。<br>
+<font color="Red">※押し忘れている場合が多いです。</font><br>
+<br>
+<img src="image/menu_face.png" alt="画像" title="顔認識ON"><br>
+<br>
+また、アバターの調整で使用したいウェブカメラが指定されているかも確認してください。<br>
+確認方法は<a href="ft_webcamera.html">こちら</a>を参照してください。</p>
+</blockquote>
+<h3 id="フェイストラッキングの開始ボタンが無効状態で押せません">フェイストラッキングの開始ボタンが無効状態で押せません！</h3>
+<blockquote>
+<p>2020/08/04 修正を行いました。<br>
+<br>
+最新の 3tene を試してみてください。<br>
+<br>
+3tene が VRM の読み込みに失敗すると発生します。<br>
+<br>
+VCランタイム 2015-2019 (x64) をインストールすると改善する可能性があります。<br>
+<a href="https://support.microsoft.com/ja-jp/help/2977003/the-latest-supported-visual-c-downloads" target="_blank">Visual C++ 再頒布可能パッケージ 2015-2019</a>より vc_redist.x64.exe をダウンロードしてください。</p>
+</blockquote>
+<h3 id="以前は動作していたのにフェイストラッキングが動作しなくなりました">以前は動作していたのにフェイストラッキングが動作しなくなりました</h3>
+<blockquote>
+<p>USB接続のウェブカメラを使用していませんか？<br>
+前回使用していたウェブカメラを取り外している状態で 3tene を起動し、<br>
+<font color="Blue">後から前回使用していたウェブカメラを接続しても自動的には切り替わりません。</font><br>
+<font color="Red">※Mac ではこれが原因で CamTwist が選択され強制終了する</font>事があるようです。<br>
+<br>
+3tene のウェブカメラ指定が変更されていないか確認してください。<br>
+アバター調整 → 設定タブ → ウェブカメラ</p>
+</blockquote>
+<h3 id="windows-でフェイストラッキングを開始すると失敗もしくは強制終了されます">Windows でフェイストラッキングを開始すると失敗（もしくは強制終了）されます。</h3>
+<blockquote>
+<p>「フェイストラッキングの初期化に失敗しました。」と表示される場合は下記条件で失敗するようです。<br>
+<font color="Red">※3tene のインスト－ルパスに全角文字があると失敗します。</font><br>
+<font color="Red">※アカウント名に全角文字があると失敗します。</font><br>
+<br>
+3tene の初期化パスの設定を変更すると改善する可能性があります。<br>
+3tene の設定 → システム → 初期化パスを変更してください。<br>
+<br>
+<font color="Red">※RealSense 接続前に 3tene を起動して Nuitrack を使おうとしても失敗します。</font><br>
+<font color="Red">※「Logi Capture」等の仮想カメラを選択していても失敗します。</font><br>
+<br>
+ウェブカメラの選択は[こちら]#ft_webcamera.html)を参照してください。</p>
+</blockquote>
+<h3 id="mac-でフェイストラッキングを開始すると失敗もしくは強制終了されます">Mac でフェイストラッキングを開始すると失敗（もしくは強制終了）されます。</h3>
+<blockquote>
+<p>3tene にカメラやマイクの使用権限が無い場合に強制終了してしまいます。<br>
+また、<font color="Red">「CamTwist」等の仮想カメラを選択していても失敗します。</font><br>
+<br>
+Mac の「システム環境設定」を選択して、「セキュリティとプライバシー」をクリック、<br>
+「プライバシー」をクリックする。「カメラ」を選択する。<br>
+リップシンクを使う場合は「マイク」の使用も許可してください。</p>
+</blockquote>
+<h3 id="フェイストラッキングの開始でカメラ起動がタイムアウトします">フェイストラッキングの開始でカメラ起動がタイムアウトします。</h3>
+<blockquote>
+<p>Windows 10 バージョン 1803 以降および Mac を使用している場合は<br>
+3teneに対してカメラ使用を許可しないとタイムアウトします。<br>
+OS のセキュリティ機能で 3tene にカメラの使用を許可してください。<br>
+<br>
+Windows10 (バージョン 1803,1809) の場合<br>
+設定 → プライバシー → カメラ でアプリの設定を変更してください。<br>
+<br>
+Windows10 (バージョン 1903 以降) の場合<br>
+設定 → プライバシー → カメラ でデスクトップアプリ設定（全体）を変更してください。<br>
+<br>
+Mac の場合<br>
+「システム環境設定」を選択して、「セキュリティとプライバシー」をクリック、<br>
+「プライバシー」をクリックする。「カメラ」を選択する。<br>
+リップシンクを使う場合は「マイク」の使用も許可してください。<br>
+<br>
+さらにセキュリティソフトをインストールしている場合には<br>
+セキュリティソフトによってカメラがガードされている場合もありますので<br>
+セキュリティソフトの設定も確認してください。<br>
+<br>
+また、画面更新が停止しているウェブカメラを選択すると開始に失敗します。<br>
+対象となるカメラの画面更新が行われるようにするか、<br>
+3teneのアバターの調整「設定」で使用するウェブカメラを変更してください。<br>
+<br>
+Mac のウェブカメラ起動時間は長い為、タイムアウトする事が多いようです。<br>
+3tene → アバターの調整 → 設定 で待ち時間を長く設定してください。<br>
+<font color="Blue">※最近の Mac で発生する事が多いようです。</font><br>
+<br>
+MacBook で BootCamp を使用して起動した Windows 上の<br>
+FaceTime HD Camera は解像度の問題で使用できないようです。</p>
+</blockquote>
+<h3 id="windows-でウェブカメラを２つ接続しましたがどちらか片方しか動作しません">Windows でウェブカメラを２つ接続しましたがどちらか片方しか動作しません。</h3>
+<blockquote>
+<p>下記のデバイスの組み合わせで同時使用が出来ないのを確認しています。<br>
+<font color="Red">※ウェブカメラが標準ドライバで動作していると同時に使用できない可能性があります。</font><br>
+<br>
+BUFFALO BSW20K07H (デバイス名：PC Camara → 標準ドライバ)<br>
+BUFFALO BSW200MBK (デバイス名：USB_Camera → 標準ドライバ)<br>
+<br>
+メーカーから専用ドライバが配布されている場合はそちらを試してみてください。<br>
+ドライバの変更は自己責任となりますのでご注意ください。<br>
+<br>
+<font color="Red">ウェブカメラの同時使用については<a href="DeviceWebCamera.html">こちら</a>を参照してください。</font></p>
+</blockquote>
+<h3 id="フェイストラッキングを使うとモデルの頭が回転します">フェイストラッキングを使うとモデルの頭が回転します。</h3>
+<blockquote>
+<p>2019/03/29 顔が回転してしまう不具合を修正。<br>
+2019/08/09 再度修正を行いました。<br>
+最新の 3tene を試してみてください。</p>
+</blockquote>
+<h3 id="iphonex-にインストールした-3teneft-と接続できません">iPhoneX にインストールした 3teneFT と接続できません。</h3>
+<blockquote>
+<p>下記の２点を確認してください。<br>
+・iPhoneX と PC が同じルーターに接続されている。<br>
+・3tene (PC) セキュリティソフトでファイアウォールが適切に設定されている。<br>
+<br>
+<font color="Red">特にファイアウォールの設定を行っていないケースが多いです。</font><br>
+<br>
+接続方法については<a href="ft_iphone.html">こちら</a>を参照してください。</p>
+</blockquote>
+<h3 id="iphonex-にインストールした-3teneft-がプチフリーズします">iPhoneX にインストールした 3teneFT がプチフリーズします。</h3>
+<blockquote>
+<p>2020/02/14 3teneFT v1.1.0 にて修正を行いました。<br>
+3tene 本体も v1.10.20 2020/02/14 以降を使用する必要があります。<br>
+<br>
+<S>数十秒待つと復帰します。<br>
+GPU 負荷で端末が一時的に停止してしまうようです。</S></p>
+</blockquote>
+<h3 id="ウェブカメラのプレビュー-fps-が極端に落ちる場合があります">ウェブカメラのプレビュー fps が極端に落ちる場合があります。</h3>
+<blockquote>
+<p>部屋の明るさが極端に明るかったり、暗かったりすると<br>
+ウェブカメラ内蔵の補正機能が働き、性能が極端に落ちる製品があります。<br>
+明るさが一定に保てる場所に移動してみてください。</p>
+</blockquote>
+<h3 id="リップシンクの設定で録音デバイスを認識していません">リップシンクの設定で録音デバイスを認識していません。</h3>
+<blockquote>
+<p>新しい Windows10 で本体のミニプラグ端子にマイクを接続して使用する場合は<br>
+マイクをミニプラグに刺していないと録音デバイスを認識しない仕様になったようです。<br>
+3tene でミニプラグ接続のマイクを使用する場合は常に接続しているようにしてください。</p>
+</blockquote>
+<h3 id="リップシンクを音声認識に設定して開始すると失敗します">リップシンクを音声認識に設定して開始すると失敗します。</h3>
+<blockquote>
+<p>アバターの調整 → 設定から「リップシンク起動待ち時間」を長くしてみてください。<br>
+<font color="Blue">※最近の Mac で発生する事が多いようです。</font></p>
+</blockquote>
+<h3 id="リップシンクを音声認識に設定して開始しても反応しません">リップシンクを音声認識に設定して開始しても反応しません。</h3>
+<blockquote>
+<p>OS (Windows,Mac) の録音機器に関連する音量やミュートの設定を確認してください。<br>
+複数の録音機器が接続されている場合には<br>
+アバターの調整 → 設定から「リップシンクの音声入力」が<br>
+使用したい録音機器になっているかを確認してください。</p>
+</blockquote>
+<h3 id="リップシンクが勝手に停止してしまいます">リップシンクが勝手に停止してしまいます。</h3>
+<blockquote>
+<p>リップシンク稼働中に音声デバイス（マイク、スピーカー）の抜き差しを行うと、<br>
+リップシンクが停止する仕様となります。<br>
+音声デバイスの準備が完了した後にリップシンクを開始するようにしてください。</p>
+</blockquote>
+<h3 id="leapmotion-が動作しません">LeapMotion が動作しません。</h3>
+<blockquote>
+<p>LeapMotion の動作には専用ソフトウェアのインストールが必要となります。<br>
+専用ソフトは公式サイトよりダウンロードしてください。<br>
+LeapMotion が動かない場合は<a href="leapmotion.html">ソフトウェアのバージョン</a>を確認してください。<br>
+<br>
+3tene v2.0.17 以前は Orion Ver 4.0.0+52173 で動作するのを確認しています。<br>
+<font color="red">(3tene v2.0.17 以前は Gemini では動作しません。)</font><br>
+3tene v2.0.18 以降は Gemini Ver 5.2.0-1165930e で動作するのを確認しています。<br>
+<font color="red">(3tene v2.0.18 以降は Orion では動作しません。)</font><br>
+<br>
+専用ソフトウェアのインストール後に 3tene を起動します。<br>
+3tene → アバターの調整 → 設定タブ → 操作方法を「LeapMotion」に変更します。</p>
+</blockquote>
+<h3 id="leapmotion-の鏡の動作が正しく反映されません">LeapMotion の鏡の動作が正しく反映されません。</h3>
+<blockquote>
+<p>今後、修正を行う予定です。</p>
+</blockquote>
+<h3 id="azure-kinect-が正常に動作しません">Azure Kinect が正常に動作しません。</h3>
+<blockquote>
+<p>「Visual Studio 2015 の Visual C++ 再頒布可能パッケージ」がインストールされている必要があります。<br>
+また、3teneKinect を日本語が含まれるパスに配置すると正常に動作せず、プレビューが真っ白になります。<br>
+<font color="Blue">※日本語のアカウント名を使用している場合には特に注意してください。</font><br>
+Kinect は USB 3.x に対応したポートに接続する必要があります。（USB 2.0 では Kinect を認識しません。）<br>
+NVIDIA 製のグラフィックボードが必要になります。（GeForce GTX 1070 など。Intel、AMD 非対応。）</p>
+</blockquote>
+<h3 id="perception-neuron-が動作しません">Perception Neuron が動作しません。</h3>
+<blockquote>
+<p>別途、Axis Neuron (PRO) のインストールが必要です。<br>
+<br>
+Axis Neuron を起動して設定変更を行う。<br>
+　※Settingsの「Broadcating」タブを選択し、「BVH」の「Enable」を選択する。<br>
+Axis Neuron で Perception Neuron のハブに接続を行う。<br>
+Axis Neuron で Perception Neuron のキャリブレーションを行う。<br>
+Axis Neuron を起動したまま 3tene を起動します。<br>
+3tene → アバターの調整 → 設定 → 操作方法を「PerceptionNeuron」に変更します。<br>
+<br>
+<a href="PerceptionNeuron.html">Perception Neuronについて</a></p>
+</blockquote>
+<h3 id="vr-が動作しません">VR が動作しません。</h3>
+<blockquote>
+<p>別途、SteamVR のインストールが必要です。<br>
+<br>
+SteamVR のインストール後に 3tene を起動します。<br>
+3tene → アバターの調整 → 設定 → 操作方法を「VR」に変更します。<br>
+3tene → 設定 → VR → ゴーグルやトラッカーの部位設定を行います。</p>
+</blockquote>
+<h3 id="htc-vive-から-htc-vive-pro-に交換したら動きません">HTC Vive から HTC Vive Pro に交換したら動きません。</h3>
+<blockquote>
+<p>SteamVR が極端に古い場合はアップデートが必要です。<br>
+<br>
+アップグレード版でゴーグルとリンクボックスを交換した場合は<br>
+コントローラの再ペアリングをする必要があります。<br>
+<br>
+フルセット版の場合はペアリングとルームの再設定が必要です。</p>
+</blockquote>
+<h3 id="realsense--nuitrack-が動作せずプレビューが真っ白です">RealSense + Nuitrack が動作せず、プレビューが真っ白です。</h3>
+<blockquote>
+<p>アクティベーションが完了していないか他のソフトと競合しています。<br>
+<a href="Nuitrack.html">こちら</a> で手順を確認してください。</p>
+</blockquote>
+<h3 id="動画保存を行うと音声が記録されません">動画保存を行うと音声が記録されません。</h3>
+<blockquote>
+<p>仕様となります。<br>
+音声も記録したい場合は OBS の使用をお勧めします。</p>
+</blockquote>
+<h3 id="windows-で-3tene-の画面が-obs-に正しく表示されません">Windows で 3tene の画面が OBS に正しく表示されません。</h3>
+<blockquote>
+<p>3tene v1.10.20 2020/02/14 以降ではウインドウキャプチャではなく<br>
+ゲームキャプチャからウインドウを指定するようにしてください。<br>
+（Mac 版はウインドウキャプチャを使用してください。）<br>
+<br>
+なお、OBS との連携では<a href="VirtualWebCamera.html">仮想ウェブカメラ</a>を経由した<br>
+映像キャプチャデバイスによる使用が推奨されます。<br>
+メニューやウインドウを表示したい場合はゲームキャプチャを使用してください。</p>
+</blockquote>
+<h3 id="obs-の映像キャプチャデバイスに3tene-screen-captureがありません">OBS の映像キャプチャデバイスに「3tene Screen Capture」がありません。</h3>
+<blockquote>
+<p>Mac 版は非対応の為、表示されません。<br>
+<br>
+Steam 版で利用するには<a href="VirtualWebCamera.html">手動登録</a>が必要となります。<br>
+<br>
+3tene をインストール後にフォルダ移動した場合も動作しなくなりますので<br>
+移動後のフォルダで仮想カメラの<a href="VirtualWebCamera.html">手動登録</a>を行ってください。<br>
+<br>
+FREE と PRO を両方インストールした後に片方をアンインストールした場合も<br>
+動作しなくなりますので仮想カメラの<a href="VirtualWebCamera.html">手動登録</a>を行ってください。</p>
+</blockquote>
+<h3 id="obs-の映像キャプチャデ画面が3tene-has-not-started緑になります">OBS の映像キャプチャデ画面が「3tene has not started」(緑)になります。</h3>
+<blockquote>
+<p>設定「システム」で「3tene ScreenCapture に出力する」が<br>
+有効になっているのを確認してください。<br>
+<br>
+有効になっている場合は仮想カメラの<a href="VirtualWebCamera.html">手動登録</a>を行ってください。</p>
+</blockquote>
+<h3 id="mac-で-obs-のウインドウキャプチャ表示ができません">Mac で OBS のウインドウキャプチャ表示ができません。</h3>
+<blockquote>
+<p>macOS Catalina (10.15.x) はセキュリティが厳しくなっていますので、<br>
+初期状態ではOBSのウインドウキャプチャが使えない場合があります。<br>
+<br>
+[システム環境設定] -&gt; [セキュリティとプライバシー] -&gt; [プライバシー] -&gt; [画面収録]<br>
+に OBS が無い場合、および OBS にチェック付いてない場合が該当します。<br>
+<br>
+OBSで「空の名前でウインドウを表示」にチェックすると、一覧に項目が追加されます。<br>
+追加された項目を選択すると「画面収録」の許可を求められるので<br>
+許可すると一覧に 3tene が現れので選択します。</p>
+</blockquote>
+<h3 id="vroid-studio-で作成したアバターの表示が崩れる場合があります">VRoid Studio で作成したアバターの表示が崩れる場合があります。</h3>
+<blockquote>
+<p>複雑な頂点構成のアバターで発生する事があるようです。<br>
+設定「システム」タブでクオリティを「Very High」以上に変更してみてください。<br>
+改善される場合があります。<br>
+ただし、処理負荷が増えるのでパフォーマンスは低下します。<br>
+<br>
+<img src="image/quality_vroid.png" alt="画像" title="クオリティ"><br>
+<font color="Blue">※VRoid Studio でパーカーを使用している場合。</font></p>
+</blockquote>
+<h3 id="自作した-vrm-の表情を変更すると目や口が２重に表示されてしまいます">自作した VRM の表情を変更すると目や口が２重に表示されてしまいます。</h3>
+<blockquote>
+<p>3tene では VR に対応している為、VRM は First Person に対応している必要があります。<br>
+VRM を First Person に対応させるか、「Third Person Only」に設定変更を行い、<br>
+First Person を無効にしてください。</p>
+</blockquote>
+<h3 id="アバターの頭や顔のパーツが描画されません">アバターの頭や顔のパーツが描画されません。</h3>
+<blockquote>
+<p>シーンカメラがアバターに近いと発生するようです。<br>
+DirectX 11 に対応している GPU (内蔵グラフィック) だと発生しないようです。<br>
+<br>
+2019/03/14 強制描画を行うオプションを追加しました。（標準でON）<br>
+最新の 3tene を試してみてください。</p>
+</blockquote>
+<h3 id="intel-core-2000-番台の内蔵グラフィックを使用していますが描画が崩れる事があります">Intel Core 2000 番台の内蔵グラフィックを使用していますが描画が崩れる事があります。</h3>
+<blockquote>
+<p>Intel Core 2000 番台に搭載されている GPU (内蔵グラフィック) は対象外となります。<br>
+<br>
+Intel Core シリーズの内蔵グラフィックを使用する場合は 4000 番台以降が対応となります。<br>
+※MacBook (Pro, Air 含む) 2011、2012 は対象外となります。<br>
+<br>
+デスクトップPCであればグラフィックボード(GPU) を追加する事で改善される可能性はありますが、<br>
+グラフィックボードの追加および交換は自己責任となります。<br>
+<font color="Blue">※DirectX 11 以降に対応したグラフィックボードを使用してください。</font><br>
+<br>
+<a href="required.html">動作環境</a></p>
+</blockquote>
+<h3 id="背景のウェブカメラに仮想ウェブカメラを指定すると黒画面表示になります">背景のウェブカメラに仮想ウェブカメラを指定すると黒画面表示になります。</h3>
+<blockquote>
+<p>仮想ウェブカメラソフトによって挙動が異なるようです。<br>
+LogiCapture の場合は 3tene で背景ウェブカメラを LogiCapture で開始した後に<br>
+本体の LogiCapture を起動すると正常表示するのを確認しています。<br>
+LogiCapture を先に起動していると黒画面になるのを確認しています。</p>
+</blockquote>
+<h3 id="ショートカットの左手右手が動作しません">ショートカットの左手、右手が動作しません</h3>
+<blockquote>
+<p>全身トラッキング中(VR, Nuitrack, Perception Neuron)のみ動作します。<br>
+<br>
+Perception Neuron の場合はアバター調整の「設定」→「全ての指を制御する」の<br>
+チェックを外していないと手の形状は変化しません。<br>
+<br>
+ショートカットの<a href="settingShortcut.html">注意事項</a></p>
+</blockquote>
+<h3 id="オブジェクトの読み込みで失敗します">オブジェクトの読み込みで失敗します。</h3>
+<blockquote>
+<p>読み込みたいオブジェクトのファイルパスに日本語のフォルダが<br>
+入っていると失敗します。<br>
+日本語が含まれないパスにファイルを移動してから読み込みを行ってください。</p>
+</blockquote>
+<h3 id="3tene-を非アクティブにしてしばらくすると画面更新が止まったりチラツキます">3tene を非アクティブにしてしばらくすると画面更新が止まったりチラツキます。</h3>
+<blockquote>
+<p>2019/04/18 チラツキの対策を行いました。<br>
+最新の 3tene を試してみてください。</p>
+</blockquote>
+
+</body>
+</html>

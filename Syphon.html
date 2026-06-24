@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Syphon.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="style2.css" type="text/css">
+</head>
+<body>
+<h2 id="syphon-について">Syphon について</h2>
+<blockquote>
+<p>Syphon の経由の画面参照を行う事で他のアプリで 3tene の画面が参照可能になります。<br>
+Mac 外部への出力はできませんが<font color="Blue"> NDI を使うよりも低負荷、低遅延になります。</font><br>
+<font color="Red">※3teneFREE は対応していません。</font><br>
+<font color="Red">※Mac 版の専用機能です。</font><br>
+<br>
+<font color="Blue">Syphon を経由する 3tene の画面は<br>
+仮想カメラ機能と同様にメニューやウインドウが録画対象とならないので<br>
+アバターと背景のみの画面参照となります。</font><br>
+<br>
+この機能を利用するには、映像を参照するソフトウェアが<br>
+Syphon に対応している必要があります。<br>
+<br>
+録画配信ソフトの OBS ではプラグイン無しで使用可能です。</p>
+</blockquote>
+<h3 id="3tene-の設定">3tene の設定</h3>
+<blockquote>
+<p>下記サイトを開きます。<br>
+<br>
+設定 - システム - 「Syphonを使用する」 にチェックを入れます。<br>
+Syphon ソース名のデフォルトは「3teneSyphon」ですが、変更することが可能です。<br>
+<br>
+受信側で 3tene 内で設定したソース名を選択すると映像が表示されます。<br>
+<br>
+&lt;<img src="image/Syphon_1.png" alt="画像"></p>
+</blockquote>
+<h3 id="obs-での使用方法">OBS での使用方法</h3>
+<blockquote>
+<p>ソースの「サイフォンクライアント」を選択して追加します。<br>
+「サイフォンクライアント」のプロパティの「ソース」に<br>
+3tene で設定した「Spoutソース名」を選択してください。<br>
+<br>
+&lt;<img src="image/Syphon_2.png" alt="画像"></p>
+</blockquote>
+<h3 id="obs-のアルファチャンネル設定">OBS のアルファチャンネル設定</h3>
+<blockquote>
+<p>3tene の背景設定を「色設定」の「透過背景」に設定します。<br>
+<img src="image/background_3.png" alt="画像"><br>
+<br>
+OBS のソースを右クリックして「プロパティ」を選択、<br>
+「透過を許可」をチェック状態にします。</p>
+</blockquote>
+
+</body>
+</html>

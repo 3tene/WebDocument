@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ft_iphone_expression.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="style2.css" type="text/css">
+</head>
+<body>
+<h2 id="iphonex-フェイストラッキングの表情自動変更表情認識">iPhoneX フェイストラッキングの表情自動変更(表情認識)</h2>
+<h3 id="表情の認識について">表情の認識について</h3>
+<blockquote>
+<p>iPhoneX の高精度なフェイストラッキングを使う事で演者の表情を読み取り、<br>
+アバターの表情を「楽しい(Joy)、怒り(Angry)、悲しい(Sorrow)」に変更します。<br>
+<br>
+<font color="Blue">VRoidStudio 以外で作成した VRM モデルは<br>
+VRM 標準の Joy、Angry、Sorrow の表情が存在している必要があります。</font></p>
+</blockquote>
+<h3 id="準備と設定">準備と設定</h3>
+<blockquote>
+<p>最初に iPhone でフェイストラッキングが動作する事を確認してください。<br>
+<a href="ft_iphone.html">iPhoneXによるフェイストラッキングについて</a><br>
+<br>
+アバター調整 → 「顔」タブ → 「表情自動実行」にチェックを付けます。<br>
+<br>
+<img src="image/iphonex_ft_expression_01.png" alt="画像" title="設定"></p>
+</blockquote>
+<h3 id="認識具合を確認する">認識具合を確認する</h3>
+<blockquote>
+<p>iPhoneX フェイストラッキングを開始します。<br>
+<br>
+表情認識は下記を<font color="Blue">意識して表情を作る</font>と操作しやすくなります。<br>
+<br>
+<font color="Blue">Joy → 広角を広げる</font><br>
+<font color="Blue">Angry → まゆげを下げる</font><br>
+<font color="Blue">Sorrow → まゆげを上げる</font><br>
+<br>
+認識がうまく行われない場合は感度を変更する事で改善します。<br>
+<br>
+<img src="image/iphonex_ft_expression_02.png" alt="画像" title="設定"></p>
+</blockquote>
+<h3 id="自動表情変更と口の動きの競合について">自動表情変更と口の動きの競合について</h3>
+<blockquote>
+<p>自動表情変更が有効な状態で口を動かすと<br>
+<font color="Red">表情の口設定と競合して正常な口の形状にならない</font>場合があります。<br>
+（VRM モデルの作り方によって影響度が違います。）<br>
+<br>
+<font color="Blue">VRoidStudio で作成したモデルに対しては対策を行っている</font>ので競合は起きませんが、<br>
+モデリングソフトで独自に作成した VRM モデルはこの問題の対象となります。</p>
+</blockquote>
+<h3 id="独自の-vrm-モデルで競合を回避する方法">独自の VRM モデルで競合を回避する方法</h3>
+<blockquote>
+<p>自動表情変更で使用する表情のカスタム設定をVRMに追加します。<br>
+Unity で VRM に下記の名前の BlendShape を追加する事によって競合を回避可能となります。<br>
+また、自動表情変更で使用する表情をカスタムしたい場合も下記の名前で BlendShape を作成してください。<br>
+(作成した BlendShape が優先となります。)<br>
+<br>
+3tene 拡張の <a href="MakeVRM_3.html">口閉じ版の作り方</a>を参照してください。</p>
+</blockquote>
+
+</body>
+</html>

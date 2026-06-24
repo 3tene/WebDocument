@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ft_webcamera.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="style2.css" type="text/css">
+</head>
+<body>
+<h2 id="ウェブカメラによるフェイストラッキングについて">ウェブカメラによるフェイストラッキングについて</h2>
+<blockquote>
+<p>一般販売されているウェブカメラを使ってフェイストラッキングを行います。<br>
+ウェブカメラ映像の解析により顔認識を行い、口、まぶた、頭の動きを反映します。<br>
+<br>
+<font color="Red">ウェブカメラの注意事項として<a href="DeviceWebCamera.html">こちら</a>を参照してください。</font><br>
+<font color="Blue">※複数のウェブカメラを同時使用する場合は必ず参照してください。</font><br>
+<br>
+<font color="Red">メガネを着用していると精度の低下や認識不能が発生します。</font><br>
+<font color="Red">マスクを着用していると顔認識ができなくなります。</font><br>
+<br>
+3tene V3 からエンジンが複数用意されています。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th style="text-align:left">機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ウェブカメラ</td>
+<td style="text-align:left">従来の 3tene と同じエンジンです。<BR>片目のまばたきや目線を動かす事はできません。</td>
+</tr>
+<tr>
+<td>ウェブカメラ(共有)</td>
+<td style="text-align:left">従来の 3tene と同じエンジンです。<BR>ボディトラッキング（ウェブカメラ ハンドトラッキング）と<BR>ウェブカメラを共有します。</td>
+</tr>
+<tr>
+<td>ウェブカメラ+Eyes(共有)</td>
+<td style="text-align:left">目のトラッキングや PerfectSync が扱えます。<BR>従来よりも処理が重くなっています。<BR><font color="Red">※3teneFREE では使用できません。</font><BR>ボディトラッキング（ウェブカメラ ハンドトラッキング）と<BR>ウェブカメラを共有します。</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><font color="Red">※</font>PerfectSync は 3tenePRO v4.0.2 から対応しています。<br>
+<font color="Red">※</font>頭の動きはボディトラッキング (Mocopi や Perception Neuron) が優先されます。</p>
+</blockquote>
+<h3 id="ウェブカメラの設定ウインドウを表示する">ウェブカメラの設定ウインドウを表示する</h3>
+<blockquote>
+<p><font color="Blue">3tene が起動していない状態で PC にウェブカメラを接続してください。</font><br>
+<br>
+ウェブカメラの初回接続時であれば汎用ドライバが自動的にインストールされますので<br>
+インストールが完了するまで待ってください。<br>
+<br>
+3tene を起動後、アバターの調整のウインドウを開き、「機器」タブを選択します。<br>
+<br>
+<img src="image/AdjustAvatar_FromMenu.png" alt="画像"></p>
+</blockquote>
+<h3 id="ウェブカメラを設定する通常版">ウェブカメラを設定する（通常版）</h3>
+<blockquote>
+<p>アバター調整の<font color="Blue">ウェブカメラ(通常)の項目</font>で接続するウェブカメラを選択します。<br>
+<br>
+ウェブカメラの映像で口も動かす場合は<br>
+リップシンク種類の項目で「顔認識」を選択します。<br>
+必要に応じて解像度も設定します。<br>
+<br>
+<img src="image/ft_webcamera_settings_01.png" alt="画像"></p>
+</blockquote>
+<h3 id="ウェブカメラを設定する共有版eyes-含む">ウェブカメラを設定する（共有版、+Eyes 含む。）</h3>
+<blockquote>
+<p><font color="Red">※3teneFREE は対応していません。</font><br>
+<br>
+アバター調整の<font color="Blue">ウェブカメラ(共有)の項目</font>で接続するウェブカメラを選択します。<br>
+<br>
+ウェブカメラの映像で口も動かす場合は<br>
+リップシンク種類の項目で「顔認識」を選択します。<br>
+必要に応じて解像度も設定します。<br>
+<br>
++Eyes は<font color="Blue">目のトラッキングや VRM が対応していれば PerfectSync が使えます。</font><br>
+<br>
+<img src="image/ft_webcamera_settings_02.png" alt="画像"></p>
+</blockquote>
+<h3 id="フェイストラッキングを開始する">フェイストラッキングを開始する</h3>
+<blockquote>
+<p>右側メニューのトラッキング開始のアイコンをクリックして<br>
+トラッキング開始のウインドウを表示します。<br>
+フェイストラッキングの開始ボタンをクリックするとトラッキングが開始されます。<br>
+<br>
+<img src="image/ft_webcamera_settings_3.png" alt="画像"></p>
+</blockquote>
+<h3 id="ウェブカメラの映像を確認する">ウェブカメラの映像を確認する</h3>
+<blockquote>
+<p>右側メニューのウェブカメラプレビューのアイコンをクリックして<br>
+ウェブカメラの映像が表示されるプレビューウインドウを表示します。<br>
+フェイストラッキングで正常に顔が認識されているかを確認する事が出来ます。<br>
+<br>
+<img src="image/ft_webcamera_settings_04.png" alt="画像">
+<br>
+<font color="Blue">※<a href="VirtualWebCamera.html">仮想ウェブカメラ(3teneScreenCapture)</a>を使用した出力では<br>
+　プレビューウインドウはメニューと同様の扱いとなり録画対象となりません。</font></p>
+</blockquote>
+<h3 id="ウェブカメラの位置をリセットする">ウェブカメラの位置をリセットする</h3>
+<blockquote>
+<p><font color="Red">ウェブカメラのリセット</font>を行う事で、基準となる位置をリセットすることが出来ます。<br>
+<br>
+ウェブカメラをリセットする事で下記の計算の初期化を行います。<br>
+<br>
+・認識の基準位置<br>
+・体の前後の動作<br>
+・眉毛の動作<br>
+<br>
+<img src="image/ft_webcamera_settings_05.png" alt="画像"></p>
+</blockquote>
+<h3 id="体の前後の動作">体の前後の動作</h3>
+<blockquote>
+<p>アバターの調整「顔」タブの「体の前後の動作」にチェックを入れることにより、<br>
+フェイストラッキングでアバターの前後に動かすことが出来ます。<br>
+フェイストラッキングで使用しているカメラに顔を近づけると、<br>
+アバターの体は前に傾き、カメラから顔を離すと、アバターの体は後ろに傾きます。<br>
+<br>
+<img src="image/ft_webcamera_settings_06.png" alt="画像"></p>
+</blockquote>
+<h3 id="眉毛の動作">眉毛の動作</h3>
+<blockquote>
+<p>アバターの調整「顔」タブの「眉毛の制御」にチェックを入れることにより、<br>
+フェイストラッキングで眉毛動かすことが出来ます。<br>
+<font color="Blue">※PerfectSync 対応した VRM モデルを読み込んでいる必要があります。</font><br>
+<br>
+<font color="Blue">眉毛は上下に動くので基準となる中心位置を決める</font>必要があります。<br>
+<font color="Red">ウェブカメラのリセット</font>を行う事で、基準となる位置をリセットすることが出来ます。<br>
+<br>
+<img src="image/ft_webcamera_settings_07.png" alt="画像"></p>
+</blockquote>
+
+</body>
+</html>

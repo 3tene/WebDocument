@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AboutLive2D.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="style2.css" type="text/css">
+</head>
+<body>
+<!-- iframe がセキュリティ問題になるの変換されない。返還後に html を修正する。 -->
+<h2 id="live2dについて">Live2Dについて</h2>
+<blockquote>
+<p>3tenePro+Live2D 版のみ、Live2D Cubism で作成されたモデルデータを読み込めます。</p>
+</blockquote>
+<h3 id="対応機材の制限">対応機材の制限</h3>
+<blockquote>
+<p>Live2D モデルの操作はフェイストラッキング(ウェブカメラ、iPhoneX以降)に対応しています。<br>
+腕の操作にも対応していますが<font color="Blue">下記に記載の専用パラメータ対応モデルと対応機器</font>が必要です。<br>
+対応機器は LeapMotion と<font color="Blue">ウェブカメラ(ハンドトラッカー)</font>になります。<br>
+<font color="Red">※VR や Nuitrack など、全身制御には対応していません。</font></p>
+</blockquote>
+<h3 id="live2d-モデルのファイル構成">Live2D モデルのファイル構成</h3>
+<blockquote>
+<p>3tene で Live2D のモデルを作成する場合は下記の構成にする必要があります。<br>
+・モーションデータ → <font color="Blue">motions フォルダ (.motion3.json ファイルを置く。)</font><br>
+・表情データ → <font color="Blue">expressions フォルダ (.exp3.json ファイルを置く。)</font></p>
+</blockquote>
+<h3 id="live2d-のパラメータid">Live2D のパラメータID</h3>
+<blockquote>
+<p>3tenePro+Live2D で使用しているパラメータ ID は下記になります。</p>
+</blockquote>
+<h4 id="呼吸">呼吸</h4>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th style="text-align:left">ID（Cubism3）</th>
+<th style="text-align:left">ID（Cubism2）</th>
+<th style="text-align:left">最小</th>
+<th style="text-align:left">基準</th>
+<th style="text-align:left">最大</th>
+<th style="text-align:left">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>呼吸</td>
+<td style="text-align:left">ParamBreath</td>
+<td style="text-align:left">PARAM_BREATH</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">+で呼吸の動き</td>
+</tr>
+</tbody>
+</table>
+<h4 id="フェイストラッキング">フェイストラッキング</h4>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th style="text-align:left">ID（Cubism3）</th>
+<th style="text-align:left">ID（Cubism2）</th>
+<th style="text-align:left">最小</th>
+<th style="text-align:left">基準</th>
+<th style="text-align:left">最大</th>
+<th style="text-align:left">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>角度X</td>
+<td style="text-align:left">ParamAngleX</td>
+<td style="text-align:left">PARAM_ANGLE_X</td>
+<td style="text-align:left">-30</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">+で画面の右を向く</td>
+</tr>
+<tr>
+<td>角度Y</td>
+<td style="text-align:left">ParamAngleY</td>
+<td style="text-align:left">PARAM_ANGLE_Y</td>
+<td style="text-align:left">-30</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">+で画面の上を向く</td>
+</tr>
+<tr>
+<td>角度Z</td>
+<td style="text-align:left">ParamAngleZ</td>
+<td style="text-align:left">PARAM_ANGLE_Z</td>
+<td style="text-align:left">-30</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">+で画面の右を向く</td>
+</tr>
+<tr>
+<td>左目 開閉</td>
+<td style="text-align:left">ParamEyeLOpen</td>
+<td style="text-align:left">PARAM_EYE_L_OPEN</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">+で目を開ける</td>
+</tr>
+<tr>
+<td>右目 開閉</td>
+<td style="text-align:left">ParamEyeROpen</td>
+<td style="text-align:left">PARAM_EYE_R_OPEN</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">+で目を開ける</td>
+</tr>
+<tr>
+<td>目玉 X</td>
+<td style="text-align:left">ParamEyeBallX</td>
+<td style="text-align:left">PARAM_EYE_BALL_X</td>
+<td style="text-align:left">-1</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">+で右を見る</td>
+</tr>
+<tr>
+<td>目玉 Y</td>
+<td style="text-align:left">ParamEyeBallY</td>
+<td style="text-align:left">PARAM_EYE_BALL_Y</td>
+<td style="text-align:left">-1</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">+で上を見る</td>
+</tr>
+<tr>
+<td>左眉 上下</td>
+<td style="text-align:left">ParamBrowLY</td>
+<td style="text-align:left">PARAM_BROW_L_Y</td>
+<td style="text-align:left">-1</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">+で眉を上げる</td>
+</tr>
+<tr>
+<td>右眉 上下</td>
+<td style="text-align:left">ParamBrowRY</td>
+<td style="text-align:left">PARAM_BROW_R_Y</td>
+<td style="text-align:left">-1</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">+で眉を上げる</td>
+</tr>
+<tr>
+<td>口 開閉</td>
+<td style="text-align:left">ParamMouthOpenY</td>
+<td style="text-align:left">PARAM_MOUTH_OPEN_Y</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">+で口を開く</td>
+</tr>
+<tr>
+<td>体の回転 X</td>
+<td style="text-align:left">ParamBodyAngleX</td>
+<td style="text-align:left">PARAM_BODY_ANGLE_X</td>
+<td style="text-align:left">-10</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left">+で画面の右を向く</td>
+</tr>
+<tr>
+<td>体の回転 Z</td>
+<td style="text-align:left">ParamBodyAngleZ</td>
+<td style="text-align:left">PARAM_BODY_ANGLE_Z</td>
+<td style="text-align:left">-10</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left">+で画面の右に傾く</td>
+</tr>
+</tbody>
+</table>
+<h4 id="母音リップシンク">母音リップシンク</h4>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th style="text-align:left">ID（Cubism3）</th>
+<th style="text-align:left">ID（Cubism2）</th>
+<th style="text-align:left">最小</th>
+<th style="text-align:left">基準</th>
+<th style="text-align:left">最大</th>
+<th style="text-align:left">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>口 あ</td>
+<td style="text-align:left">ParamMouthA (or ParamA)</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">+口を「あ」の形にする</td>
+</tr>
+<tr>
+<td>口 い</td>
+<td style="text-align:left">ParamMouthI (or ParamI)</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">+口を「い」の形にする</td>
+</tr>
+<tr>
+<td>口 う</td>
+<td style="text-align:left">ParamMouthU (or ParamU)</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">+口を「う」の形にする</td>
+</tr>
+<tr>
+<td>口 え</td>
+<td style="text-align:left">ParamMouthE (or ParamE)</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">+口を「え」の形にする</td>
+</tr>
+<tr>
+<td>口 お</td>
+<td style="text-align:left">ParamMouthO (or ParamO)</td>
+<td style="text-align:left">-</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">+口を「お」の形にする</td>
+</tr>
+</tbody>
+</table>
+<h4 id="パーフェクトシンク">パーフェクトシンク</h4>
+<p>ID① と ID② の両方が存在する場合は ID① の「Param〇〇」が優先されます。
+該当のパラメータが存在しない場合は同パラメータは動作しません。
+各パラメータの詳細につきましては<a href="https://developer.apple.com/documentation/arkit/arfaceanchor/blendshapelocation">こちら</a>をご確認ください。</p>
+<table>
+<thead>
+<tr>
+<th>カテゴリ</th>
+<th style="text-align:left">ID①（Cubism3）</th>
+<th style="text-align:left">ID②（Cubism3）</th>
+<th style="text-align:left">最小</th>
+<th style="text-align:left">基準</th>
+<th style="text-align:left">最大</th>
+<th style="text-align:left">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>左目</td>
+<td style="text-align:left">ParamEyeBlinkLeft</td>
+<td style="text-align:left">EyeBlinkLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">左まぶたの閉じ具合</td>
+</tr>
+<tr>
+<td>左目</td>
+<td style="text-align:left">ParamEyeLookDownLeft</td>
+<td style="text-align:left">EyeLookDownLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">下向きの視線と一致する左まぶたの動き</td>
+</tr>
+<tr>
+<td>左目</td>
+<td style="text-align:left">ParamEyeLookInLeft</td>
+<td style="text-align:left">EyeLookInLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">右向きの視線と一致する左まぶたの動き</td>
+</tr>
+<tr>
+<td>左目</td>
+<td style="text-align:left">ParamEyeLookOutLeft</td>
+<td style="text-align:left">EyeLookOutLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">左向きの視線と一致する左まぶたの動き</td>
+</tr>
+<tr>
+<td>左目</td>
+<td style="text-align:left">ParamEyeLookUpLeft</td>
+<td style="text-align:left">EyeLookUpLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">上向きの視線と一致する左まぶたの動き</td>
+</tr>
+<tr>
+<td>左目</td>
+<td style="text-align:left">ParamEyeSquintLeft</td>
+<td style="text-align:left">EyeSquintLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">左目の周りの顔の収縮</td>
+</tr>
+<tr>
+<td>左目</td>
+<td style="text-align:left">ParamEyeWideLeft</td>
+<td style="text-align:left">EyeWideLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">左目の周りのまぶたの広がり</td>
+</tr>
+<tr>
+<td>右目</td>
+<td style="text-align:left">ParamEyeBlinkLeft</td>
+<td style="text-align:left">EyeBlinkLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">左まぶたの閉じ具合</td>
+</tr>
+<tr>
+<td>右目</td>
+<td style="text-align:left">ParamEyeLookDownLeft</td>
+<td style="text-align:left">EyeLookDownLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">下向きの視線と一致する右まぶたの動き</td>
+</tr>
+<tr>
+<td>右目</td>
+<td style="text-align:left">ParamEyeLookInLeft</td>
+<td style="text-align:left">EyeLookInLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">右向きの視線と一致する右まぶたの動き</td>
+</tr>
+<tr>
+<td>右目</td>
+<td style="text-align:left">ParamEyeLookOutLeft</td>
+<td style="text-align:left">EyeLookOutLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">左向きの視線と一致する右まぶたの動き</td>
+</tr>
+<tr>
+<td>右目</td>
+<td style="text-align:left">ParamEyeLookUpLeft</td>
+<td style="text-align:left">EyeLookUpLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">上向きの視線と一致する右まぶたの動き</td>
+</tr>
+<tr>
+<td>右目</td>
+<td style="text-align:left">ParamEyeSquintLeft</td>
+<td style="text-align:left">EyeSquintLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">右目の周りの顔の収縮</td>
+</tr>
+<tr>
+<td>右目</td>
+<td style="text-align:left">ParamEyeWideLeft</td>
+<td style="text-align:left">EyeWideLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">右目の周りのまぶたの広がり</td>
+</tr>
+<tr>
+<td>顎</td>
+<td style="text-align:left">ParamJawForward</td>
+<td style="text-align:left">JawForward</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">下顎の前方への動き</td>
+</tr>
+<tr>
+<td>顎</td>
+<td style="text-align:left">ParamJawLeft</td>
+<td style="text-align:left">JawLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">下顎の左方向への動き</td>
+</tr>
+<tr>
+<td>顎</td>
+<td style="text-align:left">ParamJawRight</td>
+<td style="text-align:left">JawRight</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">下顎の右方向への動き</td>
+</tr>
+<tr>
+<td>顎</td>
+<td style="text-align:left">ParamJawOpen</td>
+<td style="text-align:left">JawOpen</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">下顎の開口部</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthClose</td>
+<td style="text-align:left">MouthClose</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">顎の位置とは無関係の唇の閉じ具合</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthFunnel</td>
+<td style="text-align:left">MouthFunnel</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">両唇が開いた形状の収縮</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthPucker</td>
+<td style="text-align:left">MouthPucker</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">閉じた両方の唇の収縮</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthLeft</td>
+<td style="text-align:left">MouthLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">両方の唇をの左方向への動き</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthRight</td>
+<td style="text-align:left">MouthRight</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">両方の唇をの右方向への動き</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthSmileLeft</td>
+<td style="text-align:left">MouthSmileLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">左口角の上方向の動き</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthSmileRight</td>
+<td style="text-align:left">MouthSmileRight</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">右口角の上方向の動き</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthFrownLeft</td>
+<td style="text-align:left">MouthFrownLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">左口角の下方向の動き</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthFrownRight</td>
+<td style="text-align:left">MouthFrownRight</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">右口角の下方向の動き</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthDimpleLeft</td>
+<td style="text-align:left">MouthDimpleLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">左口角の後方への動き</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthDimpleRight</td>
+<td style="text-align:left">MouthDimpleRight</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">右口角の後方への動き</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthStretchLeft</td>
+<td style="text-align:left">MouthStretchLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">左口角の左方向への動き</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthStretchRight</td>
+<td style="text-align:left">MouthStretchRight</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">右口角の右方向への動き</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthRollLower</td>
+<td style="text-align:left">MouthRollLower</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">下唇の内側への動き</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthRollUpper</td>
+<td style="text-align:left">MouthRollUpper</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">上唇の内側への動き</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthShrugLower</td>
+<td style="text-align:left">MouthShrugLower</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">下唇の外側への動き</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthShrugUpper</td>
+<td style="text-align:left">MouthShrugUpper</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">上唇の外側への動き</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthPressLeft</td>
+<td style="text-align:left">MouthPressLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">下唇左側の上方向への圧縮</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthPressRight</td>
+<td style="text-align:left">MouthPressRight</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">下唇右側の上方向への圧縮</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthLowerDownLeft</td>
+<td style="text-align:left">MouthLowerDownLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">下唇左側の下方向への動き</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthLowerDownRight</td>
+<td style="text-align:left">MouthLowerDownRight</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">下唇右側の下方向への動き</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthUpperUpLeft</td>
+<td style="text-align:left">MouthUpperUpLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">上唇左側の上方向への動き</td>
+</tr>
+<tr>
+<td>口</td>
+<td style="text-align:left">ParamMouthUpperUpRight</td>
+<td style="text-align:left">MouthUpperUpRight</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">上唇右側の上方向への動き</td>
+</tr>
+<tr>
+<td>眉</td>
+<td style="text-align:left">ParamBrowDownLeft</td>
+<td style="text-align:left">BrowDownLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">左眉外側の下方向への動き</td>
+</tr>
+<tr>
+<td>眉</td>
+<td style="text-align:left">ParamBrowDownRight</td>
+<td style="text-align:left">BrowDownRight</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">右眉外側の下方向への動き</td>
+</tr>
+<tr>
+<td>眉</td>
+<td style="text-align:left">ParamBrowInnerUp</td>
+<td style="text-align:left">BrowInnerUp</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">両眉内側の上方向への動き</td>
+</tr>
+<tr>
+<td>眉</td>
+<td style="text-align:left">ParamBrowOuterUpLeft</td>
+<td style="text-align:left">BrowOuterUpLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">左眉外側の上方向への動き</td>
+</tr>
+<tr>
+<td>眉</td>
+<td style="text-align:left">ParamBrowOuterUpRight</td>
+<td style="text-align:left">BrowOuterUpRight</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">右眉外側の上方向への動き</td>
+</tr>
+<tr>
+<td>頬</td>
+<td style="text-align:left">ParamCheekPuff</td>
+<td style="text-align:left">CheekPuff</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">両頬の外側への動き</td>
+</tr>
+<tr>
+<td>頬</td>
+<td style="text-align:left">ParamCheekSquintLeft</td>
+<td style="text-align:left">CheekSquintLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">左目周囲および下頬の上方向への動き</td>
+</tr>
+<tr>
+<td>頬</td>
+<td style="text-align:left">ParamCheekSquintRight</td>
+<td style="text-align:left">CheekSquintRight</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">右目周囲および下頬の上方向への動き</td>
+</tr>
+<tr>
+<td>鼻</td>
+<td style="text-align:left">ParamNoseSneerLeft</td>
+<td style="text-align:left">NoseSneerLeft</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">鼻孔周囲の鼻の左側の隆起</td>
+</tr>
+<tr>
+<td>鼻</td>
+<td style="text-align:left">ParamNoseSneerRight</td>
+<td style="text-align:left">NoseSneerRight</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">鼻孔周囲の鼻の右側の隆起</td>
+</tr>
+<tr>
+<td>舌</td>
+<td style="text-align:left">ParamTongueOut</td>
+<td style="text-align:left">TongueOut</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">舌の伸び</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>※EyeBlinkLeft, EyeBlinkRight に限りパラメータが存在しない場合は<br>
+ParamEyeLOpen(PARAM_EYE_L_OPEN), ParamEyeROpen(PARAM_EYE_R_OPEN)を参照します。</p>
+</blockquote>
+<h4 id="モーションleapmotion3tene用パラメータ">モーション、LeapMotion（3tene用パラメータ）</h4>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th style="text-align:left">ID（Cubism3）</th>
+<th style="text-align:left">ID（Cubism2）</th>
+<th style="text-align:left">最小</th>
+<th style="text-align:left">基準</th>
+<th style="text-align:left">最大</th>
+<th style="text-align:left">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>左腕 X</td>
+<td style="text-align:left">ParamArmLX</td>
+<td style="text-align:left">–</td>
+<td style="text-align:left">-30</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">+で左腕を閉じる</td>
+</tr>
+<tr>
+<td>左腕 Y</td>
+<td style="text-align:left">ParamArmLY</td>
+<td style="text-align:left">–</td>
+<td style="text-align:left">-30</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">+で左腕を上げる</td>
+</tr>
+<tr>
+<td>右腕 X</td>
+<td style="text-align:left">ParamArmRX</td>
+<td style="text-align:left">–</td>
+<td style="text-align:left">-30</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">+で右腕を閉じる</td>
+</tr>
+<tr>
+<td>右腕 Y</td>
+<td style="text-align:left">ParamArmRY</td>
+<td style="text-align:left">–</td>
+<td style="text-align:left">-30</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">+で右腕を上げる</td>
+</tr>
+</tbody>
+</table>
+<h4 id="leapmotion3tene用パラメータがない場合">LeapMotion（3tene用パラメータがない場合）</h4>
+<table>
+<thead>
+<tr>
+<th>名前</th>
+<th style="text-align:left">ID（Cubism3）</th>
+<th style="text-align:left">ID（Cubism2）</th>
+<th style="text-align:left">最小</th>
+<th style="text-align:left">基準</th>
+<th style="text-align:left">最大</th>
+<th style="text-align:left">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>左腕 A</td>
+<td style="text-align:left">ParamArmLA</td>
+<td style="text-align:left">–</td>
+<td style="text-align:left">-10</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left">+で左腕を広げる</td>
+</tr>
+<tr>
+<td>右腕 A</td>
+<td style="text-align:left">ParamArmRA</td>
+<td style="text-align:left">–</td>
+<td style="text-align:left">-10</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left">+で右腕を広げる</td>
+</tr>
+</tbody>
+</table>
+<h3 id="live2d-のモデルで母音によるリップシンクを使用するには">Live2D のモデルで母音によるリップシンクを使用するには</h3>
+<blockquote>
+<p>3tene で母音によるリップシンクを使用するには上記記載の「母音リップシンク」のパラメータが必要になりますので<br>
+ご利用の場合は該当モデルにパラメータを追加して 3tene への読み込みをお願いいたします。<br>
+アバターの調整 - 設定 - 母音リップシンクを使用する にチェックを入れ、リップシンクを開始すると<br>
+同パラメータを利用してリップシンクを行います。<br>
+※パラメータが存在しない場合は動作しません。</p>
+</blockquote>
+<h3 id="live2d-のモデルで腕を動かすには">Live2D のモデルで腕を動かすには</h3>
+<blockquote>
+<p>3tene で動かす為には専用パラメータをモデルに組み込む必要があります。</p>
+&lt;iframe src="https://www.youtube.com/embed/mBKb4ThyR44" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="allowfullscreen" width="576" height="324">&lt;/iframe>
+<p>動画内誤字について<br>
+<font color="Red">誤　ループパラメータ</font><br>
+<font color="Blue">正　ループ用パラメータ</font><br>
+<br>
+また、3tenePro+Live2Dに同梱されている「みとね」のLive2Dモデルは<br>
+こちらの手順で作成したものになりますので、参考にしてみてください。<br>
+<br>
+ループ用パラメータを使用し、腕を回転させるイメージで作成しています。<br>
+それぞれの方向にそれぞれのイラストを用意し、キーフレームを打つことで表示が切り替わる様に作成しています。<br>
+<br>
+前腕から手まで6つのイラストを作成します。<br>
+ループ用パラメータを設定するために「右腕X」と「右腕Y」を作成。<br>
+<br>
+それぞれの腕の表示を切り替えるためにキーを下記のようにそれぞれを設定。<br>
+右腕1<br>
+パラメータ右腕Yに-30から-15、右腕Xに-30から0<br>
+右腕2<br>
+パラメータ右腕Yに-14から+14、右腕Xに-30から0<br>
+右腕3<br>
+パラメータ右腕Yに+15から+30、右腕Xに-30から0<br>
+右腕4<br>
+パラメータ右腕Yに+15から+30、右腕Xに+1から+30<br>
+右腕5<br>
+パラメータ右腕Yに-14から+14、右腕Xに+1から+30<br>
+右腕6<br>
+パラメータ右腕Yに-30から-15、右腕Xに+1から+30<br>
+<br>
+腕の切り替え部分で腕が表示されない、2本表示されるという現象が起こるので、不透明度の設定を行います。<br>
+<br>
+例：右腕1と右腕2<br>
+右腕1<br>
+右腕Yの表示範囲は-30から-15。-14へキーを打ち、不透明度を0。<br>
+右腕２<br>
+右腕2の表示範囲は-14から+14。-15と+15に不透明度0。<br>
+<br>
+例：右腕2と右腕5<br>
+右腕2の右腕Y-14、右腕X+1.0の地点キーを打つ。<br>
++14の地点にも自動でキーが打たれるので、追加された位置のY-14、+14、X+1の地点に不透明度を0。<br>
+右腕5にも同様の設定を行う。<br>
+<br>
+不透明度を設定していないキーが幾つか打たれているのでそれぞれ設定する。<br>
+例：右腕１<br>
+右腕Y-15、右腕X0は不透明度100<br>
+右腕Y-14、右腕X0は不透明度0<br>
+右腕Y-14、右腕X1も不透明度0<br>
+右腕Y-15、右腕X1も不透明度0<br>
+<br>
+この設定を他の腕全てに設定する。<br>
+<br>
+右腕の回転<br>
+ループ用パラメータの四隅にキーを設定。<br>
+<br>
+パラメータとIDの設定<br>
+現在0に設定されてる腕は、腕2なので、デフォルト設定値に戻すと、腕2が表示されます。<br>
+今回は右腕1をデフォルトの腕としたいと思いますので、パラメータの設定から基準値を-30へ変更しています。<br>
+それぞれのパラメータは下記の通りです。<br>
+右腕X：ParamArmRX<br>
+右腕Y：ParamArmRY<br>
+左腕X：ParamArmLX<br>
+左腕Y：ParamArmLY<br>
+<br>
+書き出して3tenePro+Live2Dから読み込む。</p>
+</blockquote>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UnityCapture.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="style2.css" type="text/css">
+</head>
+<body>
+<h2 id="仮想ウェブカメラについて">仮想ウェブカメラについて</h2>
+<blockquote>
+<p>この機能を利用するには、別途 UnityCapture のインストールが必要です。<br>
+<font color="Red">※ Mac版は対応していません。</font></p>
+</blockquote>
+<h3 id="unitycapture-を使います">UnityCapture を使います</h3>
+<blockquote>
+<p>UnityCapture を使用して 3tene の映像を仮想ウェブカメラに出力する事により<br>
+ウェブカメラ対応の録画、配信ソフト（OBSなど）でキャプチャする事が可能になります。<br>
+<br>
+また、仮想ウェブカメラを経由した出力ではメニューやウインドウが<br>
+録画対象とならないのでアバターと背景のみが録画可能になります。</p>
+</blockquote>
+<h3 id="unitycapture-の入手">UnityCapture の入手</h3>
+<blockquote>
+<p>下記サイトを開きます。<br>
+<br>
+schellingb/UnityCapture
+<a href="https://github.com/schellingb/UnityCapture">https://github.com/schellingb/UnityCapture</a><br>
+<br>
+ページ内の「Clone or download」をクリックし、「DownLoad ZIP」を選択すると<br>
+ZIPファイルのダウンロードが始まります。<br>
+<br>
+ダウンロード完了後、ZIPファイルを任意の場所に解凍します。<br>
+解凍したファイルは Windows の設定（レジストリ）に登録しますので<br>
+登録作業を行う前に UnityCapture のフォルダを問題のない場所に移動してください。<br>
+※登録後も UnityCapture のフォルダは削除しないで下さい。</p>
+</blockquote>
+<h3 id="unitycapture-の登録作業">UnityCapture の登録作業</h3>
+<blockquote>
+<p>解凍した「UnityCapture-master」フォルダを問題のない場所に移動後、<br>
+フォルダ内の「Install」を開きます。<br>
+<br>
+「install.bat」ファイルを右クリックして、「管理者として実行」を実行します。<br>
+<font color="Blue">※Windows の保護が表示された場合は「詳細情報」をクリック後、<br>
+「実行」を選択してください。</font><br>
+<br>
+「デバイスの変更の許可」が表示されるので「はい」を選択してください。<br>
+<br>
+<img src="image/Vwc_Agreement.png" alt="画像"><br>
+<br>
+UnityCaptureFilter32bit.dll および UnityCaptureFilter64bit.dll の<br>
+登録成功が表示されエラーが出なければ登録完了です。<br>
+<br>
+3tene の画面が仮想カメラに出力されるようになります。<br>
+ウェブカメラ対応ソフトウェアで 3tene の画面を選択可能になります。</p>
+</blockquote>
+<h3 id="仮想ウェブカメラを-obs-で使用する">仮想ウェブカメラを OBS で使用する</h3>
+<blockquote>
+<p>下記サイトより OBS をダウンロードします。<br>
+<br>
+OBS (OBS Studio)<br>
+<a href="https://obsproject.com/ja">https://obsproject.com/ja</a><br>
+<br>
+インストールを行い、OBS を起動します。<br>
+「ソース」の追加で「映像キャプチャデバイス」を選択します。<br>
+新規作成で任意の名前を入力し「OK」をクリックします。<br>
+デバイスの選択欄で「Unity Video Capture」を選択し、「OK」を<br>
+クリックすると 3tene の画面が表示され録画が可能になります。<br>
+<br>
+<img src="image/VwcForOBS.png" alt="画像"></p>
+</blockquote>
+<h3 id="unitycapture-のソフトウェア相性について">UnityCapture のソフトウェア相性について</h3>
+<blockquote>
+<p>UnityCapture の仮想ウェブカメラは OBS にて動作確認をしていますが、<br>
+一部のウェブカメラ対応ソフトではウェブカメラとして認識せず、<br>
+「Unity Video Capture」が表示されないのを確認しています。<br>
+※認識しないのは UnityCapture もしくはウェブカメラ対応ソフトの問題となります。<br>
+<br>
+また、UnityCapture に対応している別のソフトウェアと同時使用すると<br>
+UnityCapture の出力がチラつくのを確認しています。（VDRAW 等）</p>
+</blockquote>
+
+</body>
+</html>

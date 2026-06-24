@@ -1,0 +1,17 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "markdown.mermaid.enabled": false,
+        "markdown-pdf.includeMermaid": false,
+        "markdown-pdf.mermaidServer": "",
+        "markdown-pdf.markdown-it-include.enable": false,
+        "markdown-pdf.highlight": false,
+        "markdown-pdf.includeDefaultStyles": false,
+        "markdown-pdf.styles": ["./style2.css"],
+        "markdown-pdf.stylesRelativePathFile": false
+    }
+}

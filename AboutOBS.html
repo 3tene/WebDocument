@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AboutOBS.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="style2.css" type="text/css">
+</head>
+<body>
+<h2 id="obs-との連携について">OBS との連携について</h2>
+<blockquote>
+<p>3tene と OBS を組み合わせて使う事での録画や動画配信を行う事が可能です。<br>
+<br>
+下記サイトより OBS をダウンロードします。<br>
+<br>
+OBS (OBS Studio)<br>
+<a href="https://obsproject.com/ja">https://obsproject.com/ja</a>
+<br>
+※<font color="Blue">OBS Ver 29.1.0 以降</font>で映像キャプチャの一覧に<br>
+　<font color="Red">3tene ScreenCapture が表示されない場合は 3tene v3.0.8 以降への更新が必要です。</font><br>
+　<font color="Blue">もしくは OBS を Ver 29.0.2 に戻してください。</font><br>
+<br>
+OBS の旧バージョンはこちらから<br>
+<a href="https://github.com/obsproject/obs-studio/releases">https://github.com/obsproject/obs-studio/releases</a></p>
+</blockquote>
+<h3 id="obs-のキャプチャ方法を決定する">OBS のキャプチャ方法を決定する</h3>
+<blockquote>
+<p>・Windows で OBS の映像キャプチャを利用する場合は<br>
+　 <a href="VirtualWebCamera.html">仮想ウェブカメラ 3tene Screen Capture</a> を使用します。<br>
+<br>
+・Windows でウインドウをそのまま取り込む場合は<font color="Blue">ゲームキャプチャ</font>を使用してください。<br>
+　3tenePRO なら <font color="Blue">Spout2</font> が使用可能で、こちらが推奨となります。<br>
+　<font color="Red">※OBS に別途 Spout2 プラグインの追加が必要です。</font><br>
+<br>
+・Mac で使う場合は<font color="Blue">ウインドウキャプチャ</font>を使用してください。<br>
+　3tenePRO なら<font color="Blue">サイフォンクライント</font>が使用可能で、こちらが推奨となります。<br>
+<br>
+・NDI は Windows, Mac どちらでも使用可能ですが OBS に追加プラグインが必要です。</p>
+</blockquote>
+<h4 id="注意事項">注意事項</h4>
+<blockquote>
+<p><font color="Blue">・3tene Steam 版</font>で<font color="Blue"> OBS の映像キャプチャを利用するには手動登録</font>が必要になります。<br>
+　<a href="VirtualWebCamera.html">仮想カメラ 3tene Screen Capture</a> を参照して手動設定してください。<br>
+<br>
+<font color="Blue">・3tene v2.0.6 2020/10/12 以降で映像キャプチャを使う</font>場合は<br>
+　ウェブカメラ一覧で<font color="Blue">「3tene Screen Capture」を選択</font>してください。<br>
+　<font color="Red">「Unity Video Capture」</font>は使用されなくなりました。<br>
+　<font color="Blue">※旧バージョンの 3tene では UnityCapture を使用します。</font><br>
+<br>
+<font color="Blue">・3tene v1.10.20 2020/02/14 以降で OBS を使う</font>場合は<br>
+　Windows 版は<font color="Green">ウインドウキャプチャ</font>ではなく<font color="Red">ゲームキャプチャ</font>を使用してください。<br>
+　Mac 版は<font color="Red">ウインドウキャプチャ</font>を使用してください。</p>
+</blockquote>
+<h3 id="obs-を管理者権限で起動して利用する場合について">OBS を管理者権限で起動して利用する場合について</h3>
+<blockquote>
+<p>Windows10 において負荷分散が変化するという事で<br>
+<font color="Blue">OBS を管理者権限で起動して使用する方法</font>がありますが、<br>
+その場合には <font color="Blue">3tene も管理者権限で起動</font>していないと<br>
+<font color="Red">OBS で 3tene ScreenCapture が選択できなくなります。</font></p>
+</blockquote>
+<h3 id="obs-の設定-映像キャプチャ">OBS の設定 (映像キャプチャ)</h3>
+<blockquote>
+<p>OBS の「ソース」の追加で「映像キャプチャデバイス」を選択します。<br>
+新規作成で任意の名前を入力し「OK」をクリックします。<br>
+デバイスの選択欄で「3tene Screen Capture」を選択し、<br>
+「OK」をクリックすると 3tene の画面が表示され録画が可能になります。<br>
+<br>
+<img src="image/obs_02.png" alt="画像">
+<br>
+<font color="Red">OBS のデバイス一覧に表示されなかったり、3tene を起動しても画面が更新されない</font>等、<br>
+映像キャプチャが正常に動作しない場合は<a href="VirtualWebCamera.html">手動で再登録</a>を試してみてください。</p>
+</blockquote>
+<h3 id="obs-の設定-ゲームキャプチャ">OBS の設定 (ゲームキャプチャ)</h3>
+<blockquote>
+<p>OBS の「ソース」の追加で「ゲームキャプチャ」を選択します。<br>
+新規作成で任意の名前を入力して「OK」をクリックします。<br>
+<br>
+モードを「特定のウインドウをキャプチャ」に変更し、<br>
+ウィンドウで 3tene を選択し、「OK」をクリックすると<br>
+3tene の画面が表示され録画が可能になります。<br>
+<br>
+<img src="image/obs_01.png" alt="画像"></p>
+</blockquote>
+<h3 id="obs-の設定-ウインドウキャプチャ">OBS の設定 (ウインドウキャプチャ)</h3>
+<blockquote>
+<p>OBS の「ソース」の追加で「ウインドウキャプチャ」を選択します。<br>
+新規作成で任意の名前を入力して「OK」をクリックします。<br>
+<br>
+ウィンドウから 3tene を選択し、「OK」をクリックすると<br>
+OBS に 3tene の画面が表示され録画が可能になります。<br>
+<br>
+<img src="image/obs_03.png" alt="画像">
+<br>
+Windows でウインドウキャプチャを使う場合は<br>
+キャプチャ方法を「Windows 10 (1903以降)に変更してください。<br>
+<font color="Blue">※古い OBS では「Windows Graphics Capture」を選択してください。</font><br>
+<br>
+macOS Catalina (10.15.x) 以降で OBS を起動すると<br>
+ウインドウキャプチャの一覧に 3tene が表示されない場合があります。<br>
+<br>
+ウインドウキャプチャの「空の名前でウインドウを表示」にチェックし、<br>
+項目に追加されたアプリを選択すると確認ダイアログが表示されるので<br>
+<font color="Red">OBS の「画面収録」の許可(権限の設定)</font> を行うと 3tene が一覧に表示されます。<br>
+<br>
+macOS Catalina および Big Sur では<font color="Red">権限許可</font>が必要です。<br>
+<img src="image/obs_04.png" alt="画像"></p>
+</blockquote>
+<h3 id="3teneprostudio-で使える-obs-の設定">3tenePRO(STUDIO) で使える OBS の設定</h3>
+<blockquote>
+<p>上記の映像キャプチャを使うよりも負荷が少なくなるのでお奨めです。<br>
+<br>
+メニュー等の2D画像は出力されないので OBS を使う場合にお勧めです。<br>
+アルファチャンネルにも対応しており背景透過が可能です。<br>
+<br>
+アルファチャンネルの背景透過を行って残像が発生する場合は 3tenePRO の<br>
+<font color="Blue">設定「カメラ」のアンチエイリアスを無効</font>にするか、<br>
+OBS のクロマキーを使用する方法に変更してください。<br>
+<br>
+Spout を経由して OBS に画面を出力します。(Windows 専用)<br>
+<a href="Spout.html">Spoutについて</a><br>
+<br>
+Syphon を経由して OBS に画面を出力します。(Mac 専用)<br>
+<a href="Syphon.html">Syphonについて</a><br>
+<br>
+NDI を経由して OBS に画面を出力します。<br>
+<a href="NDI.html">NDIについて</a></p>
+</blockquote>
+
+</body>
+</html>

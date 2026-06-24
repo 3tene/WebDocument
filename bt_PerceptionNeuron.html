@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>bt_PerceptionNeuron.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="style2.css" type="text/css">
+</head>
+<body>
+<h2 id="perception-neuronについて">Perception Neuronについて</h2>
+<h3 id="perceptionneuron-のセンサーneuronの取り扱いについて">PerceptionNeuron のセンサー(Neuron)の取り扱いについて</h3>
+<blockquote>
+<p>PerceptionNeuron を使い終わったら必ずセンサーを固定ベルトから取り外して<br>
+専用の金属ケースにしまってください！！！<br>
+<br>
+詳しくは<a href="https://neuronmocap.com/node/1589">注意事項 | Perception Neuron by Noitom</a>を参照してください。</p>
+</blockquote>
+<h3 id="必要機材について">必要機材について</h3>
+<blockquote>
+<p>・Windows10 64bit OS を搭載したPC<br>
+　Core-i7 4770 (４コア、8スレッド) 、メモリ16GB で動作確認しています。<br>
+　CPU内蔵のグラフィック機能でも動作はしますが、処理落ちが発生します。<br>
+　NVIDIA GeForce シリーズもしくは AMD Redeon シリーズの<br>
+　グラフィックボード(GPU)を別途、搭載する事をお勧めします。<br>
+　（Core-i7 4770 と GeForce GTX 1050 Ti の組み合わせで処理落ちは感じられません。）<br>
+<br>
+・PerceptionNeuron 本体（センサー32個もしくは18個）<br>
+　<font color="Red">※PerceptionNeuron Ver 2.0 および Pro で動作を確認しています。</font><br>
+<br>
+・モバイルバッテリー (出力 2A 以上が必須。)<br>
+　※モバイルバッテリーが必要になるケース<br>
+　　・指も含めたフルキャプチャー（センサー31+1個モード）を行う。<br>
+　　・PerceptionNeuron と PC を WiFi で接続する。<br>
+<br>
+　PerceptionNeuron を指センサー無しのセンサー18個モードかつ<br>
+　PCとUSB有線で接続する場合はモバイルバッテリーは不要です。</p>
+</blockquote>
+<h3 id="ソフトウェアのインストールとセットアップ">ソフトウェアのインストールとセットアップ</h3>
+<blockquote>
+<ol>
+<li>機器に応じた専用ソフトをインストールする。（日本語は未対応）<br>
+※<font color="Red">Perception Neuron (初代) と V2</font> は <font color="Blue">Axis Neuron</font> をインストールします。<br>
+※<font color="Red">Perception Neuron PRO</font> は <font color="Blue">Axis Neuron PRO</font> をインストールします。<br>
+※<font color="Red">Perception Neuron 3 と Studio</font> は <font color="Blue">Axis Studio</font> をインストールします。</li>
+<li>専用ソフトを起動する。<br>
+※<font color="Red">AxisStudio</font> の起動には <font color="Blue">USB ドングル</font> が必要です。</li>
+<li>各種設定を行う。</li>
+</ol>
+</blockquote>
+<h3 id="perceptionneuron-を装着する前に">PerceptionNeuron を装着する前に</h3>
+<blockquote>
+<p>・装着者はスマートフォンや携帯電話など、電波の発生する物を<br>
+　所持していた場合は取り出して離れた場所に置いておく。<br>
+・部屋の電気製品は可能な限り電源を OFF にする。（可能ならコンセントから抜く。）</p>
+</blockquote>
+<h3 id="perceptionneuron-を磁気から避ける">PerceptionNeuron を磁気から避ける</h3>
+<blockquote>
+<p>PerceptionNeuron は磁気の影響で精度が低下してしまいます。<br>
+キャリブレーションやキャプチャの精度を上げたい場合は磁気を避ける努力をしましょう。</p>
+</blockquote>
+<blockquote>
+<h4 id="磁気が発生する物は">磁気が発生する物は？</h4>
+<ol>
+<li>電気が流れると少なからず磁気が発生する。</li>
+<li>磁石など最初から磁気を発生している物質。</li>
+<li>磁気に長い間さらされて磁化した金属。</li>
+<li>地面（地球）</li>
+</ol>
+</blockquote>
+<blockquote>
+<h4 id="回避策">回避策</h4>
+<p>まず１については電気製品を最小限にします。<br>
+消費電力が大きい物はなるべく OFF にしてください。<br>
+特に<font color="Red">電気関連の電源回路には近づかない</font>でください。<br>
+パソコンも例外では無いので装着者（アクター）とは別に<br>
+パソコンを操作するオペレーターが居ると良いです。<br>
+<font color="Red">※キャリブレーションは必ずパソコンから離れて行ってください！</font><br>
+<br>
+２は<font color="Red">磁石が使われている製品に近づかない</font>でください。<br>
+スピーカーやマイクにも使われているので使用する場合は<br>
+なるべく小さい物を使えば影響は少ないと思います。<br>
+<br>
+３は金属に囲まれた環境で使用しない事です。<br>
+鉄骨、鉄筋構造のマンションやビルでは<br>
+<font color="Blue">部屋の隅や柱など金属が近くにあると思われる場所を避ける。</font><br>
+鉄道（電車）や鉄塔が近くにあると影響を受けるかもしれません。<br>
+車内などの使用も避けてください。<br>
+<br>
+４は<font color="Blue">木材のパレット等を用意してその上で使用する</font>と<br>
+地面からの影響を下げる事ができます。<br>
+構造物の場合は２階以上だと影響は少ないかと思います。</p>
+</blockquote>
+<h3 id="perceptionneuron-ver-2-の装着">PerceptionNeuron Ver 2 の装着</h3>
+<blockquote>
+<ol>
+<li>袋から各部位の固定ベルトを取り出して金属ケースに入っているセンサーを取り付ける。</li>
+<li>固定ベルト「体頭」を装着する。</li>
+<li>固定ベルト「体頭」に「ハブ」を固定する。</li>
+<li>固定ベルト「肩」を装着する。両肩。</li>
+<li>固定ベルト「体頭」と「肩」をケーブルで連結する。両肩。</li>
+<li>固定ベルト「足」を装着する。両足。</li>
+<li>固定ベルト「体頭」と「足」をケーブルで連結する。両足。</li>
+<li>固定ベルト（グローブ）「手」を装着する。両手。</li>
+<li>固定ベルト「肩」と「手」をケーブルで連結する。両手。</li>
+<li>USBケーブルで PC と「ハブ」を繋いてビープ音が鳴るのを確認する。</li>
+<li>モバイルバッテリーを繋ぐ。</li>
+<li>Axis Neuron でコネクトボタンを押し、「ハブ」を認識しているか確認する。</li>
+<li>認識していれば一覧に表示されるので「Connect」ボタンで接続を行う。</li>
+<li>固定ベルトの全てのセンサーが赤く点灯もしくは点滅しているのを確認する。<br>
+　　※全て点滅していなければケーブルの抜き差しを試す。<br>
+　　※点灯していないセンサーがある場合は連結ケーブルやセンサーの取り付け部を確認する。</li>
+<li>Axis Neuron の右側にある「Sensor Map」でセンサーが全て緑もしくは黄色で認識しているのを確認してください。<br>
+　　センサーが全て点灯しているのに「Sensor Map」で認識していない場合は<br>
+　　「Disconnect」で切断し、「Connect」で再接続後に認識を確認してください。</li>
+</ol>
+</blockquote>
+<h3 id="perceptionneuron-pro-の装着">PerceptionNeuron Pro の装着</h3>
+<p>準備中。</p>
+<h3 id="perceptionneuron-3-の装着">PerceptionNeuron 3 の装着</h3>
+<blockquote>
+<p>参考 <a href="https://www.youtube.com/watch?v=KdryfjN8pvs" target="_blank">Youtube</a></p>
+</blockquote>
+<h3 id="perceptionneuron-studio-の装着">PerceptionNeuron Studio の装着</h3>
+<blockquote>
+<p>参考 <a href="https://www.youtube.com/watch?v=WkBLCdhJwC0" target="_blank">Youtube</a></p>
+</blockquote>
+<h3 id="axis-neuron-pro-studio-の設定を変更する">Axis Neuron (PRO, Studio) の設定を変更する</h3>
+<blockquote>
+<p>Axis Neuron を起動する。<br>
+メニューの「File → Settings」を選択して設定ウインドウを表示する。<br>
+「Broadcating」タブを選択し、「BVH」の「Enable」にチェックを付ける。<br>
+<br>
+AxisNeuron (PRO) の設定ウインドウ<br>
+<img src="image/AxisNeuron_1.png" alt="画像"><br>
+<br>
+AxisStudio の設定ウインドウ<br>
+<img src="image/AxisStudio_1.png" alt="画像"><br>
+<br>
+<font color="Red">※AxisStudio では BVH-Capture と BVH-Edit で二つに分かれているので競合に注意してください。</font><br>
+（リアルタイムで処理する場合と保存済みモーションでポート番号が異なります。）</p>
+</blockquote>
+<h3 id="axis-neuron-よる-perceptionneuron-のキャリブレーション">Axis Neuron よる PerceptionNeuron のキャリブレーション</h3>
+<blockquote>
+<p>センサーが完全に認識された状態で右側のセンサーマップの下にあるボディサイズを選択した後に<br>
+キャリブレーションを開始します。<br>
+装着者が各種ポーズをとり、キャリブレーションを行います。<br>
+<br>
+※ボディサイズはアクターのサイズを予め計測して登録しておく事をお勧めします。</p>
+</blockquote>
+<h3 id="3tene-でモデルを動かす">3tene でモデルを動かす</h3>
+<blockquote>
+<ol>
+<li>Axis Neuron を起動し、Perception Neuron を使える状態にする。</li>
+<li>Axis Neuron を起動したまま 3tene を起動する。</li>
+<li>3tene で VRM のモデルを読み込む。</li>
+<li>アバターの調整ウインドウで「設定」タブを選択。</li>
+<li>「アバターの操作方法」を PerceptionNeuron にする。</li>
+<li>トラッキングウインドウから体のトラッキングを開始する。(3teneSTUDIO)
+　　アバターが Axis Neuron と同じ動きをするかを確認する。<br>
+<br>
+<img src="image/Axis3tene_1.png" alt="画像"></li>
+</ol>
+</blockquote>
+<h3 id="複数の-perceptionneuron-で複数モデルを動かす">複数の PerceptionNeuron で複数モデルを動かす</h3>
+<blockquote>
+<p>PerceptionNeuron を２つ使用する場合を例とします。<br>
+<br>
+接続形態は２種類あります。<br>
+<br>
+・複数台のPCを接続する方法<br>
+PC を２台用意してそれぞれの AxisNeuron (Pro, Studio) と接続して使用します。<br>
+<br>
+この方法は種類の異なる PerceptionNeuron を混在して使用可能です。<br>
+(PerceptionNeuron PRO + PerceptionNeuron 3 など。)<br>
+<br>
+２台の PerceptionNeuron の空間座標は共有されないので２人が関わらない動作に向いています。<br>
+※２人が自分パートを踊るだけなど。<br>
+<br>
+・１台のPCで動かす方法<br>
+AxisNeuron (Pro, Studio) に同種の PerceptionNeuron ２台を認識させ、<br>
+3tene で ActorID を選択して通信する AxisNeuron を別々に指定します。<br>
+ActorID = 0 は１台目、ActorID = 1 は２台目を指定する動作となります。<br>
+<br>
+AxisNeuron (Pro, Studio) は対応している PerceptionNeuron 以外を認識しませんので<br>
+種類の異なる PerceptionNeuron を混在して使用できません。<br>
+AxisNeuron が対応している PerceptionNeuron を２台用意して下さい。<br>
+<br>
+２台の PerceptionNeuron の空間座標は共有されるので２人の連携動作も無理ではありません。<br>
+※２人でハイタッチするなど。</p>
+</blockquote>
+
+</body>
+</html>

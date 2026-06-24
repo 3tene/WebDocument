@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>motion_vrm.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="style2.css" type="text/css">
+</head>
+<body>
+<h2 id="モーションvrmについて">モーション（VRM）について</h2>
+<blockquote>
+<p>左側メニュー上から2番目の「モーション」アイコンをクリックするとモーションウインドウが開きます。<br>
+※Live2D のアバターを読み込んでいる場合には別のモーションウインドウが開きます。<br>
+ウインドウ内のモーションリストのボタンをクリックするとアバターが動きます。</p>
+</blockquote>
+<h3 id="モーションデータリスト内のボタン背景別の説明">モーションデータリスト内のボタン背景別の説明</h3>
+<blockquote>
+<p>白：デフォルトポーズ<br>
+黄色：デフォルトモーション<br>
+ピンク：読み込んだBVHモーション<br>
+<br>
+<img src="image/motion_vrm1.jpg" alt="画像"></p>
+</blockquote>
+<h3 id="ショートカットの設定">ショートカットの設定</h3>
+<blockquote>
+<p>ウインドウ上部の「ショートカットを開く」をクリックするとショートカット設定ウインドウが開きます。<br>
+※3ten右側メニュー上から5番目の「設定」アイコンからも開くことが出来ます。<br>
+ショートカットリストの中から該当のモーションにショートカットキーを設定することが出来ます。</p>
+</blockquote>
+<h3 id="bvh-の互換性">BVH の互換性</h3>
+<blockquote>
+<p>下記の条件を満たしている必要があります。<br>
+<br>
+・初期姿勢が T-Pose になっている。<br>
+・hips に移動値が代入してある。<br>
+・hips から子に向かってローカル回転を代入してある。</p>
+</blockquote>
+<h3 id="bvhファイルの読み込み方">BVHファイルの読み込み方</h3>
+<blockquote>
+<p>ウインドウ上部中央の「モーションフォルダを開く」をクリックするとフォルダが開きます。<br>
+このフォルダに読み込ませたいBVHファイルを配置します。<br>
+<br>
+<img src="image/motion_vrm2.jpg" alt="画像"><br>
+<br>
+その後、ウインドウ上部右の「BVHを更新する」をクリックするとリストにBVHファイルが追加されます。</p>
+</blockquote>
+<h3 id="bvh-で指を動かす">BVH で指を動かす</h3>
+<blockquote>
+<p>アバター調整ウインドウの「体」タブにある、BVH 項目の「指を操作する」にチェックを入れます。<br>
+※設定変更前に読み込んだ BVH には適用されません。<br>
+<img src="image/motion_vrm3.png" alt="画像"><br>
+<br>
+リストから選択した BVH モーションに対応した指ボーンがあれば指も動きます。<br>
+<br>
+肩以降のボーン構成は下記のようになっている必要があります。<br>
+<br>
+<img src="image/motion_vrm4.png" alt="画像"></p>
+</blockquote>
+
+</body>
+</html>

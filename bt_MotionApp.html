@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>bt_MotionApp.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="style2.css" type="text/css">
+</head>
+<body>
+<h2 id="モーションアプリ連携について">モーションアプリ連携について</h2>
+<blockquote>
+<p>3tene を拡張する <font color="Blue">3teneMotionApp</font> システムを搭載。<br>
+3tene 本体の更新を行わずに新たな機器追加が可能になりました。<br>
+<br>
+<font color="Blue">3tene 本体とモーションアプリを連携する</font>事でトラッキングを可能にします。<br>
+<img src="image/MotionApp_1.png" alt="画像"><br>
+<br>
+3tene V3 以降では既存の Azure Kinect だけでなく、<br>
+LeapMotion、VR、Nuitrack もモーションアプリとして追加されました。<br>
+<br>
+<font color="Red">※3tene 本体から VR 機能を切り離したので SteamVR は起動しなくなりました。<br>
+　（モーションアプリ連携で VR を使用する場合は SteamVR が起動します。）</font><br>
+<br>
+また、PC 1台に対して1台しか接続できない機器でも<br>
+複数の PC を用意してローカルネットワークで繋ぐことで<br>
+3tene で複数台の機器が利用可能になります。<br>
+<br>
+PC 複数台で構成する事で負荷分散も可能になります。<br>
+<img src="image/MotionApp_2.png" alt="画像"></p>
+</blockquote>
+<h3 id="使い方-アプリ連携の接続">使い方 (アプリ連携の接続)</h3>
+<blockquote>
+<ol>
+<li>モーションアプリを起動します。</li>
+<li>モーションアプリのトラッキングを開始して、機器が動作しているのを確認。</li>
+<li>3tene を起動します。</li>
+<li>3tene の「アバターの調整」の「機器タブ」を選択。
+5.「ボディトラッキングの種類」を「3teneモーションアプリ」に変更。<br>
+<img src="image/bt_MoApp_01.png" alt="画像"></li>
+<li>3tene のトラッキングを開始してアバターが動くのを確認する。
+　<font color="red">※モーションアプリとの連携（通信）が確立していればアバターが動きます。</font><br>
+<img src="image/bt_MoApp_02.png" alt="画像"></li>
+</ol>
+</blockquote>
+<h3 id="ネットワーク経由">ネットワーク経由</h3>
+<blockquote>
+<p>「アバター調整」の「設定：3teneモーションアプリ」の「IPアドレス」に<br>
+モーションアプリを動かしているPCのIPアドレスを入力します。<br>
+<font color="Blue">※モーションアプリの「設定：情報」にIPアドレスが表示されます。</font><br>
+<br>
+<font color="red">１台のPCで連携する場合は「IPアドレス」に 127.0.0.1 を設定してください。<br>
+これは通信先を自分自身（ローカルホスト）にする設定になります。</font><br>
+<br>
+3tene のトラッキングを開始してアバターが動くのを確認する。<br>
+<font color="red">※モーションアプリとの連携（通信）が確立していればアバターが動きます。</font><br>
+<br>
+設定が正しく行われても<font color="red">※セキュリティソフトにブロック</font>され、<br>
+正常に動作しない場合があります。そのような場合には<br>
+<font color="Blue">モーションアプリがファイアウォールにブロック</font>されないように設定してください。<br>
+<a href="AboutSecuritySoft.html">セキュリティソフトについて</a></p>
+</blockquote>
+
+</body>
+</html>

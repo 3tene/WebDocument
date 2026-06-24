@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>mac.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="style2.css" type="text/css">
+</head>
+<body>
+<h2 id="mac版の制限">Mac版の制限</h2>
+<h3 id="初回開発元が未確認の警告ダイアログが表示される">初回「開発元が未確認」の警告ダイアログが表示される</h3>
+<blockquote>
+<p><a href="troubleshooting.html">トラブルシューティング</a> の<br>
+「Mac で開発元が未確認と表示され 3tene が起動できません。」<br>
+を参照してください。</p>
+</blockquote>
+<h3 id="apple-silicon-cpu-を搭載した-mac-の対応について">Apple Silicon CPU を搭載した Mac の対応について</h3>
+<blockquote>
+<p>Intel Mac には下記の制限はありません。<br>
+<br>
+<S>制限として<font color="Red">音声リップシンクが動作しません。</font></S><br>
+<S><font color="Blue">※顔認識によるリップシンクは使用可能です。</font></S><br>
+<br>
+以前から使用されている<font color="Red">「音声リップシンク タイプＡ」は動作しません</font>が、<br>
+<font color="Blue">3tene V4 から追加された「音声リップシンク タイプＢ」は動作します。</font><br>
+<br>
+●M1 CPU<br>
+3tene V2 ver 2.0.9 2020/12/18 から起動できるようになりました。<br>
+<br>
+●M2 CPU<br>
+3tene V2 ver 2.0.20 2022/06/30 から起動できるようになりました。<br>
+3tene V3 ver 3.0.2 2022/07/01 から起動できるようになりました。<br>
+<br>
+もし、起動できない場合は DisableLipSync.txt を<br>
+実行ファイルと同じフォルダに作成してください。<br>
+※音声リップシンクが強制的に無効になり、起動できる可能性があります。</p>
+</blockquote>
+<h3 id="mac-os-1015x-catalina-の対応について">Mac OS 10.15.x (Catalina) の対応について</h3>
+<blockquote>
+<p>3tene v1.10.28 2020/05/22 以降で正式に対応しました。<br>
+古いバージョンの 3tene は動作対象外となります。</p>
+</blockquote>
+<h3 id="leapmotion-に対応していません-3tene-v4-から対応しました"><S>LeapMotion に対応していません</S> (<font color="Red">3tene V4 から対応しました</font>)</h3>
+<blockquote>
+<p><S>最新の LeapMotion が Mac に対応していないので使用できません。</S><br>
+3teneMoApp_HandTracking (Mac 版) v1.0.2 2023/12/19 以降と<br>
+LeapMotion 用の最新ランタイム(Ultraleap Tracking v5.14 以降)の組み合わせで動作します。</p>
+</blockquote>
+<h3 id="nuitrack--realsense-に対応していません">Nuitrack + RealSense に対応していません</h3>
+<blockquote>
+<p>Nuitrack が Mac に対応していないので使用できません。</p>
+</blockquote>
+<h3 id="vr-の対応について">VR の対応について</h3>
+<blockquote>
+<p><font color="Red">Mac 版 Steam での正常動作が確認できない為、対象外となります。</font><br>
+※2022年6月に確認。<br>
+<br>
+<S>HTC Vive のみ対応します。<br>
+<br>
+<font color="Red">※M1 Mac では動作しない可能性があります。</font><br>
+<br>
+動作には SteamVR が必須となりますが、<br>
+Valve から 2020年5月に Mac の SteamVR のサポート終了が発表されており、<br>
+3tene での対応、サポートを保証できません。<br>
+<br>
+2021年の時点で下記に対応していません。<br>
+<font color="Red">※HTC Vive Pro、HTC Vive Cosmos</font><br>
+<font color="Red">※Oculus シリーズ</font></S></p>
+</blockquote>
+<h3 id="perception-neuron-の対応について">Perception Neuron の対応について</h3>
+<blockquote>
+<p>Perception Neuron 3、Studio を動かすのに必要な<br>
+AxisStudio が Mac に対応していない為、使用できません。</p>
+</blockquote>
+<h3 id="背景の画面共有には対応していません">背景の画面共有には対応していません。</h3>
+<blockquote>
+<p>Windows 専用の画面共有機能を使用している為、使用できません。</p>
+</blockquote>
+<h3 id="動画保存機能が使えません"><S>動画保存機能が使えません</S></h3>
+<blockquote>
+<p><S>画保存があまりにも遅く実用に耐えない為、無効にしています。<br>
+（2018年の端末でも3フレーム程度まで速度が低下します。）</S><br>
+<br>
+<font color="Blue">3tene V3 より Mac 版も動画保存が可能になりました。</font></p>
+</blockquote>
+<h3 id="仮想カメラが使えません">仮想カメラが使えません</h3>
+<blockquote>
+<p>3tene Screen Capture は Mac 未対応の為、使用できません。</p>
+</blockquote>
+<h3 id="仮想環境や-bootcamp-の動作保証はしません">仮想環境や BootCamp の動作保証はしません</h3>
+<blockquote>
+<p>仮想環境や BootCamp で起動した Windows で<br>
+3tene(Windows版) の正常動作は保証しません。<br>
+<br>
+<font color="Red">※3tene が起動しても対応機器が動作しない可能性があります。</font><br>
+<br>
+MacBook で BootCamp を使用して起動した Windows 上の<br>
+FaceTime HD Camera は解像度の問題で使用できないようです。</p>
+</blockquote>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AdjustAvaterFace.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="style2.css" type="text/css">
+</head>
+<body>
+<h2 id="アバター調整顔タブ">アバター調整（顔タブ）</h2>
+<blockquote>
+<p>アバターのフェイストラッキングの調整や設定を行います。</p>
+</blockquote>
+<h3 id="アバター調整のウインドウを表示する">アバター調整のウインドウを表示する</h3>
+<blockquote>
+<p>右側メニューのアバター調整のアイコンをクリックします。<br>
+<br>
+<img src="image/AdjustAvatar_FromMenu.png" alt="画像"><br>
+<br>
+顔タブを選択します。<br>
+<br>
+<img src="image/AdjustAvatarFace_00.png" alt="画像"></p>
+</blockquote>
+<h3 id="アバタースロットを選択する-3tenefree-は非対応">アバタースロットを選択する (3teneFREE は非対応)</h3>
+<blockquote>
+<p>アバターを複数読み込んでいる場合にどのアバターを対象にするかを選択します。</p>
+</blockquote>
+<h3 id="フェイストラッキング-共通">フェイストラッキング (共通)</h3>
+<blockquote>
+<h4 id="動作の左右反転">動作の左右反転</h4>
+<p>ファイストラッキングの結果を左右反転します。</p>
+</blockquote>
+<blockquote>
+<h4 id="まばたきの動作">まばたきの動作</h4>
+<p>まばたきの動作を変更します。<br>
+・アニメーション → まぶたが一定よりも閉じると自動でまばたきをします。<br>
+・取得パラメータ → 顔認識から取得した数値でまぶたを制御します。（じと目も可能になります）<br>
+<br>
+※取得パラメータ動作はウェブカメラだと精度が足りず望んだ結果にならない場合があります。<br>
+　iPhoneX と 3teneFT 使用時にお勧めします。</p>
+</blockquote>
+<blockquote>
+<h4 id="連続まばたき禁止時間">連続まばたき禁止時間</h4>
+<p>まばたきをしてから指定されている時間を経過しないとまばたきをしません。<br>
+※自動まばたきは対象となりません。</p>
+</blockquote>
+<blockquote>
+<h4 id="表情が標準以外の時のまばたきを無効">表情が標準以外の時のまばたきを無効</h4>
+<p>アバターの表情を変更している状態でまばたきをすると<br>
+表示が崩れる場合があるのでオンにするとまばたきを抑制します。</p>
+</blockquote>
+<blockquote>
+<h4 id="表情の移行時間">表情の移行時間</h4>
+<p>表情が変化するまでの時間を変更します。</p>
+</blockquote>
+<blockquote>
+<h4 id="頭の下向き角度を制限する">頭の下向き角度を制限する</h4>
+<p>チェックを入れることで頭を下に向けた際の角度を制限します。</p>
+</blockquote>
+<blockquote>
+<h4 id="眉毛の制御">眉毛の制御</h4>
+<p>チェックを入れることでフェイストラッキングの際に眉毛の制御も行います。</p>
+</blockquote>
+<h3 id="フェイストラッキング-ウェブカメラ">フェイストラッキング (ウェブカメラ)</h3>
+<blockquote>
+<h4 id="ノイズフィルター">ノイズフィルター</h4>
+<p>ウェブカメラ使用時にノイズフィルターをかけます。</p>
+</blockquote>
+<blockquote>
+<h4 id="体の前後の動作">体の前後の動作</h4>
+<p>フェイストラッキング時の体の前後の動作を有効にします。<br>
+<a href="ft_webcamera.html">ウェブカメラによるフェイストラッキングについて</a></p>
+</blockquote>
+<blockquote>
+<h4 id="頭の反応">頭の反応</h4>
+<p>値を大きくすると頭のフェイストラッキングの動き出すタイミングが敏感になります。</p>
+</blockquote>
+<blockquote>
+<h4 id="頭の感度">頭の感度</h4>
+<p>頭を動かした場合の感度を変更します。</p>
+</blockquote>
+<blockquote>
+<h4 id="体の感度">体の感度</h4>
+<p>体を動かした場合の感度を変更します。</p>
+</blockquote>
+<blockquote>
+<h4 id="頭の横向きの感度">頭の横向きの感度</h4>
+<p>頭を横向きに動かした場合の感度を変更します。</p>
+</blockquote>
+<blockquote>
+<h4 id="まぶたの閾値補正">まぶたの閾値補正</h4>
+<p>まぶたの判定に関する値を調整します。<br>
+まばたきの動作を「取得パラメータ」に変更すると確認がしやすいです。</p>
+</blockquote>
+<blockquote>
+<h4 id="まばたきの感度">まばたきの感度</h4>
+<p>まばたきアニメーションの開始判定を変更します。</p>
+</blockquote>
+<blockquote>
+<h4 id="口の感度-横幅">口の感度 (横幅)</h4>
+<p>口を横に動かした場合の感度を変更します。</p>
+</blockquote>
+<blockquote>
+<h4 id="口の感度-縦幅">口の感度 (縦幅)</h4>
+<p>口を縦に動かした場合の感度を変更します。</p>
+</blockquote>
+<blockquote>
+<h4 id="口の応答性">口の応答性</h4>
+<p>口の応答性を変更します。</p>
+</blockquote>
+<h3 id="フェイストラッキング-iphone">フェイストラッキング (iPhone)</h3>
+<blockquote>
+<h4 id="3tene-facesyncを使用する">3tene FaceSyncを使用する</h4>
+<p>使用有無を変更します。<br>
+くわしくは<a href="ft_iphone_FaceSync.html">こちら</a>。</p>
+</blockquote>
+<blockquote>
+<h4 id="顔の回転の感度">顔の回転の感度</h4>
+<p>顔の回転の感度を変更します。</p>
+</blockquote>
+<blockquote>
+<h4 id="体の回転の感度">体の回転の感度</h4>
+<p>体の回転の感度を変更します。</p>
+</blockquote>
+<blockquote>
+<h4 id="まばたきの感度-1">まばたきの感度</h4>
+<p>まばたきの感度を変更します。</p>
+</blockquote>
+<blockquote>
+<h4 id="口の感度-横幅-1">口の感度 (横幅)</h4>
+<p>口を横に動かした場合の感度を変更します。</p>
+</blockquote>
+<blockquote>
+<h4 id="口の感度-縦幅-1">口の感度 (縦幅)</h4>
+<p>口を縦に動かした場合の感度を変更します。</p>
+</blockquote>
+<blockquote>
+<h4 id="口の応答性-1">口の応答性</h4>
+<p>口の応答性を変更します。</p>
+</blockquote>
+<blockquote>
+<h4 id="表情自動変更">表情自動変更</h4>
+<p>口の応答性を変更します。</p>
+</blockquote>
+<blockquote>
+<h4 id="3teneft-からのショートカットの呼び出し">3teneFT からのショートカットの呼び出し</h4>
+<p>iPhone からのショートカット呼び出しを設定します。</p>
+</blockquote>
+<h3 id="live2dモデル-live2d-版のみ">Live2Dモデル (LIVE2D 版のみ)</h3>
+<blockquote>
+<h4 id="母音リップシンクを使用する">母音リップシンクを使用する</h4>
+<p>対応しているモデルを読み込み時のみ動作します。</p>
+</blockquote>
+<h3 id="音声リップシンクタイプａ">音声リップシンク（タイプＡ）</h3>
+<blockquote>
+<h4 id="入力ゲイン音声">入力ゲイン（音声）</h4>
+<p>音声認識を使用している場合の音に対する感度を変更します。<br>
+設定「システム」の「マイク入力を再生する」をオンにした場合の音量も変化します。</p>
+</blockquote>
+<blockquote>
+<h4 id="反応速度">反応速度</h4>
+<p>反応速度を変更します。</p>
+</blockquote>
+<blockquote>
+<h4 id="形状の変化速度">形状の変化速度</h4>
+<p>形状の変化速度を変更します。</p>
+</blockquote>
+<h3 id="音声リップシンクタイプｂ">音声リップシンク（タイプＢ）</h3>
+<blockquote>
+<h4 id="入力ゲイン音声-1">入力ゲイン（音声）</h4>
+<p>音声認識を使用している場合の音に対する感度を変更します。<br>
+設定「システム」の「マイク入力を再生する」をオンにした場合の音量も変化します。</p>
+</blockquote>
+<blockquote>
+<h4 id="感度">感度</h4>
+<p>感度を変更します。</p>
+</blockquote>
+<blockquote>
+<h4 id="形状の変化速度-1">形状の変化速度</h4>
+<p>形状の変化速度を変更します。</p>
+</blockquote>
+
+</body>
+</html>

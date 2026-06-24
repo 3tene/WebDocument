@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AboutFaceForge.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href="style2.css" type="text/css">
+</head>
+<body>
+<h2 id="faceforge-について">FaceForge について</h2>
+<h3 id="概要">概要</h3>
+<blockquote>
+<p><font color="Blue">3tenePRO (+Live2D 含む) v2.0.8 以降に付属しています。</font><br>
+<br>
+このソフトウェアは元となる VRM からシェイプキーと表情クリップを<br>
+一括でコピー先の VRM に追加する事を目的としています。<br>
+<br>
+VRM はコピー元とコピー先で２つ必要になります。<br>
+コピー元とコピー先は互換性のあるモデルデータ(※後述)である必要があります。</p>
+</blockquote>
+<h3 id="モデルに関する注意事項">モデルに関する注意事項</h3>
+<blockquote>
+<p><font color="Red">最悪の場合、VRM のファイルを壊してしまう可能性があるので<br>
+出力でコピー元の VRM ファイルを上書きしないようにしてください。</font></p>
+</blockquote>
+<h3 id="vrm-の互換性">VRM の互換性</h3>
+<blockquote>
+<p>基本的には VRoidStudio の同じバージョンで出力された VRM でしか<br>
+表情のコピーは成功しません。<br>
+<br>
+異なるバージョンの VRoidStudio で出力された VRM でコピーを行うと<br>
+コピーに失敗するか、成功しても表情が正常に動作しない VRM が出力されます。<br>
+<br>
+・VRoidStudio 0.11.2 モデル → VRoidStudio 0.11.2 モデル ： <font color="Blue">正常に動作</font><br>
+・VRoidStudio 0.11.3 モデル → VRoidStudio 0.11.3 モデル ： <font color="Blue">正常に動作</font><br>
+・VRoidStudio 0.11.2 モデル → VRoidStudio 0.11.3 モデル ： <font color="Red">コピーは成功するが正常動作しない。</font><br>
+・VRoidStudio 1.0.2 モデル → VRoidStudio 1.0.2 モデル ： <font color="Blue">正常に動作</font><br>
+　<font color="Red">※エクスポートの「ポリゴンの削減」の「透明メッシュを削除する」のチェック有無が異なると、<br>
+　コピーは成功しても正常動作しません。</font>
+<br>
+・Blender モデル → VRoidStudio 0.11.2 モデル ： <font color="Red">コピーに失敗。</font><br>
+・VRoidStudio 0.11.2 モデル → Blender モデル ： <font color="Red">コピーに失敗。</font></p>
+</blockquote>
+<h3 id="シェイプキーと表情クリップのコピー後のモデルについて">シェイプキーと表情クリップのコピー後のモデルについて</h3>
+<blockquote>
+<p><font color="Blue">著作権や配布可否は元の VRM に準じます。</font><br>
+修正が許可されている VRM に対してこのツールを使ってください。</p>
+</blockquote>
+<h3 id="使い方">使い方</h3>
+<blockquote>
+<p><img src="image/FaceForge_1.png" alt="画像"></p>
+<ol>
+<li>
+<p><strong>コピー元VRMをインポート</strong></p>
+<p>画面左上の[変換元VRMをインポート]を押下し、コピー元のVRMファイルを選択します。</p>
+</li>
+<li>
+<p><strong>コピー元のメッシュを選択する</strong></p>
+<p>画面左上のドロップダウン[メッシュを選択]から顔の頂点情報を持つメッシュを選択します。</p>
+<p>一般的に[Face]という名称になっている事が多いです。</p>
+</li>
+<li>
+<p><strong>コピー先VRMをインポート</strong></p>
+<p>画面右上の[変換先VRMをインポート]を押下し、コピー先のVRMファイルを選択してください。</p>
+</li>
+<li>
+<p><strong>コピー先のメッシュを選択する</strong></p>
+<p>画面右上のドロップダウン[メッシュを選択]から顔の頂点情報を持つメッシュを選択します。</p>
+<p>一般的に[Face]という名称になっている事が多いです。</p>
+</li>
+<li>
+<p><strong>頂点数とポリゴン数が一致していることを確認する</strong></p>
+<p>画面中央の表示から頂点数とポリゴン数を確認してください。</p>
+<p>頂点数とポリゴン数が一致しているVRM同士であればコピーに成功する確率が高く、</p>
+<p>失敗した場合は顔の可動位置にズレが生じ正しく動作しないことがあります。</p>
+</li>
+<li>
+<p><strong>メッシュとクリップをコピーしてファイルに書き出す</strong></p>
+<p>画面中央下の[メッシュとクリップをコピーしてファイルに書き出す]を押下し、</p>
+<p>ファイル保存ダイアログが表示されるので、変換後のVRMを保存するフォルダを選択してください。</p>
+<p>書き出しに成功すると画面中央に書き出しが完了した旨を示すテキストが表示されます。</p>
+</li>
+</ol>
+</blockquote>
+
+</body>
+</html>
