@@ -74,6 +74,7 @@
 ### MOCOPI (モーションアプリ連携 - 3teneMoApp_Mocopi)
 
 >アプリ連携により mocopi を使用したボディトラッキングを行います。  
+>[mocopi (v5 内蔵) について](bt_Mocopi.html)  
 >[mocopi (App) について](bt_MoAppMocopi.html)
 
 
