@@ -131,6 +131,12 @@
 >[Hi5 VR GLOVEについて](Hi5VrGlove.html)
 
 
+### MCP サーバー
+
+>AI エージェントから 3tene を操作できるようにします。  
+>[MCP サーバー について](Mcp.html)
+
+
 ### MIDI
 
 >MIDI 機器を使ってショートカットを利用します。  
