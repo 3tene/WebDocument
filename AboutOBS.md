@@ -28,10 +28,9 @@
 >　3tenePRO なら<font color="Blue">サイフォンクライント</font>が使用可能で、こちらが推奨となります。  
 >\
 >・NDI は Windows, Mac どちらでも使用可能ですが OBS に追加プラグインが必要です。
-
-
-#### 注意事項
-
+>
+>#### 注意事項
+>
 ><font color="Blue">・3tene Steam 版</font>で<font color="Blue"> OBS の映像キャプチャを利用するには手動登録</font>が必要になります。  
 >　[仮想カメラ 3tene Screen Capture](VirtualWebCamera.html) を参照して手動設定してください。  
 >\

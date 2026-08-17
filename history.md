@@ -378,7 +378,6 @@
 
 ### 過去バージョン
 
->[3tene V2 までの古い更新履歴](V2/index.html#history.md)
->[3tene V3 までの古い更新履歴](V3/index.html#history.md)
->[3tene V4 までの古い更新履歴](V4/index.html#history.md)
-
+><a href="V2/index.html#history.md" target="_blank">3tene V2 までの古い更新履歴</a>  
+><a href="V3/index.html#history.md" target="_blank">3tene V3 までの古い更新履歴</a>  
+><a href="V4/index.html#history.md" target="_blank">3tene V4 までの古い更新履歴</a>  
