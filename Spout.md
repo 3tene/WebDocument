@@ -6,8 +6,8 @@
 ><font color="Red">※3teneFREE は対応していません。</font>  
 ><font color="Red">※Windows 版の専用機能です。</font>  
 >\
-><font color="Blue">Spout を経由する 3tene の画面は  
->仮想カメラ機能と同様にメニューやウインドウが録画対象とならないので  
+><font color="Blue">Spout を経由する 3tene の画面は仮想カメラ機能と同様に  
+>メニューやウインドウが録画対象とならないので  
 >アバターと背景のみの画面参照となります。</font>  
 >\
 >この機能を利用するには、映像を参照するソフトウェアが  
@@ -32,17 +32,22 @@
 
 >OBS のプラグインである obs-spout2-plugin をインストールします。  
 >[https://github.com/Off-World-Live/obs-spout2-plugin/releases](https://github.com/Off-World-Live/obs-spout2-plugin/releases)  
-
 >\
->インストールが完了するとソースに「Spout2 Capture」が追加されます。  
->Spout2 Capture を追加し、プロパティの「SpoutSenders」 に複数ある場合は  
->3tene で設定した「Spoutソース名」を選択してください。  
+>インストールが完了するとソースに「Spout2 Capture」が追加できるようになります。  
+>\
+>ソースに Spout2 Capture を選択して追加した後、プロパティを開きます。  
+>「SpoutSenders」 の項目に名称が複数ある場合は  
+>3tene で設定した Spout ソース名「<font color="Blue">3teneSpout</font>」を選択してください。  
 >\
 >![画像](image/Spout_2.png "")
 
 
 ### OBS のアルファチャンネル設定
 
+>背景を透過したい場合は下記の設定を行います。  
+>/
+>設定「システム」で「Spoutのアルファチャンネルを使用する」にチェックを付けます。  
+>/
 >3tene の背景設定を「色設定」の「透過背景」に設定します。  
 >![画像](image/background_3.png "")  
 >\
