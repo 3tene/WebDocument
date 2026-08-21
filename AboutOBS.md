@@ -21,7 +21,7 @@
 >　 [仮想ウェブカメラ 3tene Screen Capture](VirtualWebCamera.html) を使用します。  
 >\
 >・Windows でウインドウをそのまま取り込む場合は<font color="Blue">ゲームキャプチャ</font>を使用してください。  
->　3tenePRO なら <font color="Blue">Spout2</font> が使用可能で、こちらが推奨となります。  
+>　3tenePRO なら [Spout2](Spout.html) が使用可能で、こちらが推奨となります。  
 >　<font color="Red">※OBS に別途 Spout2 プラグインの追加が必要です。</font>  
 >\
 >・Mac で使う場合は<font color="Blue">ウインドウキャプチャ</font>を使用してください。  
