@@ -29,10 +29,10 @@
 
 ### フェイストラッキング（iPhoneX 以降）
 
->iPhoneX 以降と連携して高精度フェイストラッキングを行います。  
->[iPhoneXによるフェイストラッキングについて](ft_iphone.html)  
->>[iPhoneX フェイストラッキングの表情自動変更(表情認識)](ft_iphone_expression.html)  
->>[iPhoneX フェイストラッキングの FaceSync (PerfectSync)](ft_iphone_FaceSync.html)
+>iPhoneX 以降(TrueDepth 搭載機種)と連携して高精度フェイストラッキングを行います。  
+>[iPhone フェイストラッキング連携について](ft_iphone.html)  
+>>[iPhone フェイストラッキング連携の表情自動変更(表情認識)](ft_iphone_expression.html)  
+>>[iPhone フェイストラッキング連携の FaceSync (PerfectSync)](ft_iphone_FaceSync.html)
 
 
 ### リップシンク（顔認識、音声認識）
